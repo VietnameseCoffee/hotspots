@@ -7,13 +7,11 @@ const Splash = () => {
   return (
     <div className='splash-header'>
       <div className='splash-img'>
+        <div className="splash-header-right">
+          <UserHeaderContainer />
+        </div>
 
       </div>
-
-      <div className="splash-header-right">
-        <UserHeaderContainer />
-      </div>
-
     </div>
   );
 };
