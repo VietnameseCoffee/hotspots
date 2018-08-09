@@ -8,7 +8,9 @@ const SplashHeader = () => {
   return (
     <div className='splash-top'>
       <div className='splash-img'>
+        <div>
 
+        </div>
         <div className="splash-header">
           <div className="splash-header-left">
             <SplashHeaderNav />

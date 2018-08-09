@@ -31,12 +31,17 @@
         }
       }
 
-      .splash-login {
+      .splash-header-right {
+        width: 190px;
+      }
 
+      .splash-login-signup {
+        width: 190px;
+        display: flex;
+        justify-content: space-between;
       }
 
       .splash-signup {
-        display: inline;
         border: 2px solid white;
         padding: 7px 24px 8px;
         border-radius: 3px;

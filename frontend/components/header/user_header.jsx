@@ -6,7 +6,7 @@ const UserHeader = ({ currentUser, requestLogout, match }) => {
 
   const sessionLinks = () => (
     // debugger
-    <nav className={`${splash}login-signup`}>
+    <div className={`${splash}login-signup`}>
       <span className={`${splash}login`}>
         <Link to="/login">Login</Link>
       </span>
@@ -14,7 +14,7 @@ const UserHeader = ({ currentUser, requestLogout, match }) => {
       <span>
         <Link className={`${splash}signup`} to="/signup">Sign up</Link>
       </span>
-    </nav>
+    </div>
   );
   console.log(match)
   // change to a picture with a dropdown, place holder from benchbnb
