@@ -1,4 +1,4 @@
-.splash-header {
+.splash-top {
   height: 600px;
   color: white;
 
@@ -9,16 +9,34 @@
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
     z-index: 2;
     float: left;
-  }
+    .splash-header {
+      margin: 0 auto;
+      width: 960px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: "Robot", sans-serif;
 
-  .splash-login {
+      .splash-header-left ul {
+        display: flex;
+        li {
 
-  }
+          padding: 5px;
+        }
+      }
 
-  .splash-signup {
-    display: inline;
-    border: 2px solid white;
-    padding: 7px 24px 8px;
-    border-radius: 3px;
+      .splash-login {
+
+      }
+
+      .splash-signup {
+        display: inline;
+        border: 2px solid white;
+        padding: 7px 24px 8px;
+        border-radius: 3px;
+      }
+
+    }
   }
 }
