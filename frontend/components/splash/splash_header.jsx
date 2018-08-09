@@ -2,7 +2,7 @@ import React from 'react';
 
 import UserHeaderContainer from '../header/user_header_container';
 
-const Splash = () => {
+const SplashHeader = () => {
 
   return (
     <div className='splash-header'>
@@ -16,4 +16,4 @@ const Splash = () => {
   );
 };
 
-export default Splash;
+export default SplashHeader;

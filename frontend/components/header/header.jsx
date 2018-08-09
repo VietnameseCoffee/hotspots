@@ -13,6 +13,7 @@ const Header = () => {
           <h1>Hot Spots</h1>
         </Link>
       </div>
+
       <div className="header-right">
         <UserHeaderContainer />
       </div>
