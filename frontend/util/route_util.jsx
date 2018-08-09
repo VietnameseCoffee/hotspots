@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { Redirect, Route, withRouter } from 'react-router-dom';
 
 const msp = state => {
-  return {loggedIn: !!(state.session.currentUser)};
+  console.log(state.session)
+  return {loggedIn: !!(state.session.id)};
 };
 
 const Auth = ({ component: Component, path, loggedIn, exact }) => (

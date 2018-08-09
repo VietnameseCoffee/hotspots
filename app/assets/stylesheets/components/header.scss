@@ -1,6 +1,12 @@
-header {
-  background-color: red;
-}
-.header {
+
+.header-main-container {
+  text-align: center;
   background-color: #d32323;
+}
+
+.header-arranger {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }

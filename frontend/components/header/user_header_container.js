@@ -1,17 +1,18 @@
 import { connect } from 'react-redux';
 
-import { logout } from '../../actions/session_actions';
+import { requestLogout } from '../../actions/session_actions';
 import UserHeader from './user_header';
 
 const msp = ({ session, entities: { users } }) => {
-  
   return {
     currentUser: users[session.id]
   };
 };
 
-const msd = dispatch => ({
-  logout: () => dispatch(logout())
-});
+const mdp = dispatch => {
 
-export default connect(msp, msd)(UserHeader);
+  return { requestLogout: () => dispatch(requestLogout()) }
+};
+
+
+export default connect(msp, mdp)(UserHeader);
