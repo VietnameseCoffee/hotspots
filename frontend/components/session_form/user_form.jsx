@@ -10,6 +10,10 @@ class UserForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentWillMount () {
+    this.props.removeSessionErrors();
+  }
+
   // refactor for better efficiency
   update (value) {
     return (e) => this.setState({[value]: e.target.value});
@@ -21,7 +25,7 @@ class UserForm extends React.Component {
   }
 
   render () {
-    let namesInput, zipInput, birthdayInput;
+    let namesInput, zipInput, birthdayInput, errors;
     let header2 = 'Log In to Hot Spots';
     if (this.props.formType === 'Sign Up') {
       namesInput = this.namesRender();
@@ -29,15 +33,16 @@ class UserForm extends React.Component {
       birthdayInput = this.birthdayRender();
       header2 = 'Sign Up for Hot Spots';
     }
+    if (this.props.errors.length > 0) { errors = "Invalid entry, please try again";}
 
     return (
       <div className='super-container'>
         <div className='main-session-container'>
-          <div className='form-header'>
-            <h2>{header2}</h2>
-          </div>
 
           <div className='form-wrapper'>
+            <div className='form-header'>
+              <h2>{header2}</h2>
+            </div>
             <form className='user-form' onSubmit={this.handleSubmit}>
               {namesInput}
               <div>
@@ -52,14 +57,14 @@ class UserForm extends React.Component {
                 <button className='button'>{this.props.formType}</button>
               </div>
               <div className="errors">
-                {this.props.errors[0]}
+                {errors}
               </div>
             </form>
           </div>
         </div>
 
         <div className="main-side-container">
-          <p>FUUH</p>
+          <img src="./assets/app_layout/signup_illustration"></img>
         </div>
       </div>
     );

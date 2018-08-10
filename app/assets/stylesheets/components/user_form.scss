@@ -3,12 +3,13 @@
 
   .main-session-container {
     width: 50%;
+    display: flex;
+    align-items: center;
   }
 
   .form-wrapper {
     margin: 0 0 20px 0;
-    display: flex;
-    
+
     .input-field {
       border: 1px solid #aeaeae;
       border-radius: 3px;

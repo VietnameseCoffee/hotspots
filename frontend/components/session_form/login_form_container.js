@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import UserForm from './user_form';
-import { requestLogin } from '../../actions/session_actions';
+import { requestLogin, removeSessionErrors } from '../../actions/session_actions';
 
 const msp = (state) => ({
   formUser: { email: '', password: '' },
@@ -10,7 +10,9 @@ const msp = (state) => ({
 });
 
 const mdp = (dispatch) => {
-  return { action: (formUser) => dispatch(requestLogin(formUser))};
+  return {
+    action: (formUser) => dispatch(requestLogin(formUser)),
+    removeSessionErrors: () => dispatch(removeSessionErrors())};
 };
 
 

@@ -1,13 +1,14 @@
-import { RECEIVE_CURRENT_USER, RECEIVE_SESSION_ERRORS } from '../actions/session_actions';
+import { RECEIVE_CURRENT_USER, RECEIVE_SESSION_ERRORS, REMOVE_SESSION_ERRORS } from '../actions/session_actions';
 
 const sessionErrorsReducer = (state = [], action) => {
   Object.freeze(state);
-  // debugger
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
       return [];
     case RECEIVE_SESSION_ERRORS:
       return action.payload.responseJSON;
+    case REMOVE_SESSION_ERRORS:
+      return [];
     default:
       return state;
   }
