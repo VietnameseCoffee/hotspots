@@ -1,15 +1,15 @@
 class CreateBusinesses < ActiveRecord::Migration[5.1]
   def change
     create_table :businesses do |t|
-      t.string :name
-      t.string :latitude
-      t.string :longitude
-      t.string :address
-      t.string :city
-      t.string :state
-      t.string :zip
-      t.string :stars
-      t.string :price
+      t.string :name, null: false
+      t.float :latitude, null: false
+      t.float :longitude, null: false
+      t.string :address, null: false
+      t.string :city, null: false
+      t.string :state, null: false
+      t.integer :zip
+      t.float :stars
+      t.integer :price, null: false
 
       t.timestamps
     end
