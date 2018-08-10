@@ -35,7 +35,7 @@ class SearchBar extends React.Component {
         <div className="search-location">
           <label id="location">Near</label>
           <input
-            placeholder=" San Fransisco, Oakland!"
+            placeholder="San Fransisco, Oakland!"
             htmlFor="location"></input>
         </div>
 

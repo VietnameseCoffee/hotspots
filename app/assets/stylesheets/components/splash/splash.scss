@@ -55,6 +55,7 @@
       color: black;
       padding-top: 40px;
       font-size: 18px;
+      text-align: left;
 
       form {
         display: flex;
@@ -76,6 +77,11 @@
         padding: 11px;
         position: relative;
 
+        input {
+          position: absolute;
+          left: 12%;
+        }
+
         &:after {
           content:"";
           background: #ccc;
@@ -91,6 +97,15 @@
         width: 416px;
         box-sizing: border-box;
         padding: 11px;
+        position: relative;
+
+        input {
+          position: absolute;
+          left: 14%;
+          float: left;
+          width: 100%;
+        }
+
       }
 
       button {
