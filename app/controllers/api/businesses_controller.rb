@@ -4,10 +4,21 @@ class Api::BusinessesController < ApplicationController
 
   def create
     @business = Business.new(business_params)
+
+    if @business.save
+      render "api/businesses/show"
+    else
+      render json: @business.errors.full_messages , status: 401
+    end
   end
 
-  def destroy
-
+  def show
+    @business = Business.find_by(name: params[:business][:name])
+    if @business
+      render "api/businesses/show"
+    else
+      render "api/errors/fo-of-fo"
+    end
   end
 
   private
@@ -15,6 +26,7 @@ class Api::BusinessesController < ApplicationController
   def business_params
     params.require(:business)
     .permit(
+      :id
       :name,
       :latitude,
       :longitude,
