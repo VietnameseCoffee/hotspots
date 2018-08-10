@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SplashHeaderNav = () => {
+const SplashHeaderTop = () => {
 
   return (
     <ul>
@@ -12,4 +12,4 @@ const SplashHeaderNav = () => {
   );
 };
 
-export default SplashHeaderNav;
+export default SplashHeaderTop;

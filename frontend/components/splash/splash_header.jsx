@@ -1,8 +1,9 @@
 import React from 'react';
 
 import UserHeaderContainer from '../header/user_header_container';
-import SplashHeaderNav from './splash_header_nav';
+import SplashHeaderTop from './splash_header_top';
 import SearchBarContainer from '../header/search_bar_container';
+// import SplashHeaderNav from './splash_header_nav';
 
 const SplashHeader = () => {
 
@@ -12,7 +13,7 @@ const SplashHeader = () => {
 
         <div className="splash-header">
           <div className="splash-header-left">
-            <SplashHeaderNav />
+            <SplashHeaderTop />
           </div>
           <div className="splash-header-right">
             <UserHeaderContainer />
