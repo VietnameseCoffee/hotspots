@@ -3,7 +3,7 @@ import React from 'react';
 import UserHeaderContainer from '../header/user_header_container';
 import SplashHeaderTop from './splash_header_top';
 import SearchBarContainer from '../header/search_bar_container';
-import SplashHeaderNav from './splash_header_nav';
+import NavBar from '../header/nav_bar';
 
 const SplashHeader = () => {
 
@@ -30,7 +30,7 @@ const SplashHeader = () => {
         </div>
 
         <div className="splash-nav">
-          <SplashHeaderNav />
+          <NavBar />
         </div>
 
       </div>

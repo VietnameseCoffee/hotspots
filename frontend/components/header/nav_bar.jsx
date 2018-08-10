@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SplashHeaderNav = () => {
+const NavBar = () => {
 
   return (
     <nav>
@@ -14,4 +14,4 @@ const SplashHeaderNav = () => {
   );
 };
 
-export default SplashHeaderNav;
+export default NavBar;
