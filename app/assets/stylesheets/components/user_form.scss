@@ -10,18 +10,38 @@
   .form-wrapper {
     margin: 0 0 20px 0;
 
+    .form-header {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
     .input-field {
+      padding: 5px;
+      margin-bottom: 9px;
+      width: 300px;
       border: 1px solid #aeaeae;
       border-radius: 3px;
       background-color: #fff;
+    }
+
+    .user-form-dropdown {
+      padding: 5px;
+      margin-bottom: 9px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
     }
 
     .button {
       background: #d90007;
       padding: 5px;
       border-radius: 3px;
-      border-color: #8d0005;
-
+      border-color: 000000;
+      width: 300px;
+      height: 48px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
     }
 
     .button:hover {

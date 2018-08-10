@@ -5,6 +5,7 @@ import { AuthRoute } from '../util/route_util';
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import Header from './header/header.jsx';
+import SignupHeader from './header/header.jsx';
 import SplashHeader from './splash/splash_header';
 
 
@@ -15,7 +16,9 @@ const App = () => {
       <header className="header-main-container">
         <Switch>
           <Route exact path="/" component={SplashHeader}/>
-          <Route path='/login' component={Header}/>
+          <Route path='/' component={Header}/>
+          <Route path='/login' component={SignupHeader}/>
+          <Route path='/signup' component={SignupHeader}/>
         </Switch>
       </header>
       <div className="main">

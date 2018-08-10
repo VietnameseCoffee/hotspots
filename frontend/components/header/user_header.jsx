@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-const UserHeader = ({ currentUser, requestLogout, match }) => {
-  const splash = match.path.length == 1 ?  'splash-': '';
+const UserHeader = ({ currentUser, requestLogout, match}) => {
+  // debugger
+  const splash = match.isExact ?  'splash-': '';
 
   const sessionLinks = () => {
     let loginLink;
-    
+
     if (splash){
       loginLink = (
         <span className={`${splash}login`}>
