@@ -9,11 +9,16 @@
     width: 900px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     height: 64px;
     box-sizing: border-box;
     padding: 12px 0 12px 0;
     margin: auto;
+
+    .header-search-bar {
+      min-width: 10px;
+    }
 
     .header-right {
       height: 40px;
@@ -21,6 +26,8 @@
 
 
       .login-signup {
+        justify-content: space-between;
+        align-items: center;
 
         .signup {
           background-color: #bd1f1f;

@@ -5,7 +5,8 @@ import { requestLogin } from '../../actions/session_actions';
 
 const msp = (state) => ({
   formUser: { email: '', password: '' },
-  formType: 'Log In'
+  formType: 'Log In',
+  errors: state.errors.session
 });
 
 const mdp = (dispatch) => {

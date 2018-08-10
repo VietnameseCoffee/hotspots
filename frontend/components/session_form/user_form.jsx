@@ -29,6 +29,8 @@ class UserForm extends React.Component {
       birthdayInput = this.birthdayRender();
       header2 = 'Sign Up for Hot Spots';
     }
+
+
     return (
       <div className='super-container'>
         <div className='main-session-container'>
@@ -50,6 +52,9 @@ class UserForm extends React.Component {
                 {birthdayInput}
                 <button className='button'>{this.props.formType}</button>
               </div>
+              <div className="errors">
+                
+              </div>
             </form>
           </div>
         </div>
@@ -60,6 +65,11 @@ class UserForm extends React.Component {
       </div>
     );
   }
+
+
+
+
+
 
   // helper methods
 

@@ -14,7 +14,8 @@ const msp = (state) => ({
     day: 'Day',
     year: 'Year'
   },
-  formType: 'Sign Up'
+  formType: 'Sign Up',
+  errors: state.errors.session
 });
 
 const mdp = (dispatch) => {
