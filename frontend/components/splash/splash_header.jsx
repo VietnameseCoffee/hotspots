@@ -29,7 +29,7 @@ const SplashHeader = () => {
           <SearchBarContainer />
         </div>
 
-        <div className="splash-nav">
+        <div className="nav-bar">
           <NavBar />
         </div>
 
