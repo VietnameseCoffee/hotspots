@@ -24,15 +24,22 @@ class SearchBar extends React.Component {
     return (
     <div className="search_bar">
       <form onSubmit={() => console.log("searchin..")}>
+
         <div className="search-business">
           <label id="business">Find</label>
-          <input for="business"></input>
+          <input
+            placeholder="burgers, bars, burritos..."
+            htmlFor="business"></input>
         </div>
+
         <div className="search-location">
           <label id="location">Near</label>
-          <input for="location"></input>
+          <input
+            placeholder=" San Fransisco, Oakland!"
+            htmlFor="location"></input>
         </div>
-        <button><i class="fa fa-search"></i></button>
+
+        <button><i className="fa fa-search"></i></button>
       </form>
     </div>
     );

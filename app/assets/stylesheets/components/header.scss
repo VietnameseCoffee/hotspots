@@ -2,11 +2,43 @@
 .header-main-container {
   text-align: center;
   background-color: #d32323;
-}
+  height: 90px;
+  color: #eee;
 
-.header-arranger {
-  width: 900px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  .header-arranger {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 64px;
+    box-sizing: border-box;
+    padding: 12px 0 12px 0;
+    margin: auto;
+
+    .header-right {
+      height: 40px;
+      display: flex;
+
+
+      .login-signup {
+
+        .signup {
+          background-color: #bd1f1f;
+          padding: 7px 24px 8px;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          font-weight: 700;
+        }
+      }
+
+
+    }
+  }
+
+  .header-nav {
+
+    height: 26px;
+    box-sizing: border-box;
+  }
+
 }

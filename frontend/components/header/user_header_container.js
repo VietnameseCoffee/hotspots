@@ -16,4 +16,4 @@ const mdp = dispatch => {
 };
 
 
-export default withRouter(connect(msp, mdp)(UserHeader));
+export default (connect(msp, mdp)(UserHeader));

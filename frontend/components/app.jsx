@@ -15,7 +15,7 @@ const App = () => {
       <header className="header-main-container">
         <Switch>
           <Route exact path="/" component={SplashHeader}/>
-          <Route path='/' component={Header}/>
+          <Route path='/login' component={Header}/>
         </Switch>
       </header>
       <div className="main">

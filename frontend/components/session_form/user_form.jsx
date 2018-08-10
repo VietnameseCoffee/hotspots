@@ -54,7 +54,7 @@ class UserForm extends React.Component {
           </div>
         </div>
 
-        <div className="side-container">
+        <div className="main-side-container">
           <p>FUUH</p>
         </div>
       </div>
