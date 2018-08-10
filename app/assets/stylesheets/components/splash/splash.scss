@@ -26,7 +26,7 @@
         }
 
         li:hover {
-          border-bottom: 3px solid white;
+          text-decoration: underline;
         }
       }
 
@@ -56,6 +56,7 @@
       padding-top: 40px;
       font-size: 18px;
       text-align: left;
+      
 
       form {
         display: flex;
@@ -120,6 +121,17 @@
         font-size: 22px;
       }
 
+    }
+
+    .splash-nav {
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          width: 120px;
+        }
+      }
     }
   }
 }

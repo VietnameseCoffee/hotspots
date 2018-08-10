@@ -3,7 +3,7 @@ import React from 'react';
 import UserHeaderContainer from '../header/user_header_container';
 import SplashHeaderTop from './splash_header_top';
 import SearchBarContainer from '../header/search_bar_container';
-// import SplashHeaderNav from './splash_header_nav';
+import SplashHeaderNav from './splash_header_nav';
 
 const SplashHeader = () => {
 
@@ -27,6 +27,10 @@ const SplashHeader = () => {
 
         <div className="splash-search-bar">
           <SearchBarContainer />
+        </div>
+
+        <div className="splash-nav">
+          <SplashHeaderNav />
         </div>
 
       </div>
