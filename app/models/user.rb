@@ -21,7 +21,7 @@ class User < ApplicationRecord
 
   validates :email, :first_name, :last_name, :zip, :password_digest, :session_token, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
-  validate :valid_email?, :valid_zip?
+  # validate :valid_email?, :valid_zip?
   before_validation :ensure_session_token
 
   attr_reader :password
@@ -61,7 +61,7 @@ class User < ApplicationRecord
     if split_email?(split_email) && valid_top_level_domain(split_email)
       return true
     end
-    raise 'Invalid email'
+    false
   end
 
   def split_email?(split_email)

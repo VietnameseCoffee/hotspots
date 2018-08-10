@@ -4,14 +4,14 @@ const _nullState = { id: null };
 
 const sessionReducer = (state = _nullState, action) => {
   Object.freeze(state);
-
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
       return { id: action.payload.user.id };
     case LOGOUT_CURRENT_USER:
       return _nullState;
     default:
-      return state;
+        return state;
   }
+  console.log("sessionReducer");
 };
  export default sessionReducer;

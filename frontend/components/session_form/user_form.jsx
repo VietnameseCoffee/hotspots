@@ -30,7 +30,6 @@ class UserForm extends React.Component {
       header2 = 'Sign Up for Hot Spots';
     }
 
-
     return (
       <div className='super-container'>
         <div className='main-session-container'>
@@ -53,7 +52,7 @@ class UserForm extends React.Component {
                 <button className='button'>{this.props.formType}</button>
               </div>
               <div className="errors">
-                
+                {this.props.errors[0]}
               </div>
             </form>
           </div>
