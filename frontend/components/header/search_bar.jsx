@@ -10,14 +10,14 @@ class SearchBar extends React.Component {
     };
   }
 
-  // update (value) {
-  //   return (e) => this.setState({[value]: e.target.value});
-  // }
-  //
-  // handleSubmit (e) {
-  //   e.preventDefault();
-  //   this.props.action(this.state).then(() => this.props.history.push('/'));
-  // }
+  update (value) {
+    return (e) => this.setState({[value]: e.target.value});
+  }
+
+  handleSubmit (e) {
+    e.preventDefault();
+    this.props.action(this.state);
+  }
 
   render ()  {
 
@@ -32,7 +32,7 @@ class SearchBar extends React.Component {
           <label id="location">Near</label>
           <input for="location"></input>
         </span>
-        <button>SUBMIT YO</button>
+        <button><i class="fa fa-search"></i></button>
       </form>
     </div>
     );
