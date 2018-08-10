@@ -8,10 +8,8 @@ const SplashHeader = () => {
 
   return (
     <div className='splash-top'>
-      <div className='splash-img'>
-        <div>
+      <div className='splash-content-container'>
 
-        </div>
         <div className="splash-header">
           <div className="splash-header-left">
             <SplashHeaderNav />
@@ -19,6 +17,10 @@ const SplashHeader = () => {
           <div className="splash-header-right">
             <UserHeaderContainer />
           </div>
+        </div>
+
+        <div className="splash-logo">
+          Logo Loading up, just wait for it
         </div>
 
         <div className="splash-search-bar">

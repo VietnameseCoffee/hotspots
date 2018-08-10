@@ -1,10 +1,10 @@
 .splash-top {
   height: 600px;
   color: white;
+  background-image: url("/assets/foods/burger-splash.jpg");
 
-  .splash-img {
+  .splash-content-container {
     padding-top: 30px;
-    background-image: url("/assets/foods/burger-splash.jpg");
     width: 100%;
     height: 100%;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
@@ -46,7 +46,15 @@
         padding: 7px 24px 8px;
         border-radius: 3px;
       }
+    }
+
+    .splash-logo {
+      padding-top: 80px;
+    }
+
+    .splash-search-bar {
 
     }
+    
   }
 }
