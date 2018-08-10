@@ -20,6 +20,7 @@ const SplashHeader = () => {
         </div>
 
         <div className="splash-logo">
+          <div class="loader"></div>
           Logo Loading up, just wait for it
         </div>
 

@@ -3,6 +3,7 @@
   color: white;
   background-image: url("/assets/foods/burger-splash.jpg");
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  font-family: "Robot", sans-serif;
 
   .splash-content-container {
     padding-top: 30px;
@@ -18,7 +19,6 @@
       justify-content: space-between;
       font-size: 14px;
       font-weight: 700;
-      font-family: "Robot", sans-serif;
 
       .splash-header-left ul {
         display: flex;
@@ -54,6 +54,8 @@
 
     .splash-search-bar {
       color: black;
+      padding-top: 40px;
+      font-size: 18px;
 
       input {
         z-index: 2;
@@ -63,16 +65,37 @@
         justify-content: center;
       }
 
+      label {
+        float: left;
+        font-weight: bold;
+        color: #666;
+      }
+
       .search-business {
         background-color:  white;
         width: 480px;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
+        box-sizing: border-box;
+        padding: 11px;
+        position: relative;
+
+        &:after {
+          content:"";
+          background: #ccc;
+          position: absolute;
+          right: 0;
+          height: 50%;
+          width: 1px;
+        }
       }
+
 
       .search-location {
         background-color:  white;
         width: 416px;
+        box-sizing: border-box;
+        padding: 11px;
       }
 
       button {

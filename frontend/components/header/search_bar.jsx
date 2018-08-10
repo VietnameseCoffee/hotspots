@@ -22,7 +22,7 @@ class SearchBar extends React.Component {
   render ()  {
 
     return (
-    <div className="search_bar">Search Bar
+    <div className="search_bar">
       <form onSubmit={() => console.log("searchin..")}>
         <div className="search-business">
           <label id="business">Find</label>
