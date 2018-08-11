@@ -6,15 +6,16 @@ class BusinessShow extends React.Component {
 
   constructor (props) {
     super(props);
-    this.state = {};
+    this.state = props.business;
   }
 
   componentDidMount () {
-    this.props.requestBusiness(this.props.match.params.businessId);
+    this.props.requestBusiness(this.props.businessId);
   }
 
+  componentWillUpdateProps
+
   render () {
-    // console.log(this.props.match.params.businessId)
     return (
       <div className="business-show">Business Show!</div>
     );
