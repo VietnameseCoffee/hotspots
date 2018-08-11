@@ -18,7 +18,7 @@ class Api::BusinessesController < ApplicationController
     if @business
       render "api/businesses/show"
     else
-      render "api/errors/fo-of-fo"
+      render "api/errors/fo_o_fo"
     end
   end
 

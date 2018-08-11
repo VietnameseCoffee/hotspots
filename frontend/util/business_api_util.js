@@ -9,8 +9,8 @@ export const postBusiness = (business) => {
 
 export const showBusiness = (name) => (
   $.ajax({
-    type: 'POST',
-    url: `/api/business/${name}`,
-    data: { business: name }
+    type: 'GET',
+    url: `/api/businesses/${name}`,
+    data: { business: { name }}
   })
 );
