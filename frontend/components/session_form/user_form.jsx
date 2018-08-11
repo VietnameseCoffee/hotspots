@@ -64,7 +64,7 @@ class UserForm extends React.Component {
         </div>
 
         <div className="main-side-container">
-          <img src="./assets/app_layout/signup_illustration"></img>
+          <div className="session_image"></div>
         </div>
       </div>
     );

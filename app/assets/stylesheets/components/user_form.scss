@@ -59,6 +59,10 @@
   }
 
   .main-side-container {
-
+    .session_image {
+      background-image: image_url('signup_illustration');
+      width: 382px;
+      height: 342px;
+    }
   }
 }
