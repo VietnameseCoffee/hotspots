@@ -1,3 +1,1 @@
-json.business do
-  json.extract! @business, :id, :name, :latitude, :longitude, :address, :city, :state, :zip, :stars, :price
-end
+json.partial! "api/businesses/business", business: @business

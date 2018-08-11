@@ -13,6 +13,7 @@ class Api::BusinessesController < ApplicationController
   end
 
   def show
+    debugger
     @business = Business.find_by(name: params[:business][:name])
     if @business
       render "api/businesses/show"
@@ -26,7 +27,7 @@ class Api::BusinessesController < ApplicationController
     @business = Business.find_by(name: params[:search][:input])
     # if find add to array, then look for tags of the first result
     # pick a tag and search via tag for similar flavor restaurants
-    
+
   end
 
   private
