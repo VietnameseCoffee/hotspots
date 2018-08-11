@@ -33,7 +33,7 @@ class UserForm extends React.Component {
       zipInput = this.zipRender();
       birthdayInput = this.birthdayRender();
       header2 = 'Sign Up for Hot Spots';
-      switchForm = 'Login'
+      switchForm = 'Login';
     }
     if (this.props.errors.length > 0) { errors = "Invalid entry, please try again";}
 

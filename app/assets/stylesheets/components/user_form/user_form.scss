@@ -9,10 +9,24 @@
 
   .form-wrapper {
     margin: 0 0 20px 0;
+    width: 300px;
 
     .form-header {
       padding-bottom: 50px;
       text-align: center;
+    }
+
+    .input-names {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      border-color: blue;
+
+      .input-field {
+        width: 142px;
+        margin-right: 4px;
+
+      }
     }
 
     .input-field {
