@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from 'react-dropdown';
+import { Link } from 'react-router-dom';
 
 class UserForm extends React.Component {
 
@@ -27,11 +27,13 @@ class UserForm extends React.Component {
   render () {
     let namesInput, zipInput, birthdayInput, errors;
     let header2 = 'Log In to Hot Spots';
+    let switchForm = 'Signup';
     if (this.props.formType === 'Sign Up') {
       namesInput = this.namesRender();
       zipInput = this.zipRender();
       birthdayInput = this.birthdayRender();
       header2 = 'Sign Up for Hot Spots';
+      switchForm = 'Login'
     }
     if (this.props.errors.length > 0) { errors = "Invalid entry, please try again";}
 
@@ -56,8 +58,10 @@ class UserForm extends React.Component {
                 {birthdayInput}
                 <button className='button'>{this.props.formType}</button>
               </div>
+              <div className="switch-form">
+                <Link to={`/${switchForm}`}>{switchForm}</Link>
+              </div>
               <div className="errors">
-                {errors}
               </div>
             </form>
           </div>
