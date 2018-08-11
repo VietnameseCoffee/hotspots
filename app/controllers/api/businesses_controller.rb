@@ -21,12 +21,18 @@ class Api::BusinessesController < ApplicationController
     end
   end
 
+  def index
+    # result = []
+    @business = Business.find_by(name: params[:search][:input])
+    # if find add to array
+  end
+
   private
 
   def business_params
     params.require(:business)
     .permit(
-      :id
+      :id,
       :name,
       :latitude,
       :longitude,
