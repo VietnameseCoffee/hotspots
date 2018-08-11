@@ -21,13 +21,15 @@ class BusinessShow extends React.Component {
     return (
       <div className="biz-show">
 
-        <div className="biz-header">
-          <BusinessHeader />
-        </div>
+        <div className="biz-top">
+          <div className="biz-header">
+            <BusinessHeader />
+          </div>
 
-        <div className="biz-sub-header">
-          <BusinessDetail />
-          <BusinessImages />
+          <div className="biz-sub-header">
+            <BusinessDetail />
+            <BusinessImages />
+          </div>
         </div>
 
         <div className="biz-main">

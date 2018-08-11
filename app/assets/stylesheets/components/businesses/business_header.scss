@@ -1,4 +1,72 @@
 .biz-header {
+  height: 130px;
+  border: 1px solid blue;
+
+  .biz-header-container {
 
 
+    display: flex;
+    justify-content: space-between;
+
+    .biz-header-left {
+      border: 1px solid blue;
+      width: 525px;
+      height: 130px;
+      position: relative;
+
+
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .stars {
+        position: absolute;
+        bottom: 30px;
+      }
+      .tags-price {
+        position: absolute;
+        bottom: 5px;
+        a {
+          color: #0073bb;
+
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .biz-header-right {
+      border: 1px solid blue;
+      width: 400px;
+      position: relative;
+
+      .biz-header-actions {
+        position: absolute;
+        top: 30%;
+        right: 0;
+
+        .write-a-review {
+          background-color: #bd1f1f;
+          padding: 8px 12px 9px 19px;
+          color: white;
+          margin-right: 10px;
+          border-radius: 3px;
+        }
+
+        a {
+          border: 1px solid #666;
+          box-shadow:  #555;
+          border-radius: 2px;
+          color: #666;
+          padding: 4px 6px 4px 8px;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+    }
+
+
+  }
 }

@@ -13,7 +13,7 @@ import BusinessShowContainer from './businesses/business_show_container';
 const App = () => {
 
   return (
-    <div>
+    <div className="app">
       <header className="header-main-container">
         <Switch>
           <Route exact path="/" component={SplashHeader}/>

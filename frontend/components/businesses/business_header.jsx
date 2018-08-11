@@ -6,13 +6,28 @@ const BusinessHeader = (props) => {
   return (
     <div className="biz-header-container">
       <div className="biz-header-left">
-        Business Name and basic information goes here
-        
+        <h1>NAME OF THE PLACE</h1>
+
+        <div className="stars">
+          <div>Stars in a rowwww, ratings via function.. <span>Num Ratings</span> </div>
+        </div>
+
+        <div className="tags-price">
+          <span>Price</span> ..
+          <span> <a>a tag</a></span>
+        </div>
 
       </div>
 
       <div className="biz-header-right">
-        Nav-ish thing goes here
+
+        <div className="biz-header-actions">
+          <Link className="write-a-review" to="/">Write a Review</Link>
+          <Link className="biz-action" to="/">Add Photo</Link>
+          <Link className="biz-action" to="/">Share</Link>
+          <Link className="biz-action" to="/">Save</Link>
+
+        </div>
 
 
       </div>
