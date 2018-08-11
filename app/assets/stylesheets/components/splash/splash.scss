@@ -22,11 +22,13 @@
       .splash-header-left ul {
         display: flex;
         li {
+          border-bottom: 2px solid transparent;
           padding: 9px 12px 9px 12px;
         }
 
         li:hover {
-          text-decoration: underline;
+          border-bottom: 2px solid white;
+
         }
       }
 

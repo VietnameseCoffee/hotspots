@@ -24,7 +24,9 @@ class Api::BusinessesController < ApplicationController
   def index
     # result = []
     @business = Business.find_by(name: params[:search][:input])
-    # if find add to array
+    # if find add to array, then look for tags of the first result
+    # pick a tag and search via tag for similar flavor restaurants
+    
   end
 
   private
