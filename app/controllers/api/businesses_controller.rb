@@ -13,7 +13,6 @@ class Api::BusinessesController < ApplicationController
   end
 
   def show
-    debugger
     @business = Business.find_by(name: params[:business][:name])
     if @business
       render "api/businesses/show"
