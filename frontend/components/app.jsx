@@ -7,6 +7,7 @@ import SignupFormContainer from './session_form/signup_form_container';
 import Header from './header/header.jsx';
 import SignupHeader from './header/signup_header.jsx';
 import SplashHeader from './splash/splash_header';
+import BusinessShow from './businesses/business_show';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <div className="main">
         <AuthRoute exact path="/login" component={ LoginFormContainer }/>
         <AuthRoute exact path="/signup" component={ SignupFormContainer }/>
+        <BusinessShow />
       </div>
     </div>
   );

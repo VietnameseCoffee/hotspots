@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class UserForm extends React.Component {
+class BusinessShow extends React.Component {
 
   constructor (props) {
     super(props);
@@ -9,11 +9,15 @@ class UserForm extends React.Component {
   }
 
   componentDidMount () {
-    
+
   }
 
   render () {
-
+    return (
+      <div className="business-show">Business Show!</div>
+    );
   }
 
 }
+
+export default BusinessShow;
