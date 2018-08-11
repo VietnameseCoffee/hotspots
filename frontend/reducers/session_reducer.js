@@ -12,6 +12,5 @@ const sessionReducer = (state = _nullState, action) => {
     default:
         return state;
   }
-  console.log("sessionReducer");
 };
  export default sessionReducer;
