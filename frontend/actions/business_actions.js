@@ -12,7 +12,12 @@ const receiveBusiness = (business) => {
 
 const receiveBusinesses = (businesses) => {
   return ({
-    type: RECEIVE_BUSINESS,
+    type: RECEIVE_BUSINESSES,
     payload: businesses,
   });
+};
+
+export const requestBusiness = (name) => (dispatch) => {
+  return (BusinessApiUtil.showBusiness(name)
+    .then( business => dispatch(receiveBusiness(business))));
 };

@@ -1,4 +1,4 @@
-import { RECEIVE_BUSINESS, RECEIVE_BUSINESSES } from '../actions/session_actions';
+import { RECEIVE_BUSINESS, RECEIVE_BUSINESSES } from '../actions/business_actions';
 import merge from 'lodash/merge';
 
 const businessesReducer = (state = {}, action) => {
@@ -7,9 +7,9 @@ const businessesReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_BUSINESS:
-      return merge({}, state, {[payload.business.id]: payload});
+      return merge({}, state, {[payload.business.id]: payload.business });
     case RECEIVE_BUSINESSES:
-      return _nullState;
+      return merge({}, state, payload.businesses);
     default:
         return state;
   }

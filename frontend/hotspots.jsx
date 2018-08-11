@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
-import * as BusinessApiUtil from './util/business_api_util'
+import * as BusinessApiUtil from './util/business_api_util';
+import { requestBusiness } from './actions/business_actions';
 
 //test
 import { requestSignup } from './actions/session_actions';
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   window.ajaxCall = BusinessApiUtil.showBusiness;
+  window.requestBusiness = requestBusiness;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
 });

@@ -14,3 +14,11 @@ export const showBusiness = (name) => (
     data: { business: { name }}
   })
 );
+
+export const indexBusinesses = (search) => (
+  $.ajax({
+    type: 'GET',
+    url: `/api/businesses`,
+    data: { search }
+  })
+);
