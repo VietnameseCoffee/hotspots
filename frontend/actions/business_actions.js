@@ -17,7 +17,7 @@ const receiveBusinesses = (businesses) => {
   });
 };
 
-export const requestBusiness = (name) => (dispatch) => {
-  return (BusinessApiUtil.showBusiness(name)
+export const requestBusiness = (id) => (dispatch) => {
+  return (BusinessApiUtil.showBusiness(id)
     .then( business => dispatch(receiveBusiness(business))));
 };

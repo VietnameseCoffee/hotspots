@@ -13,7 +13,7 @@ class Api::BusinessesController < ApplicationController
   end
 
   def show
-    @business = Business.find_by(name: params[:business][:name])
+    @business = Business.find(params[:business][:id])
     if @business
       render "api/businesses/show"
     else

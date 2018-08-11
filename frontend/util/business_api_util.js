@@ -7,11 +7,11 @@ export const postBusiness = (business) => {
   });
 };
 
-export const showBusiness = (name) => (
+export const showBusiness = (id) => (
   $.ajax({
     type: 'GET',
-    url: `/api/businesses/${name}`,
-    data: { business: { name }}
+    url: `/api/businesses/${id}`,
+    data: { business: { id }}
   })
 );
 
