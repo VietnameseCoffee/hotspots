@@ -3,10 +3,30 @@
   display: flex;
   justify-content: space-between;
 
-  .biz-detail {
-    width: 288px;
+  .biz-detail-container {
+    width: 300px;
     height: 287px;
     border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    padding: 5px;
+
+    .biz-detail {
+
+      .map-box {
+        width: 286px;
+        height: 135px;
+        border: 1px solid blue;
+        margin-bottom: 4px;
+      }
+
+      ul {
+
+        border: 1px solid blue;
+      }
+
+
+    }
   }
+
 
 }

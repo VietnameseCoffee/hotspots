@@ -6,17 +6,16 @@ const BusinessDetail = (props) => {
   return (
     <div className="biz-detail-container">
       <div className="biz-detail">
+
         <div className="map-box">
           Map Box belongs here
-
-
         </div>
 
-        <div className="biz-info">
-          Business Information
-
-
-        </div>
+        <ul className="biz-info">
+          <li>business</li>
+          <li>info</li>
+        </ul>
+        
       </div>
     </div>
   );
