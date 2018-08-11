@@ -16,11 +16,12 @@ end
 # }
 
 # options2 = {
-#   name: 'Starbucks',
-#   latitude: 35.773972,
-#   longitude: -122.431297,
-#   address: "200 Market",
+#   name: 'Wildflower Cafe',
+#   latitude: 37.794143,
+#   longitude: -122.401591,
+#   address: "411 Sansome Street",
 #   city: "San Francisco",
 #   state: "CA",
-#   zip: 94533,
+#   zip: 94111,
+#   price: 2
 # }
