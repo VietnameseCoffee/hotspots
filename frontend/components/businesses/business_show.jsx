@@ -25,7 +25,7 @@ class BusinessShow extends React.Component {
     // console.log(this.props)
     if (!this.props.businessDetails) {
       return (
-        <div>Loadingfjdkljf;ldas</div>
+        <div>Loading...</div>
       );
     }
 
