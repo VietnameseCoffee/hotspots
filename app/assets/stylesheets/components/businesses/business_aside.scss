@@ -8,6 +8,13 @@
     .aside-info {
       border: 1px solid blue;
       margin-bottom: 5px;
+
+      th {
+        text-align: left;
+        width: 50px;
+      }
+
+
     }
   }
 }

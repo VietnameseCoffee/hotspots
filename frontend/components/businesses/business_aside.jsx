@@ -3,20 +3,21 @@ import React from 'react';
 const BusinessAside = ({ hours }) => {
   let hoursList = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun",];
 
-  hoursList = hoursList.map((el, i) => <li><span>{el}</span><span>{hours[i]}</span></li>)
+  hoursList = hoursList.map((el, i) => <tr><th>{el}</th><td>{hours[i]}</td></tr>)
 
   return (
-    <div className="biz-aside-container">Aside Hur
+    <div className="biz-aside-container">
 
       <div className="aside-info">
         <h3>Hours</h3>
-        <ul>
+        <table>
           {hoursList}
-        </ul>
+        </table>
       </div>
 
       <div className="aside-info">
-        More busines info
+        <h3>More business info</h3>
+        {}
       </div>
 
 
