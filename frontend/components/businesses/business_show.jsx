@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import BusinessHeader from './business_header';
 import BusinessDetail from './business_detail';
 import BusinessImages from './business_images';
+import BusinessReviews from './business_reviews';
+import BusinessAside from './business_aside';
 
 class BusinessShow extends React.Component {
 
@@ -21,8 +23,7 @@ class BusinessShow extends React.Component {
     return (
       <div className="biz-show">
         <div className="biz-gray-top">
-
-        <div className="biz-top">
+          <div className="biz-top">
             <div className="biz-header">
               <BusinessHeader />
             </div>
@@ -35,11 +36,14 @@ class BusinessShow extends React.Component {
         </div>
 
         <div className="biz-main">
-          Business Main w Reviews Hours n XTRA INFO
+          <div className="biz-reviews">
+            <BusinessReviews/>
+          </div>
+          <div className="biz-aside">
+            <BusinessAside />
+          </div>
         </div>
 
-
-        Business Show!
 
       </div>
     );

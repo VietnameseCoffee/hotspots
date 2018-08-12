@@ -7,7 +7,7 @@ const BusinessImages = (props) => {
     <div className="biz-images-container">
       <div className="biz-images">
         Here contains a sample set of images
-
+        
 
 
       </div>
