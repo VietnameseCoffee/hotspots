@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180812210248) do
+ActiveRecord::Schema.define(version: 20180812230819) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "business_infos", force: :cascade do |t|
+    t.integer "business_id", null: false
+    t.string "details", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["business_id"], name: "index_business_infos_on_business_id", unique: true
+  end
 
   create_table "businesses", force: :cascade do |t|
     t.string "name", null: false
