@@ -38,7 +38,7 @@ class BusinessShow extends React.Component {
             </div>
 
             <div className="biz-sub-header">
-              <BusinessDetail />
+              <BusinessDetail details={this.props.businessDetails}/>
               <BusinessImages />
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BusinessDetail = (props) => {
+const BusinessDetail = ({details}) => {
 
   return (
     <div className="biz-detail-container">
@@ -12,10 +12,16 @@ const BusinessDetail = (props) => {
         </div>
 
         <ul className="biz-info">
-          <li>business</li>
-          <li>info</li>
+          <li>{details.address}
+            <br></br>
+            {details.city},
+            {details.state}
+          </li>
+          <li>{details.phoneNumber}</li>
+          <li><a>Get Directions</a></li>
+          <li><a>Message the Business</a></li>
         </ul>
-        
+
       </div>
     </div>
   );
