@@ -55,3 +55,15 @@
 # Business.includes(:categories).each do |b|
 #   puts b.categories.pluck(:category)
 # end
+
+arr = [
+  "10:30 am - 2:30 pm",
+  "10:30 am - 2:30 pm",
+  "10:30 am - 2:30 pm",
+  "10:30 am - 2:30 pm",
+  "10:30 am - 2:30 pm",
+  "closed",
+  "closed"
+]
+
+h1 = Hour.new(business_id: )

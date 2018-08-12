@@ -4,4 +4,6 @@ class Business < ApplicationRecord
   validates :price, inclusion: [1, 2, 3, 4 ]
 
   has_many :categories
+  has_one :hour
+
 end
