@@ -1,4 +1,16 @@
 # b0 = {
+# name: "Good Mong Kok Bakery",
+# latitude: 37.795466,
+# longitude: -122.408336,
+# address: "1039 Stockton St",
+# city: "San Francisco",
+# state: "CA",
+# zip: 94108,
+# stars: nil,
+# price: 2,
+# }
+
+# b1 = {
 #   name: 'Wildflower Cafe',
 #   latitude: 37.794143,
 #   longitude: -122.401591,
@@ -9,7 +21,7 @@
 #   price: 2
 # }
 
-# b1 = {
+# b2 = {
 #   name: 'Plow',
 #   latitude: 37.762585,
 #   longitude: -122.395434,
@@ -18,4 +30,24 @@
 #   state: "CA",
 #   zip: 94107,
 #   price: 2
+# }
+
+# c0 = {
+#   business_id = 2,
+#   category = "Cafe"
+# }
+#
+# c1 = {
+#   business_id: 1,
+#   category: "Bakeries"
+# }
+#
+# c2 = {
+#   business_id: 1,
+#   category: "Dim Sum"
+# }
+#
+# c3 = {
+#   business_id: 1,
+#   category: "Chinese"
 # }
