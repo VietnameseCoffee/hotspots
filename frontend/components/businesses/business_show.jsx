@@ -22,8 +22,9 @@ class BusinessShow extends React.Component {
   }
 
   render () {
-    // console.log(this.props)
-    if (!this.props.businessDetails) {
+    let businessDetails = this.props.businessDetails;
+
+    if (!businessDetails) {
       return (
         <div>Loading...</div>
       );
@@ -34,11 +35,14 @@ class BusinessShow extends React.Component {
         <div className="biz-gray-top">
           <div className="biz-top">
             <div className="biz-header">
-              <BusinessHeader name={this.props.businessDetails.name}/>
+              <BusinessHeader
+                name={businessDetails.name}
+                price={businessDetails.price}
+                tags={businessDetails.tags}/>
             </div>
 
             <div className="biz-sub-header">
-              <BusinessDetail details={this.props.businessDetails}/>
+              <BusinessDetail details={businessDetails}/>
               <BusinessImages />
             </div>
           </div>

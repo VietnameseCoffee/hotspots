@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BusinessHeader = ({name}) => {
+const BusinessHeader = ({name, price, tags}) => {
+  let price_str = "";
 
+  while (price_str.length < price) {price_str = price_str.concat("$")};
 
   return (
     <div className="biz-header-container">
@@ -10,11 +12,11 @@ const BusinessHeader = ({name}) => {
         <h1>{name}</h1>
 
         <div className="stars">
-          <div className="stars-big-4"></div><span>Num Ratings</span> 
+          <div className="stars-big-4"></div><span>Num Ratings</span>
         </div>
 
         <div className="tags-price">
-          <span>Price</span> ..
+          <span>{price_str}</span> ..
           <span> <a>a tag</a></span>
         </div>
 
