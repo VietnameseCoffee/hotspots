@@ -13,8 +13,11 @@ class Api::BusinessesController < ApplicationController
   end
 
   def show
-    @business = Business.includes(:categories).where(id: params[:business][:id])[0]
+    # may need to refactor, does it requery again after includes?
+    @business = Business.includes(:categories, :hour).where(id: params[:business][:id])[0]
     @categories = @business.categories.pluck(:category)
+    @hours = @business.hour.to_arr
+
     if @business
       render "api/businesses/show"
     else

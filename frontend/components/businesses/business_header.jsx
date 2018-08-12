@@ -6,7 +6,7 @@ const BusinessHeader = ({name, price, tags}) => {
   let anchorTags;
 
   while (price_str.length < price) {price_str = price_str.concat("$")};
-  anchorTags = tags.map((tag) => <Link to={`/`}>{tag}</Link>)
+  anchorTags = tags.map((tag) => <Link key={tag}to={`/`}>{tag}</Link>)
 
   return (
     <div className="biz-header-container">
@@ -18,7 +18,7 @@ const BusinessHeader = ({name, price, tags}) => {
         </div>
 
         <div className="tags-price">
-          <span>{price_str}</span> 
+          <span>{price_str}</span>
           <span>{anchorTags}</span>
         </div>
 

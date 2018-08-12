@@ -9,7 +9,6 @@ const msp = ({entities}, ownProps) => {
     businessDetails: entities.businesses[ownProps.match.params.businessId],
     imageIds: [],
     reviewIds: [],
-    hours: '',
     extrainfo: {}
   };
 };
