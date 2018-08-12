@@ -13,7 +13,8 @@ class Api::BusinessesController < ApplicationController
   end
 
   def show
-    @business = Business.find(params[:business][:id])
+    @business = Business.includes(:categories).where(id: params[:business][:id])[0]
+    @categories = @business.categories.pluck(:category)
     if @business
       render "api/businesses/show"
     else

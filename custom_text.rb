@@ -51,3 +51,7 @@
 #   business_id: 1,
 #   category: "Chinese"
 # }
+
+# Business.includes(:categories).each do |b|
+#   puts b.categories.pluck(:category)
+# end
