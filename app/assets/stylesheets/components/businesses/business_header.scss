@@ -24,8 +24,11 @@
 
       .stars {
         position: absolute;
+        width: 100%;
         bottom: 30px;
-
+        span{
+          margin-left: 5px;
+        }
       }
       .tags-price {
         position: absolute;

@@ -1,15 +1,14 @@
 [class*="stars-big"] {
   display: inline-block;
   background-image: image_url('stars.png');
-  background-size: 25px 250px;
+  // background-size: 25px 250px;
   background-repeat: no-repeat;
   vertical-align: bottom;
   overflow: hidden;
-  height: 0;
   width: 132px;
-  padding-top: 25px;
+  height: 24px;
 }
 
 .stars-big-4 {
-  // display: inline-block;
+  background-position: 0 -144px;
 }

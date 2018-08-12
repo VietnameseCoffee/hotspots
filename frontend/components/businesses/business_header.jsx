@@ -10,7 +10,7 @@ const BusinessHeader = ({name}) => {
         <h1>{name}</h1>
 
         <div className="stars">
-          <div className="stars-big-4">Stars<span>Num Ratings</span> </div>
+          <div className="stars-big-4"></div><span>Num Ratings</span> 
         </div>
 
         <div className="tags-price">
