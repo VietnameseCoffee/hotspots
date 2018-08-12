@@ -19,7 +19,6 @@ const msp = (state) => ({
 });
 
 const mdp = (dispatch) => {
-  // console.log(434)
   return {
     action: (formUser) => dispatch(requestSignup(formUser)),
     removeSessionErrors: () => dispatch(removeSessionErrors())

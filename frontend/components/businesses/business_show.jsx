@@ -12,6 +12,9 @@ class BusinessShow extends React.Component {
   constructor (props) {
     super(props);
 
+    // this.state = {
+    //   headerDetails: props.businessDetails
+    // };
   }
 
   componentDidMount () {
@@ -19,13 +22,19 @@ class BusinessShow extends React.Component {
   }
 
   render () {
+    // console.log(this.props)
+    if (!this.props.businessDetails) {
+      return (
+        <div>Loadingfjdkljf;ldas</div>
+      );
+    }
 
     return (
       <div className="biz-show">
         <div className="biz-gray-top">
           <div className="biz-top">
             <div className="biz-header">
-              <BusinessHeader />
+              <BusinessHeader name={this.props.businessDetails.name}/>
             </div>
 
             <div className="biz-sub-header">

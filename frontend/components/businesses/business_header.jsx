@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BusinessHeader = (props) => {
+const BusinessHeader = ({name}) => {
+
 
   return (
     <div className="biz-header-container">
       <div className="biz-header-left">
-        <h1>NAME OF THE PLACE</h1>
+        <h1>{name}</h1>
 
         <div className="stars">
           <div>Stars in a rowwww, ratings via function.. <span>Num Ratings</span> </div>

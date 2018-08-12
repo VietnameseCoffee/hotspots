@@ -6,7 +6,7 @@ import { requestBusiness } from '../../actions/business_actions';
 const msp = ({entities}, ownProps) => {
   return {
     businessId: parseInt(ownProps.match.params.businessId),
-    businessDetail: entities.businesses[ownProps.match.params.businessId],
+    businessDetails: entities.businesses[ownProps.match.params.businessId],
     imageIds: [],
     reviewIds: [],
     hours: '',
