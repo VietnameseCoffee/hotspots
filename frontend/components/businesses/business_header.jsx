@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 
 const BusinessHeader = ({name, price, tags}) => {
   let price_str = "";
+  let anchorTags;
 
   while (price_str.length < price) {price_str = price_str.concat("$")};
+  anchorTags = tags.map((tag) => <Link to={`/`}>{tag}</Link>)
 
   return (
     <div className="biz-header-container">
@@ -16,8 +18,8 @@ const BusinessHeader = ({name, price, tags}) => {
         </div>
 
         <div className="tags-price">
-          <span>{price_str}</span> ..
-          <span> <a>a tag</a></span>
+          <span>{price_str}</span> 
+          <span>{anchorTags}</span>
         </div>
 
       </div>
