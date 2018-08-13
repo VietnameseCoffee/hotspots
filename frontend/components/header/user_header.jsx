@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-const UserHeader = ({ currentUser, requestLogout, match}) => {
+const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
   const splash = match.isExact ?  'splash-': '';
   let demo;
   let demo_user = {
     email: "jordan@gmail.com",
     password: "123456"
   }
+  console.log(demoLogin)
   if (!currentUser) {
     demo = (
       <span className="">
-        <button className="demo-login">Demo</button>
+        <button
+          className="demo-login"
+          onClick={() => demoLogin(demo_user)}>Demo</button>
       </span>
     )
   }
