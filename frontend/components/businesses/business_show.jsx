@@ -60,7 +60,7 @@ class BusinessShow extends React.Component {
 
         <div className="biz-main">
           <div className="biz-primary">
-            <BusinessPrimary reviews={businessDetails.reviewIds}/>
+            <BusinessPrimary reviewIds={businessDetails.reviewIds}/>
           </div>
           <div className="biz-aside">
             <BusinessAside

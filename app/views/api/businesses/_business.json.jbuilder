@@ -3,7 +3,7 @@ json.business do
   json.tags tags
   json.hours hours
   json.info info
-  json.reviewsIds reviews.map {|rev| rev.id }
+  json.reviewIds reviews.map {|rev| rev.id }
 end
 
 json.reviews do
