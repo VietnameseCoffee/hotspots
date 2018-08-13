@@ -27,6 +27,11 @@ const App = () => {
         <AuthRoute exact path="/signup" component={ SignupFormContainer }/>
         <Route path={`/businesses/:businessId`} component={BusinessShowContainer} />
       </div>
+
+      links to show page----
+      <Link to="/businesses/1">Good Mong Kok Bakery</Link>-----
+      <Link to="/businesses/2">Wildflower Cafe</Link>-----
+      <Link to="/businesses/3">Plow</Link>-----
     </div>
   );
 };

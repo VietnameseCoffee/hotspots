@@ -9,6 +9,8 @@
 lunch = "10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&Closed&Closed"
 normal = '10:00 am - 9:00&10:00 am - 9:00&10:00 am - 9:00&10:00 am - 9:00&10:00 am - 11:00&10:00 am - 11:00&10:00 am - 7:00'
 
+detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No",
+
 User.create(first_name: "Michael", last_name: "Jordan", email: "jordan@gmail.com", password: "123456", zip: 12345, city: "Chicago", state: "IL")
 User.create(first_name: "Michael", last_name: "Scott", email: "office@gmail.com", password: "office", zip: 12345, city: "New York", state: "NY")
 User.create(first_name: "Amy", last_name: "O", email: "amy@gmail.com", password: "567890", zip: 76589, city: "Chicago", state: "IL")
@@ -94,5 +96,14 @@ Hour.create(
 
 
 BusinessInfo.create(
-  
+  business_id: 1,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: 2,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: 3,
+  details: detail
 )

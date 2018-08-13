@@ -20,7 +20,6 @@ class Api::BusinessesController < ApplicationController
     @categories = @business.categories.pluck(:category)
     @hours = @business.hour.to_arr ## if ? .to_arr : DEFAULT
     @info = @business.business_info.to_arr ## IF ? .to_arr : DEFAULT
-
     if @business
       # debugger
 
