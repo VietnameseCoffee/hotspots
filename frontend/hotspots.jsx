@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
-import * as BusinessApiUtil from './util/business_api_util';
+import * as ReviewApiUtil from './util/review_api_util';
 import { requestBusiness } from './actions/business_actions';
 
 //test
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={ store }/>, root);
 
 
-  window.ajaxCall = BusinessApiUtil.showBusiness;
+  window.ajaxCall = ReviewApiUtil.postReview;
   window.requestBusiness = requestBusiness;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
