@@ -35,7 +35,7 @@ class UserForm extends React.Component {
       header2 = 'Sign Up for Hot Spots';
       switchForm = 'Login';
     }
-    if (this.props.errors.length > 0) { errors = "Invalid entry, please try again";}
+    if (this.props.errors.length > 0) { errors = 5;}
 
     return (
       <div className='super-container'>
@@ -62,6 +62,7 @@ class UserForm extends React.Component {
                 <Link to={`/${switchForm}`}>{switchForm}</Link>
               </div>
               <div className="errors">
+                {this.props.errors.join(", ")}
               </div>
             </form>
           </div>
