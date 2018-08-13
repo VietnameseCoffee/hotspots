@@ -24,10 +24,15 @@ const UserHeader = ({ currentUser, requestLogout, match}) => {
         <span>
           <Link className={`${splash}signup`} to="/signup">Sign up</Link>
         </span>
+
+
       </div>
     );
   };
 
+  // <span className="demo-login">
+  //   <Link className={`${splash}signup`} to="/signup">Demo</Link>
+  // </span>
 
   // change to a picture with a dropdown, place holder from benchbnb
   const greeting = () => (

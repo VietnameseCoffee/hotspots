@@ -18,7 +18,6 @@ const SplashHeader = () => {
           <div className="splash-header-right">
             <UserHeaderContainer />
           </div>
-          <div className="demo-login">Demo</div>
         </div>
 
         <div className="splash-logo">
