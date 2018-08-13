@@ -14,6 +14,14 @@
         width: 50px;
       }
 
+      li {
+        padding-bottom: 6px;
+      }
+
+      span:last-child {
+        margin-left: 5px;
+        font-weight: 700;
+      }
 
     }
   }

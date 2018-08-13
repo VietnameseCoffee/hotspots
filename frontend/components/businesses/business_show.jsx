@@ -53,7 +53,9 @@ class BusinessShow extends React.Component {
             <BusinessReviews/>
           </div>
           <div className="biz-aside">
-            <BusinessAside hours={businessDetails.hours} />
+            <BusinessAside
+              hours={businessDetails.hours}
+              info={businessDetails.info} />
           </div>
         </div>
 
