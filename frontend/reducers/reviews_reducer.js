@@ -8,8 +8,8 @@ const reviewsReducer = (state = {}, action ) => {
   let payload = action.payload;
 
   switch (action.type) {
-    // case RECEIVE_BUSINESS:
-    //   return payload;
+    case RECEIVE_BUSINESS:
+      return merge({}, state, payload.reviews);
     case RECEIVE_REVIEW:
       return merge({}, state, {[payload.review.id]: payload.review });
     case REMOVE_REVIEW:

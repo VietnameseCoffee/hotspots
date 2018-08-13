@@ -3,4 +3,13 @@ json.business do
   json.tags tags
   json.hours hours
   json.info info
+  json.reviews reviews.map {|rev| rev.id }
+end
+
+json.reviews do
+  reviews.each do |rev|
+    json.set! rev.id do
+      json.extract! rev, :id, :business_id, :user_id, :stars, :text, :post_date
+    end
+  end
 end
