@@ -5,7 +5,7 @@ import Root from './components/root';
 import configureStore from './store/store';
 
 import * as ReviewApiUtil from './util/review_api_util';
-import { requestBusiness } from './actions/business_actions';
+import { requestAddReview } from './actions/review_actions';
 
 //test
 import { requestSignup } from './actions/session_actions';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.ajaxCall = ReviewApiUtil.postReview;
   window.ajaxCall1 = ReviewApiUtil.patchReview;
   window.ajaxCall2 = ReviewApiUtil.deleteReview;
-  window.requestBusiness = requestBusiness;
+  window.requestAddReview = requestAddReview;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
 });
