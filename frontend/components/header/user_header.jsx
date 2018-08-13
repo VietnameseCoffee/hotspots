@@ -2,8 +2,20 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 const UserHeader = ({ currentUser, requestLogout, match}) => {
-  // debugger
   const splash = match.isExact ?  'splash-': '';
+  let demo;
+  let demo_user = {
+    email: "jordan@gmail.com",
+    password: "123456"
+  }
+  if (!currentUser) {
+    demo = (
+      <span className="">
+        <button className="demo-login">Demo</button>
+      </span>
+    )
+  }
+
 
   const sessionLinks = () => {
     let loginLink;
@@ -24,15 +36,11 @@ const UserHeader = ({ currentUser, requestLogout, match}) => {
         <span>
           <Link className={`${splash}signup`} to="/signup">Sign up</Link>
         </span>
-
-
+        {demo}
       </div>
     );
   };
 
-  // <span className="demo-login">
-  //   <Link className={`${splash}signup`} to="/signup">Demo</Link>
-  // </span>
 
   // change to a picture with a dropdown, place holder from benchbnb
   const greeting = () => (

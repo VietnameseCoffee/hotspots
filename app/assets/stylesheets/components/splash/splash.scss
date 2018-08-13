@@ -35,22 +35,27 @@
       }
 
       .splash-header-right {
-        width: 190px;
-        position: relative;
+        width: 300px;
+
         .splash-login-signup {
-          width: 190px;
-          display: flex;
-          justify-content: space-between;
+          width: 390px;
+          // display: flex;
+          // justify-content: space-between;
+
+          .splash-signup {
+            border: 2px solid white;
+            padding: 7px 24px 8px;
+            border-radius: 3px;
+            margin-left: 5px;
+          }
           
           .splash-signup {
             border: 2px solid white;
             padding: 7px 24px 8px;
             border-radius: 3px;
-
+            margin-left: 5px;
+          }
         }
-      }
-
-
       }
     }
 
