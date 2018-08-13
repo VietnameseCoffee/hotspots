@@ -1,5 +1,6 @@
 import React from 'react';
-// import BusinessHourDay from './business_hour_day'
+import BusinessHourDay from './business_hour_day';
+import BusinessInfoItem from './business_info_item';
 
 const BusinessAside = ({ hours, info }) => {
   let hoursList = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun",];
@@ -12,7 +13,7 @@ const BusinessAside = ({ hours, info }) => {
         <h3>Hours</h3>
         <table>
           <tbody>
-            {hoursList.map((el, i) => <tr><th>{el}</th><td>{hours[i]}</td></tr>)}
+            {hoursList.map((day, i) => <BusinessHourDay key={day} day={day} hours={hours[i]}/>)}
           </tbody>
         </table>
       </div>
@@ -20,7 +21,14 @@ const BusinessAside = ({ hours, info }) => {
       <div className="aside-info">
         <h3>More business info</h3>
         <ul>
-          {info.map((detail) => <li><span>{detail[0]}</span><span>{detail[1]}</span></li>)}
+          {info.map((detail, i) => <BusinessInfoItem key={i} detail={detail}/>)}
+        </ul>
+      </div>
+      
+      <div className="aside-info">
+        <h3>More business info</h3>
+        <ul>
+          {info.map((detail, i) => <BusinessInfoItem key={i} detail={detail}/>)}
         </ul>
       </div>
 
