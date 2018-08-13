@@ -6,5 +6,6 @@ class Business < ApplicationRecord
   has_many :categories
   has_one :hour
   has_one :business_info
+  has_many :reviews
 
 end
