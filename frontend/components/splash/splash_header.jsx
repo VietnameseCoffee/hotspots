@@ -18,11 +18,12 @@ const SplashHeader = () => {
           <div className="splash-header-right">
             <UserHeaderContainer />
           </div>
+          <div className="demo-login">Demo</div>
         </div>
 
         <div className="splash-logo">
           <div className="loader"></div>
-          Logo Loading up, just wait for it
+            I CANT DECIDE ON A LOGOO
         </div>
 
         <div className="splash-search-bar">
