@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import BusinessHeader from './business_header';
 import BusinessDetail from './business_detail';
 import BusinessImages from './business_images';
-import BusinessReviews from './business_reviews';
+import BusinessPrimary from './business_primary';
 import BusinessAside from './business_aside';
 
 class BusinessShow extends React.Component {
@@ -30,7 +30,6 @@ class BusinessShow extends React.Component {
 
 
   render () {
-
     let businessDetails = this.props.businessDetails;
 
     if (!businessDetails) {
@@ -43,6 +42,7 @@ class BusinessShow extends React.Component {
       <div className="biz-show">
         <div className="biz-gray-top">
           <div className="biz-top">
+
             <div className="biz-header">
               <BusinessHeader
                 name={businessDetails.name}
@@ -54,12 +54,13 @@ class BusinessShow extends React.Component {
               <BusinessDetail details={businessDetails}/>
               <BusinessImages />
             </div>
+
           </div>
         </div>
 
         <div className="biz-main">
-          <div className="biz-reviews">
-            <BusinessReviews/>
+          <div className="biz-primary">
+            <BusinessPrimary reviews={businessDetails.reviewIds}/>
           </div>
           <div className="biz-aside">
             <BusinessAside
