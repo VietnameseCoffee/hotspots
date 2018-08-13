@@ -10,8 +10,8 @@ export const postReview = (review) => {
 export const patchReview = (review) => (
   $.ajax({
     type: 'PATCH',
-    url: `/api/reviews/${id}`,
-    data: { review: { review }}
+    url: `/api/reviews/${review.id}`,
+    data:  { review }
   })
 );
 

@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   window.ajaxCall = ReviewApiUtil.postReview;
+  window.ajaxCall1 = ReviewApiUtil.patchReview;
+  window.ajaxCall2 = ReviewApiUtil.deleteReview;
   window.requestBusiness = requestBusiness;
   window.getState = store.getState;
   window.dispatch = store.dispatch;

@@ -3,7 +3,6 @@ class Api::ReviewsController < ApplicationController
   # no render methods applied
 
   def create
-    debugger
     @review = Review.new(review_params)
 
     if @review.save
@@ -14,11 +13,27 @@ class Api::ReviewsController < ApplicationController
   end
 
   def update
-
+    @review = Review.find(params[:review][:id])
+    if @review
+      if @review.update_attributes(review_params)
+        render "api/reviews/show"
+      else
+        render json: @review.errors.full_messages, status: 401
+      end
+    else
+      render json: "this review doesn't exist"
+    end
   end
 
   def destroy
-
+    debugger
+    @review = Review.find(params[:id])
+    if @review
+      @review.destroy
+      render "api/reviews/show"
+    else
+      render json: ["This review doesn't exist"]
+    end
   end
 
   def index
