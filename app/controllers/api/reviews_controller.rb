@@ -3,7 +3,6 @@ class Api::ReviewsController < ApplicationController
   # no render methods applied
 
   def create
-    debugger
     @review = Review.new(review_params)
 
     if @review.save

@@ -11,6 +11,11 @@ export const recieveReview = (review) => ({
   payload: { review }
 });
 
+export const removeReview = (id) => ({
+  type: REMOVE_REVIEW,
+  payload: { id }
+});
+
 export const requestAddReview = (formReview) => (dispatch) => {
   return (
   ReviewApiUtil.postReview(formReview)
