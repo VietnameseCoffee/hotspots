@@ -35,7 +35,6 @@ class UserForm extends React.Component {
       header2 = 'Sign Up for Hot Spots';
       switchForm = 'Login';
     }
-    if (this.props.errors.length > 0) { errors = 5;}
 
     return (
       <div className='super-container'>

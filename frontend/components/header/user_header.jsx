@@ -8,16 +8,7 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
     email: "jordan@gmail.com",
     password: "123456"
   }
-  console.log(demoLogin)
-  if (!currentUser) {
-    demo = (
-      <span className="">
-        <button
-          className="demo-login"
-          onClick={() => demoLogin(demo_user)}>Demo</button>
-      </span>
-    )
-  }
+
 
 
   const sessionLinks = () => {
@@ -31,6 +22,16 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
       );
     }
 
+    if (!currentUser) {
+      demo = (
+        <span className="">
+        <button
+          className="demo-login"
+          onClick={() => demoLogin(demo_user)}>Demo</button>
+        </span>
+      )
+    }
+
 
     return (
       <div className={`${splash}login-signup`}>
@@ -39,7 +40,7 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
         <span>
           <Link className={`${splash}signup`} to="/signup">Sign up</Link>
         </span>
-        {demo}
+        {splash ? demo : null}
       </div>
     );
   };
