@@ -60,10 +60,38 @@
 
 # details = 'Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No'
 
-Review.new(
-  business_id: 2,
-  user_id: 1,
-  stars: 4,
-  text: "This place has great shark fin dumplings!",
-  post_date: "08/10/2018"
- )
+# Review.new(
+#   business_id: 2,
+#   user_id: 1,
+#   stars: 4,
+#   text: "This place has great shark fin dumplings!",
+#   post_date: "08/10/2018"
+#  )
+
+r = Review.first
+r.photo.attach(io: File.open("/Users/appacademy/Documents/paintings/boca.jpg"), filename: "boca.jpg")
+
+
+Rails.application.routes.draw do
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  namespace :api, defaults: {format: :json} do
+    resource :session, only: [:create, :destroy]
+    resource :users, only: [:create, :destroy, :show]
+
+    resources :businesses, only: [:create, :show, :index, :update]
+    resources :reviews, only: [:create, :update, :destroy]
+  end
+
+
+  root to: 'static_pages#root'
+end
+
+
+
+
+
+
+
+
+##
