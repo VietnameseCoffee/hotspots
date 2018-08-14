@@ -19,16 +19,16 @@ normal = '10:00 am - 9:00&10:00 am - 9:00&10:00 am - 9:00&10:00 am - 9:00&10:00 
 detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No",
 text= "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
-User.create(first_name: "Michael", last_name: "Jordan", email: "jordan@gmail.com", password: "123456", zip: 12345, city: "Chicago", state: "IL")
-User.create(first_name: "Michael", last_name: "Scott", email: "office@gmail.com", password: "office", zip: 12345, city: "New York", state: "NY")
-User.create(first_name: "Amy", last_name: "O", email: "amy@gmail.com", password: "567890", zip: 76589, city: "Chicago", state: "IL")
-User.create(first_name: "Kavian", last_name: "M", email: "mojabe@gmail.com", password: "asdfgh", zip: 94111, city: "San Francisco", state: "CA")
-User.create(first_name: "Tony", last_name: "M", email: "zhang@gmail.com", password: "asdfgh", zip: 95436, city: "San Mateo", state: "CA")
-User.create(first_name: "Nigel", last_name: "R", email: "canada@gmail.com", password: "asdfgh", zip: 98544, city: "Oakland", state: "CA")
-User.create(first_name: "Sarah", last_name: "J", email: "lol@gmail.com", password: "asdfgh", zip: 98544, city: "Oakland", state: "CA")
-User.create(first_name: "Rex", last_name: "B", email: "lmao@gmail.com", password: "betttt", zip: 95151, city: "Pomona", state: "CA")
+u1 = User.create(first_name: "Michael", last_name: "Jordan", email: "jordan@gmail.com", password: "123456", zip: 12345, city: "Chicago", state: "IL")
+u2 = User.create(first_name: "Michael", last_name: "Scott", email: "office@gmail.com", password: "office", zip: 12345, city: "New York", state: "NY")
+u3 = User.create(first_name: "Amy", last_name: "O", email: "amy@gmail.com", password: "567890", zip: 76589, city: "Chicago", state: "IL")
+u4 = User.create(first_name: "Kavian", last_name: "M", email: "mojabe@gmail.com", password: "asdfgh", zip: 94111, city: "San Francisco", state: "CA")
+u5 = User.create(first_name: "Tony", last_name: "M", email: "zhang@gmail.com", password: "asdfgh", zip: 95436, city: "San Mateo", state: "CA")
+u6 = User.create(first_name: "Nigel", last_name: "R", email: "canada@gmail.com", password: "asdfgh", zip: 98544, city: "Oakland", state: "CA")
+u7 = User.create(first_name: "Sarah", last_name: "J", email: "lol@gmail.com", password: "asdfgh", zip: 98544, city: "Oakland", state: "CA")
+u8 = User.create(first_name: "Rex", last_name: "B", email: "lmao@gmail.com", password: "betttt", zip: 95151, city: "Pomona", state: "CA")
 
-Business.create(
+b1 =Business.create(
   name: "Good Mong Kok Bakery",
   latitude: 37.795466,
   longitude: -122.408336,
@@ -39,7 +39,7 @@ Business.create(
   stars: nil,
   price: 1,
 )
-Business.create(
+b2 = Business.create(
   name: "Wildflower Cafe",
   latitude: 37.794143,
   longitude: -122.401591,
@@ -50,7 +50,7 @@ Business.create(
   stars: 3.8,
   price: 1,
 )
-Business.create(
+b3 = Business.create(
   name: "Plow",
   latitude: 37.762585,
   longitude: -122.395434,
@@ -63,140 +63,140 @@ Business.create(
 )
 
 Category.create(
-  business_id: 1,
+  business_id: b1.id,
   category: "Bakeries",
 )
 Category.create(
-  business_id: 1,
+  business_id: b1.id,
   category: "Dim Sum",
 )
 Category.create(
-  business_id: 1,
+  business_id: b1.id,
   category: "Chinese",
 )
 Category.create(
-  business_id: 2,
+  business_id: b2.id,
   category: "Cafe",
 )
 Category.create(
-  business_id: 2,
+  business_id: b2.id,
   category: "Salad",
 )
 Category.create(
-  business_id: 3,
+  business_id: b3.id,
   category: "Breakfast",
 )
 
 
 Hour.create(
-  business_id: 1,
+  business_id: b1.id,
   hours: normal,
 )
 Hour.create(
-  business_id: 2,
+  business_id: b2.id,
   hours: lunch,
 )
 Hour.create(
-  business_id: 3,
+  business_id: b3.id,
   hours: normal,
 )
 
 
 
 BusinessInfo.create(
-  business_id: 1,
+  business_id: b1.id,
   details: detail
 )
 BusinessInfo.create(
-  business_id: 2,
+  business_id: b2.id,
   details: detail
 )
 BusinessInfo.create(
-  business_id: 3,
+  business_id: b3.id,
   details: detail
 )
 
 Review.create(
-  business_id: 1,
-  user_id: 1,
-  stars: 4,
+  business_id: b1.id,
+  user_id: u1.id,
+  stars: 5,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 2,
-  user_id: 1,
+  business_id: b2.id,
+  user_id: u1.id,
   stars: 2,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 1,
-  user_id: 2,
+  business_id: b1.id,
+  user_id: u2.id,
   stars: 3,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 3,
-  user_id: 4,
+  business_id: b3.id,
+  user_id: u4.id,
   stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 3,
-  user_id: 3,
+  business_id: b3.id,
+  user_id: u3.id,
   stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 3,
-  user_id: 2,
+  business_id: b3.id,
+  user_id: u2.id,
   stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 1,
-  user_id: 5,
+  business_id: b1.id,
+  user_id: u5.id,
   stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 3,
-  user_id: 5,
+  business_id: b3.id,
+  user_id: u5.id,
+  stars: 5,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: b1.id,
+  user_id: u3.id,
   stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 1,
-  user_id: 3,
+  business_id: b1.id,
+  user_id: u8.id,
+  stars: 3,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: b3.id,
+  user_id: u7.id,
   stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
-  business_id: 1,
-  user_id: 8,
-  stars: 4,
-  text: text,
-  post_date: "08/10/2018"
-)
-Review.create(
-  business_id: 3,
-  user_id: 7,
-  stars: 4,
-  text: text,
-  post_date: "08/10/2018"
-)
-Review.create(
-  business_id: 2,
-  user_id: 7,
-  stars: 4,
+  business_id: b2.id,
+  user_id: u7.id,
+  stars: 3,
   text: text,
   post_date: "08/10/2018"
 )
