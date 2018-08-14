@@ -11,11 +11,26 @@
           border: 1px solid green;
           display: flex;
           justify-content: space-between;
-            min-height: 100px;
+          min-height: 100px;
 
           .review-side-bar {
             width: 215px;
             border: 1px solid orange;
+
+            .profile-content {
+              display: flex;
+              justify-content: space-between;
+              a {
+                width: 60px;
+                height: 60px;
+                border-radius: 7px;
+                border: 1px solid blue;
+              }
+              li {
+                width: 148px;
+                text-align: left;
+              }
+            }
           }
           .review-body{
             width: 400px;
