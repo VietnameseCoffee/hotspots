@@ -5,7 +5,14 @@ const ReviewIndexItem = ({review}) => {
   return (
     <li className="review-index-item">
       <div className="review-side-bar" >
-        Profile info goes here
+        <div className="profile-content">
+          <a>Profile img</a>
+          <ul>
+            <li>{}</li>
+            <li>{}</li>
+            <li>{}</li>
+          </ul>
+        </div>
       </div>
       <div className="review-body" >
         <div className="review-info">

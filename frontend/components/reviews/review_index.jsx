@@ -6,9 +6,9 @@ const ReviewIndex = (props) => {
 
   return (
     <div className="review-index">
-  
+
       <ul>
-        {props.reviews.map ((review) => <ReviewIndexItem review={review}/>)}
+        {props.reviews.map ((review) => <ReviewIndexItem key={review.id}review={review}/>)}
       </ul>
     </div>
   );

@@ -16,6 +16,8 @@ end
 
 json.users do
   users.each do |user|
-    json.extract! user, :id, :first_name, :last_name
+    json.set! user.id do
+      json.extract! user, :id, :first_name, :last_name, :city, :state
+    end
   end
 end
