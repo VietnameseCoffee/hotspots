@@ -14,8 +14,7 @@ const BusinessDetail = ({details}) => {
         <ul className="biz-info">
           <li>{details.address}
             <br></br>
-            {details.city},
-            {details.state}
+            {`${details.city}, ${details.state} ${details.zip}`}
           </li>
           <li>{details.phoneNumber}</li>
           <li><a>Get Directions</a></li>

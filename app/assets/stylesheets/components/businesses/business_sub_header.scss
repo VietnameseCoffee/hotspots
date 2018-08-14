@@ -22,7 +22,13 @@
       ul {
         li {
           margin-top: 2px;
-          border-top: 1px, solid #7A7A7A; 
+          border-top: 1px, solid #7A7A7A;
+        }
+        li:first-child {
+          color: #222222;
+          font-weight: 550;
+          margin-top: 2px;
+          border-top: 1px, solid #7A7A7A;
         }
         border: 1px solid blue;
       }
