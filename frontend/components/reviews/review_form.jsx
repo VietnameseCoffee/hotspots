@@ -21,35 +21,39 @@ class ReviewForm extends React.Component {
 
   render () {
     let business = this.props.business;
-    console.log(this.props)
+    if (!business) {
+      this.props.requestBusiness(this.props.businessId);
+      return <div className="loading">Loading review Page :)</div>;
+    }
+
     return (
       <div className="">
-      <h2><Link to={`/businesses/${business.id}`}>{business.name}</Link></h2>
-      <form >
+        <h2><Link to={`/businesses/${business.id}`}>{business.name}</Link></h2>
+        <form >
+          <input type="hidden" name="businessId" value={business.id}></input>
+          <div className="stars">
+            <input
+              className="input-field"
+              placeholder="stars"
+              type='text'
+              onChange={this.update('stars')}
+              value={this.state.stars}></input>
+          </div>
 
-        <div className="stars">
-          <input
-            className="input-field"
-            placeholder="stars"
-            type='text'
-            onChange={this.update('stars')}
-            value={this.state.stars}></input>
-        </div>
+          <div>
+            <textarea
+              placeholder="Write your review inside here!"
+              type='text'
+              onChange={this.update('text')}
+              value={this.state.text}></textarea>
+          </div>
 
-        <div>
-          <textarea
-            placeholder="Write your review inside here!"
-            type='text'
-            onChange={this.update('text')}
-            value={this.state.text}></textarea>
-        </div>
+          <div>
+            <button className='button'>Post Review</button>
+          </div>
 
-        <div>
-          <button className='button'>Post Review</button>
-        </div>
-
-      </form>
-    </div>
+        </form>
+      </div>
     );
   }
 }

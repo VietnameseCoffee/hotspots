@@ -2,11 +2,12 @@ import { connect } from 'react-redux';
 
 import ReviewForm from './review_form';
 import requestAddReview from '../../actions/review_actions';
-import requestBusiness from '../../actions/business_actions';
+import { requestBusiness } from '../../actions/business_actions';
 
 const msp = ({entities}, { match }) => {
   return ({
-    business: entities.businesses[match.params.businessId]
+    business: entities.businesses[match.params.businessId],
+    businessId: match.params.businessId
   });
 };
 
