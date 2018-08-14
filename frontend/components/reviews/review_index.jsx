@@ -2,13 +2,13 @@ import React from 'react';
 
 import ReviewIndexItem from './review_index_item';
 
-const ReviewIndex = (props) => {
-
+const ReviewIndex = ({ reviews, users }) => {
+  console.log()
   return (
     <div className="review-index">
 
       <ul>
-        {props.reviews.map ((review) => <ReviewIndexItem key={review.id}review={review}/>)}
+        {reviews.map ((review) => <ReviewIndexItem key={review.id} review={review} user={users[review.userId]}/>)}
       </ul>
     </div>
   );

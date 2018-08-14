@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReviewIndexItem = ({review}) => {
+const ReviewIndexItem = ({ review, user }) => {
 
   return (
     <li className="review-index-item">
