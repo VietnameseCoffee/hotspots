@@ -1,15 +1,14 @@
 import React from 'react';
 
 const ReviewIndexItem = ({ review, user }) => {
-
+  debugger
   return (
     <li className="review-index-item">
       <div className="review-side-bar" >
         <div className="profile-content">
           <a>Profile img</a>
           <ul>
-            <li>{}</li>
-            <li>{}</li>
+            <li>{user.firstName}, {user.lastName}</li>
             <li>{}</li>
           </ul>
         </div>
