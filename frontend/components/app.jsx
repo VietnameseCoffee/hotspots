@@ -8,6 +8,7 @@ import Header from './header/header.jsx';
 import SignupHeader from './header/signup_header.jsx';
 import SplashHeader from './splash/splash_header';
 import BusinessShowContainer from './businesses/business_show_container';
+import ReviewForm from './reviews/review_form'
 
 
 const App = () => {
@@ -26,8 +27,8 @@ const App = () => {
         <AuthRoute exact path="/login" component={ LoginFormContainer }/>
         <AuthRoute exact path="/signup" component={ SignupFormContainer }/>
         <Route path={`/businesses/:businessId`} component={BusinessShowContainer} />
+        <Route path={`/writeareview/:businessId`} component={ReviewForm} />
       </div>
-
       links to show page----
       <Link to="/businesses/1">Good Mong Kok Bakery</Link>-----
       <Link to="/businesses/2">Wildflower Cafe</Link>-----
