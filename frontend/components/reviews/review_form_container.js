@@ -3,11 +3,13 @@ import { connect } from 'react-redux';
 import ReviewForm from './review_form';
 import requestAddReview from '../../actions/review_actions';
 import { requestBusiness } from '../../actions/business_actions';
+import { formatDate } from '../../util/format_date_util';
 
-const msp = ({entities}, { match }) => {
+const msp = (state, { match }) => {
   return ({
-    business: entities.businesses[match.params.businessId],
-    businessId: match.params.businessId
+    business: state.entities.businesses[match.params.businessId],
+    businessId: match.params.businessId,
+    userId: state.session.id
   });
 };
 

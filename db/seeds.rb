@@ -122,82 +122,82 @@ Review.create(
   user_id: u1.id,
   stars: 5,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b2.id,
   user_id: u1.id,
   stars: 2,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b1.id,
   user_id: u2.id,
   stars: 3,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b3.id,
   user_id: u4.id,
   stars: 4,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b3.id,
   user_id: u3.id,
   stars: 4,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b3.id,
   user_id: u2.id,
   stars: 4,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b1.id,
   user_id: u5.id,
   stars: 4,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b3.id,
   user_id: u5.id,
   stars: 5,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b1.id,
   user_id: u3.id,
   stars: 4,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b1.id,
   user_id: u8.id,
   stars: 3,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b3.id,
   user_id: u7.id,
   stars: 4,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )
 Review.create(
   business_id: b2.id,
   user_id: u7.id,
   stars: 3,
   text: text,
-  post_date: "08/10/2018"
+  post_date: "8/10/2018"
 )

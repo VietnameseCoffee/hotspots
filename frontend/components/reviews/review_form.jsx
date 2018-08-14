@@ -13,10 +13,10 @@ class ReviewForm extends React.Component {
     return (e) => this.setState({[value]: e.target.value});
   }
 
-  // handleSubmit (e) {
-  //   e.preventDefault();
-  //   this.props.action(this.state);
-  // }
+  handleSubmit (e) {
+    e.preventDefault();
+    this.props.action(this.state);
+  }
 
 
   render () {
@@ -25,12 +25,14 @@ class ReviewForm extends React.Component {
       this.props.requestBusiness(this.props.businessId);
       return <div className="loading">Loading review Page :)</div>;
     }
-
+    debugger
     return (
       <div className="">
         <h2><Link to={`/businesses/${business.id}`}>{business.name}</Link></h2>
         <form >
           <input type="hidden" name="businessId" value={business.id}></input>
+          <input type="hidden" name="userId" value={this.props.userId}></input>
+
           <div className="stars">
             <input
               className="input-field"
