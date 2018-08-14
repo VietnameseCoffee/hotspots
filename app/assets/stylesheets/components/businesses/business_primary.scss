@@ -1,7 +1,31 @@
-.biz-reviews {
+.biz-primary {
   border-right: 1px solid #B9B9B9;
-  width: 67%;
-  .biz-reviews-container {
+  width: 640px;
+  border: 1px solid blue;
+  .biz-primary-container {
+    .biz-reviews-index {
+      .review-index {
+        border: 1px solid blue;
+        .review-index-item {
+          width: 100%;
+          border: 1px solid green;
+          display: flex;
+          justify-content: space-between;
+            min-height: 100px;
 
+          .review-side-bar {
+            width: 215px;
+            border: 1px solid orange;
+          }
+          .review-body{
+            width: 400px;
+            border: 1px solid orange;
+            .review-info {
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
