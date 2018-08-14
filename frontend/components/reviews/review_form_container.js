@@ -4,11 +4,11 @@ import ReviewForm from './review_form';
 import requestAddReview from '../../actions/review_actions';
 import requestBusiness from '../../actions/business_actions';
 
-// const msp = ({entities}, ownProps) => {
-//   return ({
-//     businessName: 1;
-//   });
-// };
+const msp = ({entities}, { match }) => {
+  return ({
+    business: entities.businesses[match.params.businessId]
+  });
+};
 
 const mdp = (dispatch) => {
   return {
@@ -17,4 +17,4 @@ const mdp = (dispatch) => {
   };
 };
 
-export default connect(null, mdp)(ReviewForm);
+export default connect(msp, mdp)(ReviewForm);

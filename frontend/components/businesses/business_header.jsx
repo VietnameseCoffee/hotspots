@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
-const BusinessHeader = ({name, price, tags}) => {
+const BusinessHeader = ({name, price, tags, id}) => {
   let price_str = "";
   let anchorTags;
 
@@ -27,7 +27,7 @@ const BusinessHeader = ({name, price, tags}) => {
       <div className="biz-header-right">
 
         <div className="biz-header-actions">
-          <Link className="write-a-review" to="/">Write a Review</Link>
+          <Link className="write-a-review" to={`/writeareview/${id}`}>Write a Review</Link>
           <Link className="biz-action" to="/">Add Photo</Link>
           <Link className="biz-action" to="/">Share</Link>
           <Link className="biz-action" to="/">Save</Link>

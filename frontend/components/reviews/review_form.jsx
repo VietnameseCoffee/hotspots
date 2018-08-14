@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class ReviewForm extends React.Component {
 
@@ -19,9 +20,11 @@ class ReviewForm extends React.Component {
 
 
   render () {
+    let business = this.props.business;
+    console.log(this.props)
     return (
       <div className="">
-      <h2>BUSINESS NAME LINK</h2>
+      <h2><Link to={`/businesses/${business.id}`}>{business.name}</Link></h2>
       <form >
 
         <div className="stars">

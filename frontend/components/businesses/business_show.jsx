@@ -45,6 +45,7 @@ class BusinessShow extends React.Component {
 
             <div className="biz-header">
               <BusinessHeader
+                id={this.props.businessId}
                 name={businessDetails.name}
                 price={businessDetails.price}
                 tags={businessDetails.tags}/>
