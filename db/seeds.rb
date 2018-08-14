@@ -6,10 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.destroy_all
+Business.destroy_all
+Hour.destroy_all
+Category.destroy_all
+BusinessInfo.destroy_all
+Review.destroy_all
+
 lunch = "10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&Closed&Closed"
 normal = '10:00 am - 9:00&10:00 am - 9:00&10:00 am - 9:00&10:00 am - 9:00&10:00 am - 11:00&10:00 am - 11:00&10:00 am - 7:00'
 
 detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No",
+text= "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
 User.create(first_name: "Michael", last_name: "Jordan", email: "jordan@gmail.com", password: "123456", zip: 12345, city: "Chicago", state: "IL")
 User.create(first_name: "Michael", last_name: "Scott", email: "office@gmail.com", password: "office", zip: 12345, city: "New York", state: "NY")
@@ -106,4 +114,89 @@ BusinessInfo.create(
 BusinessInfo.create(
   business_id: 3,
   details: detail
+)
+
+Review.create(
+  business_id: 1,
+  user_id: 1,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 2,
+  user_id: 1,
+  ratings: 2,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 1,
+  user_id: 2,
+  ratings: 3,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 3,
+  user_id: 4,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 3,
+  user_id: 3,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 3,
+  user_id: 2,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 1,
+  user_id: 5,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 3,
+  user_id: 5,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 1,
+  user_id: 3,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 1,
+  user_id: 8,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 3,
+  user_id: 7,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
+)
+Review.create(
+  business_id: 2,
+  user_id: 7,
+  ratings: 4,
+  text: text,
+  post_date: "08/10/2018"
 )
