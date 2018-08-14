@@ -1,16 +1,17 @@
 <% if logged_in? %>
-window.currentUser = {
-  "id": "<%= current_user.id %>",
-  "first_name": "<%= current_user.first_name %>",
-  "last_name": "<%= current_user.last_name %>"
-};
-<%  end %>
+  <script type="text/javascript">
+
+    window.currentUser = {
+      "id": "<%= current_user.id %>",
+      "first_name": "<%= current_user.first_name %>",
+      "last_name": "<%= current_user.last_name %>"
+    };
+  </script>
+<% end %>
 <script type="text/javascript">
-
-window.images = {
-  dimsum: "<%=asset_path('dimsum.jpg')%>",
-}
-
+  window.images = {
+    dimsum: "<%=asset_path('dimsum.jpg')%>",
+  }
 </script>
 
 <div id="root">
