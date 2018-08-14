@@ -22,6 +22,7 @@
       ul {
         li {
           margin-top: 2px;
+          border-top: 1px, solid #7A7A7A; 
         }
         border: 1px solid blue;
       }
@@ -30,5 +31,18 @@
     }
   }
 
+  .biz-images-container {
+
+    .biz-images {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+      }
+    }
+  }
 
 }

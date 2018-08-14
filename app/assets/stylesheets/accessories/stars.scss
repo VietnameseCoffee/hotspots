@@ -8,6 +8,106 @@
   height: 24px;
 }
 
-.stars-big-4 {
+.stars-big-0 {
+  background-position: 0 0px;
+}
+
+.stars-big-1 {
+  background-position: 0 -24px;
+}
+
+.stars-big-1-5 {
+  background-position: 0 -48px;
+}
+
+.stars-big-2{
+  background-position: 0 -72px;
+}
+
+.stars-big-2-5 {
+  background-position: 0 -96px;
+}
+
+.stars-big-3 {
+  background-position: 0 -120px;
+}
+
+.stars-big-3-5 {
   background-position: 0 -144px;
+}
+
+.stars-big-4 {
+  background-position: 0 -168px;
+}
+
+.stars-big-4-5 {
+  background-position: 0 -192px;
+}
+
+.stars-big-5 {
+  background-position: 0 -216px;
+}
+
+// mid stars
+
+[class*="stars-mid"] {
+  display: inline-block;
+  background-image: image_url('stars.png');
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  overflow: hidden;
+  width: 106px;
+  height: 18px;
+}
+
+.stars-mid-0 {
+  background-position: 0 -240px;
+}
+
+.stars-mid-1 {
+  background-position: 0 -258px;
+}
+
+.stars-mid-1-5 {
+  background-position: 0 -276px;
+}
+
+.stars-mid-2{
+  background-position: 0 -294px;
+}
+
+.stars-mid-2-5 {
+  background-position: 0 -312px;
+}
+
+.stars-mid-3 {
+  background-position: 0 -330px;
+}
+
+.stars-mid-3-5 {
+  background-position: 0 -348px;
+}
+
+.stars-mid-4 {
+  background-position: 0 -366px;
+}
+
+.stars-mid-4-5 {
+  background-position: 0 -384px;
+}
+
+.stars-mid-5 {
+  background-position: 0 -402px;
+}
+
+// small stars
+
+[class*="stars-smol"] {
+  display: inline-block;
+  background-image: image_url('stars.png');
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  overflow: hidden;
+  width: 132px;
+  height: 18px;
 }

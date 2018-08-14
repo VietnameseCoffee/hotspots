@@ -6,8 +6,9 @@ const BusinessImages = (props) => {
   return (
     <div className="biz-images-container">
       <div className="biz-images">
-        Here contains a sample set of images
-        
+        <img src={window.images.dimsum}></img>
+        <img src={window.images.dimsum}></img>
+        <img src={window.images.dimsum}></img>
 
 
       </div>

@@ -9,7 +9,7 @@ const ReviewIndexItem = ({review}) => {
       </div>
       <div className="review-body" >
         <div className="review-info">
-          <span className={`stars-mid-${}`}>Stars</span>Stars and date go here
+          <span className={`stars-mid-${review.stars}`}></span><span>{review.postDate}</span>
         </div>
         <p>
           {review.text}
