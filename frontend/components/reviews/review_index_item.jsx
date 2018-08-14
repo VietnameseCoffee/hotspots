@@ -9,8 +9,8 @@ const ReviewIndexItem = ({ review, user }) => {
         <div className="profile-content">
           <a>Profile img</a>
           <ul>
-            <li>{user.firstName}, {user.lastName}</li>
-            <li>{user.city}, {user.state}</li>
+            <li className="user-name">{user.firstName}, {user.lastName}</li>
+            <li className="user-place">{user.city}, {user.state}</li>
           </ul>
         </div>
       </div>
@@ -23,7 +23,7 @@ const ReviewIndexItem = ({ review, user }) => {
           {review.text}
         </p>
       </div>
-      
+
     </li>
   );
 };

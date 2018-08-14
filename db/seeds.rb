@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Business.destroy_all
+Review.destroy_all
+Hour.destroy_all
+Category.destroy_all
+BusinessInfo.destroy_all
 
 
 lunch = "10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&Closed&Closed"
@@ -113,84 +119,84 @@ BusinessInfo.create(
 Review.create(
   business_id: 1,
   user_id: 1,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 2,
   user_id: 1,
-  ratings: 2,
+  stars: 2,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 1,
   user_id: 2,
-  ratings: 3,
+  stars: 3,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 3,
   user_id: 4,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 3,
   user_id: 3,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 3,
   user_id: 2,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 1,
   user_id: 5,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 3,
   user_id: 5,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 1,
   user_id: 3,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 1,
   user_id: 8,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 3,
   user_id: 7,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
 Review.create(
   business_id: 2,
   user_id: 7,
-  ratings: 4,
+  stars: 4,
   text: text,
   post_date: "08/10/2018"
 )
