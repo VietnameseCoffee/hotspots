@@ -13,3 +13,9 @@ json.reviews do
     end
   end
 end
+
+json.users do
+  users.each do |user|
+    json.extract! user, :id, :first_name, :last_name
+  end
+end

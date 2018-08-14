@@ -14,7 +14,7 @@ class Api::BusinessesController < ApplicationController
   end
 
   def show
-    # NEED refactor, does it requery again after includes?
+    # NEED refactor, does it requery again after includes, supa slow?
     # SUPER FRAGILE RN
     @business = Business.includes(:categories, :hour, :business_info, :reviews).where(id: params[:business][:id])[0]
     if @business
@@ -22,6 +22,7 @@ class Api::BusinessesController < ApplicationController
       @hours = @business.hour.to_arr ## if ? .to_arr : DEFAULT
       @info = @business.business_info.to_arr ## IF ? .to_arr : DEFAULT
       @reviews = @business.reviews
+      @users = @reviews.map {|rev| rev.user}
       # debugger
 
       render "api/businesses/show"
