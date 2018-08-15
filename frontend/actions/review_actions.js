@@ -17,6 +17,11 @@ export const removeReview = (review) => ({
   payload: { review }
 });
 
+export const recieveReviewErrors = (errors) => ({
+  type: RECEIVE_REVIEW_ERRORS,
+  payload: { errors }
+});
+
 export const requestAddReview = (formReview) => (dispatch) => {
   return (
   ReviewApiUtil.postReview(formReview)
