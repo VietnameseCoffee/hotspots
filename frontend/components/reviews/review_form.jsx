@@ -23,6 +23,7 @@ class ReviewForm extends React.Component {
 
   handleSubmit (e) {
     e.preventDefault();
+    console.log(this.state)
 
     this.props.action(this.state);
   }
@@ -30,6 +31,7 @@ class ReviewForm extends React.Component {
 
   render () {
     let textareaPlaceholder = "Type your review in here! Help other people find the hottest spots around!";
+    let starText = ["", "No bueno", "Needs more heat", "Meets my needs", "This place is great!", "🔥 🔥 🔥"]
     let business = this.props.business;
     if (!business) {
       this.props.requestBusiness(this.props.businessId);
@@ -49,6 +51,7 @@ class ReviewForm extends React.Component {
                 <input value={4} onClick={this.update('stars')}></input>
                 <input value={5} onClick={this.update('stars')}></input>
               </ul>
+              <span>{starText[this.state.stars]}</span>
             </div>
 
             <div>
