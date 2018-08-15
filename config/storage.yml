@@ -6,6 +6,13 @@ amazon_dev:
   region: <%= Rails.application.credentials.aws[:region] %>
   bucket: <%= Rails.application.credentials.aws[:bucket] %>
 
+test:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>
+  
+local:
+  service: Disk
+  root: <%= Rails.root.join("storage") %>
 # Remember not to checkin your GCS keyfile to a repository
 # google:
 #   service: GCS
