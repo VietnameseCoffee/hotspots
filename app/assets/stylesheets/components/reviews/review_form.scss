@@ -1,0 +1,23 @@
+.review-form-container {
+  margin: 0 auto;
+  width: 960px;
+
+
+  a {
+    color: #0073bb;
+    font-size: 36px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h2 {
+    margin: 25px 0 25px 0;
+  }
+
+  form {
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    width: 585px;
+    padding: 20px;
+  }
+}

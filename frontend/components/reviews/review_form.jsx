@@ -36,7 +36,7 @@ class ReviewForm extends React.Component {
     }
 
     return (
-      <div className="">
+      <div className="review-form-container">
         <h2><Link to={`/businesses/${business.id}`}>{business.name}</Link></h2>
         <form onSubmit={this.handleSubmit}>
 
