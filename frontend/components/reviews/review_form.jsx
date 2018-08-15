@@ -48,11 +48,11 @@ class ReviewForm extends React.Component {
           <div className="review-inputs">
             <div className="stars">
               <ul className={`stars-big-${this.state.stars}`}>
-                <input readOnly={1} onClick={this.update('stars')}></input>
-                <input readOnly={2} onClick={this.update('stars')}></input>
-                <input readOnly={3} onClick={this.update('stars')}></input>
-                <input readOnly={4} onClick={this.update('stars')}></input>
-                <input readOnly={5} onClick={this.update('stars')}></input>
+                <input value={1} onClick={this.update('stars')}></input>
+                <input value={2} onClick={this.update('stars')}></input>
+                <input value={3} onClick={this.update('stars')}></input>
+                <input value={4} onClick={this.update('stars')}></input>
+                <input value={5} onClick={this.update('stars')}></input>
               </ul>
               <span>{starText[this.state.stars]}</span>
             </div>
