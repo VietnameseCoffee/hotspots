@@ -10,7 +10,8 @@ const msp = (state, { match }) => {
     business: state.entities.businesses[match.params.businessId],
     businessId: match.params.businessId,
     userId: state.session.id, // currentUser
-    getDate: getDate
+    getDate: getDate,
+    errors: state.errors.reviews
   });
 };
 

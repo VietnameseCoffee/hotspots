@@ -5,7 +5,8 @@ const reviewErrorsReducer = (state = [], action) => {
   switch (action.type) {
 
     case RECEIVE_REVIEW_ERRORS:
-      return action.payload.responseJSON;
+      // debugger
+      return action.payload.errors.responseJSON;
     case REMOVE_REVIEW_ERRORS:
       return [];
     default:
