@@ -7,8 +7,7 @@ const msp = ({entities}, ownProps) => {
   return {
     businessId: parseInt(ownProps.match.params.businessId),
     businessDetails: entities.businesses[ownProps.match.params.businessId],
-    imageIds: [],
-    reviewIds: [],
+    imageUrls: [],
     extrainfo: {}
   };
 };

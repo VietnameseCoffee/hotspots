@@ -11,7 +11,9 @@ json.reviews do
     json.set! rev.id do
       json.extract! rev, :id, :business_id, :user_id, :stars, :text, :post_date
       json.photos do
-        json.testt "hi"
+        rev.photos.each do |photo|
+          json.photoUrl url_for(photo)
+        end
       end
     end
   end

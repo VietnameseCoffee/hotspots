@@ -8,4 +8,7 @@ class Business < ApplicationRecord
   has_one :business_info
   has_many :reviews
 
+  has_many :review_photos,
+    through: :reviews,
+    source: :photos_attachments
 end
