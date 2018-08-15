@@ -4,6 +4,7 @@ import * as ReviewApiUtil from '../util/review_api_util';
 // export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS'; MAYBE IF LOTS O REVIEWS
 export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 export const REMOVE_REVIEW = 'REMOVE_REVIEW';
+export const RECEIVE_REVIEW_ERRORS = 'RECEIVE_REVIEW_ERRORS';
 
 
 export const recieveReview = (review) => ({
@@ -33,6 +34,6 @@ export const requestUpdateReview = (formReview) => (dispatch) => {
 export const requestDeleteReview = (id) => (dispatch) => {
   return (
   ReviewApiUtil.deleteReview(id)
-  .then(review => dispatch(removeReview(review)), err => dispatch(receiveErrors(err)))
+  .then(review => dispatch(removeReview(review)), err => dispatch(receiveReviewErrors(err)))
   );
 };
