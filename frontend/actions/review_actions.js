@@ -11,9 +11,9 @@ export const recieveReview = (review) => ({
   payload: { review }
 });
 
-export const removeReview = (id) => ({
+export const removeReview = (review) => ({
   type: REMOVE_REVIEW,
-  payload: { id }
+  payload: { review }
 });
 
 export const requestAddReview = (formReview) => (dispatch) => {
