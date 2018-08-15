@@ -27,6 +27,8 @@ class ReviewForm extends React.Component {
     if (this.state.user_id) {
       this.props.action(this.state)
         .then(() => this.props.history.push(`/businesses/${this.state.business_id}`));
+      } else {
+        this.props.history.push(`/signup`);
       }
 
   }
