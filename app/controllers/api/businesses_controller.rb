@@ -21,7 +21,7 @@ class Api::BusinessesController < ApplicationController
       @categories = @business.categories.pluck(:category)
       @hours = @business.hour.to_arr ## if ? .to_arr : DEFAULT
       @info = @business.business_info.to_arr ## IF ? .to_arr : DEFAULT
-      @reviews = @business.reviews
+      @reviews = @business.reviews.reverse
       @users = @reviews.map {|rev| rev.user}
       # debugger
 
@@ -55,5 +55,9 @@ class Api::BusinessesController < ApplicationController
       :stars,
       :price
     )
+  end
+
+  def extract_photos
+    photos = []
   end
 end
