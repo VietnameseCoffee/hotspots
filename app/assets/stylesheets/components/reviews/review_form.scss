@@ -15,9 +15,45 @@
   }
 
   form {
-    border: 1px solid #B9B9B9;
-    border-radius: 4px;
-    width: 585px;
-    padding: 20px;
+
+    .review-inputs {
+      border: 1px solid #B9B9B9;
+      border-radius: 4px;
+      width: 585px;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      div {
+        margin-bottom: 8px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 250px;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+    }
+
+    .review-stars {
+      background-image: image_url('stars.png');
+      background-repeat: no-repeat;
+      vertical-align: bottom;
+      overflow: hidden;
+      width: 132px;
+      height: 24px;
+
+    }
+
+
+    .button {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 12px 60px;
+      background-color: #D81B1B;
+      color: white;
+      border: 1px solid #640F0F;
+      border-radius: 4px;
+    }
   }
 }

@@ -29,6 +29,7 @@ class ReviewForm extends React.Component {
 
 
   render () {
+    let textareaPlaceholder = "Type your review in here! Help other people find the hottest spots around!";
     let business = this.props.business;
     if (!business) {
       this.props.requestBusiness(this.props.businessId);
@@ -39,22 +40,24 @@ class ReviewForm extends React.Component {
       <div className="review-form-container">
         <h2><Link to={`/businesses/${business.id}`}>{business.name}</Link></h2>
         <form onSubmit={this.handleSubmit}>
+          <div className="review-inputs">
+            <div className="stars">
+              <ul className={`stars-big-${this.state.stars}`}>
+                <input value={1} onClick={this.update('stars')}></input>
+                <input value={2} onClick={this.update('stars')}></input>
+                <input value={3} onClick={this.update('stars')}></input>
+                <input value={4} onClick={this.update('stars')}></input>
+                <input value={5} onClick={this.update('stars')}></input>
+              </ul>
+            </div>
 
-          <div className="stars">
-            <input
-              className="input-field"
-              placeholder="stars"
-              type='text'
-              onChange={this.update('stars')}
-              value={this.state.stars}></input>
-          </div>
-
-          <div>
-            <textarea
-              placeholder="Write your review inside here!"
-              type='text'
-              onChange={this.update('text')}
-              value={this.state.text}></textarea>
+            <div>
+              <textarea
+                placeholder={textareaPlaceholder}
+                type='text'
+                onChange={this.update('text')}
+                value={this.state.text}></textarea>
+            </div>
           </div>
 
           <div>
