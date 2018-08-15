@@ -7,7 +7,7 @@ const msp = ({entities}, ownProps) => {
   let revUsers = {};
   let userIds = ownProps.reviewIds.map((revId) => entities.reviews[revId].userId);
   userIds.map((userId) => revUsers[userId] = entities.users[userId]);
-
+  console.log(revUsers)
   return ({
     reviews: ownProps.reviewIds.map((revId) => entities.reviews[revId]),
     users: revUsers

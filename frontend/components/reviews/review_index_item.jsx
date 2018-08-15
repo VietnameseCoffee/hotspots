@@ -9,7 +9,7 @@ const ReviewIndexItem = ({ review, user }) => {
         <div className="profile-content">
           <a>Profile img</a>
           <ul>
-            {/* <li className="user-name">{user.firstName}, {user.lastName.slice(0,1)}.</li> */}
+            <li className="user-name">{user.firstName}, {user.lastName.slice(0,1)}.</li>
             <li className="user-place">{user.city}, {user.state}</li>
           </ul>
         </div>
