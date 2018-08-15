@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import ReviewForm from './review_form';
-import requestAddReview from '../../actions/review_actions';
+import { requestAddReview } from '../../actions/review_actions';
 import { requestBusiness } from '../../actions/business_actions';
 import getDate from '../../util/get_date_util';
 

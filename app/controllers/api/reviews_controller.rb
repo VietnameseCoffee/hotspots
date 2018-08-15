@@ -3,8 +3,8 @@ class Api::ReviewsController < ApplicationController
   # no render methods applied
 
   def create
-    @review = Review.new(review_params)
     debugger
+    @review = Review.new(review_params)
     if @review.save
       render "api/reviews/show"
     else
@@ -26,7 +26,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def destroy
-    debugger
+
     @review = Review.find(params[:id])
     if @review
       @review.destroy

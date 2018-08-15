@@ -8,10 +8,13 @@ class ReviewForm extends React.Component {
 
     this.state = {
       text: '',
-      ratings: 0,
-      userId: props.userId,
-      businessId: props.businessId
+      stars: 0,
+      user_id: props.userId,
+      business_id: props.businessId,
+      post_date: this.props.getDate() //boo cant work on handlesubmit
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   update (value) {
@@ -20,8 +23,7 @@ class ReviewForm extends React.Component {
 
   handleSubmit (e) {
     e.preventDefault();
-    debugger
-    this.setState({post_date: this.props.getDate()});
+
     this.props.action(this.state);
   }
 
