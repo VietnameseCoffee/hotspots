@@ -1,7 +1,14 @@
 import React from 'react';
 
-const ReviewIndexItem = ({ review, user }) => {
-
+const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
+  let deleteButton;
+  // debugger
+  if (review.userId === currentUser) {
+    deleteButton = (
+      <button onClick={() => deleteReview(review.id)}>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      </button>);
+  }
   return (
     <li className="review-index-item">
 
@@ -19,10 +26,21 @@ const ReviewIndexItem = ({ review, user }) => {
         <div className="review-info">
           <span className={`stars-mid-${review.stars}`}></span><span>{review.postDate}</span>
         </div>
+
         <p>
           {review.text}
         </p>
+
+        <div className="review-extras">
+          <div>
+
+          </div>
+          <div className="extras-button">
+            {deleteButton}
+          </div>
+        </div>
       </div>
+
 
     </li>
   );

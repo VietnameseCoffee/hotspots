@@ -34,7 +34,7 @@ class ReviewForm extends React.Component {
 
   render () {
     let textareaPlaceholder = "Type your review in here! Help other people find the hottest spots around!";
-    let starText = ["", "No bueno!", "Could have heat", "Meets my needs", "This place is great!", "🔥 🔥 🔥"];
+    let starText = ["", "No bueno!", "Could have more heat", "Meets my needs", "This place is great!", "🔥 🔥 🔥"];
     let business = this.props.business;
     if (!business) {
       this.props.requestBusiness(this.props.businessId);
