@@ -4,7 +4,6 @@ import ReviewIndexItem from './review_index_item';
 
 const ReviewIndex = ({ reviews, users }) => {
 
-  debugger
   return (
     <div className="review-index">
       <ul>

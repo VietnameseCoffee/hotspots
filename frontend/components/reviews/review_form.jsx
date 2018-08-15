@@ -24,7 +24,10 @@ class ReviewForm extends React.Component {
   handleSubmit (e) {
     e.preventDefault();
 
-    if (this.state.user_id) this.props.action(this.state);
+    if (this.state.user_id) {
+      this.props.action(this.state)
+        .then(() => this.props.history.push(`/businesses/${this.state.business_id}`));
+      }
 
   }
 
