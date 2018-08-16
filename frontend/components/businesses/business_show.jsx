@@ -34,11 +34,7 @@ class BusinessShow extends React.Component {
         <div>Loading...</div>
       );
     }
-    let options = {
-      zoom: 8,
-      center:{lat:42.3601, lng:-71.0589}
-    };
-  
+
     return (
       <div className="biz-show">
         <div className="biz-gray-top">
@@ -49,7 +45,8 @@ class BusinessShow extends React.Component {
                 id={this.props.businessId}
                 name={businessDetails.name}
                 price={businessDetails.price}
-                tags={businessDetails.tags}/>
+                tags={businessDetails.tags}
+                stars={businessDetails.stars}/>
             </div>
 
             <div className="biz-sub-header">

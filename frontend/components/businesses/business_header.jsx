@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
-const BusinessHeader = ({name, price, tags, id}) => {
+const BusinessHeader = ({name, price, tags, id, stars}) => {
   let price_str = "";
   let anchorTags;
 
@@ -14,7 +14,7 @@ const BusinessHeader = ({name, price, tags, id}) => {
         <h1>{name}</h1>
 
         <div className="stars">
-          <div className="stars-big-4"></div><span>Num Ratings</span>
+          <div className={`stars-big-${rounded(stars)}`}></div><span>Num Ratings</span>
         </div>
 
         <div className="tags-price">
@@ -38,8 +38,14 @@ const BusinessHeader = ({name, price, tags, id}) => {
       </div>
     </div>
   );
-
-
 };
+
+const rounded = (stars) => {
+  debugger
+  return Number((Math.round(stars * 2) / 2 ));
+}
+// super simple blew mah mind
+// https://stackoverflow.com/questions/19390644/round-number-to-nearest-5-decimal
+
 
 export default BusinessHeader;

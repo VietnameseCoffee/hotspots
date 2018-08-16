@@ -24,7 +24,9 @@ class Map extends React.Component {
 
     const marker = new google.maps.Marker({
       position: pos,
-      map: this.map });
+      map: this.map,
+      }
+    );
   }
 
   render () {
