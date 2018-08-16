@@ -41,8 +41,7 @@ const BusinessHeader = ({name, price, tags, id, stars}) => {
 };
 
 const rounded = (stars) => {
-  debugger
-  return Number((Math.round(stars * 2) / 2 ));
+  return (Math.round(stars * 2) / 2 ).toString().split(".").join("-");
 }
 // super simple blew mah mind
 // https://stackoverflow.com/questions/19390644/round-number-to-nearest-5-decimal

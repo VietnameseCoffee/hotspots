@@ -14,9 +14,11 @@
 
 
 lunch = "10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&Closed&Closed"
-normal = '10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 11:00 pm&10:00 am - 11:00 pm&10:00 am - 7:00 pm'
+normal = '10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 10:00 pm&10:00 am - 10:00 pm&10:00 am - 7:00 pm'
+late = '5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 1:00 am&5:00 am - 1:00 am&5:00 am - 12:00 am'
 
 detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No"
+detail_1 = "Takes Reservations:No&Delivery:Yes&Take-out:Yes&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:Yes&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:Yes&Caters:No"
 
 text= "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.       Ut enim ad minim veniam."
 
@@ -27,7 +29,19 @@ u4 = User.create(first_name: "Kavian", last_name: "M", email: "mojabe@gmail.com"
 u5 = User.create(first_name: "Tony", last_name: "M", email: "zhang@gmail.com", password: "asdfgh", zip: 95436, city: "San Mateo", state: "CA")
 u6 = User.create(first_name: "Nigel", last_name: "R", email: "canada@gmail.com", password: "asdfgh", zip: 98544, city: "Oakland", state: "CA")
 u7 = User.create(first_name: "Sarah", last_name: "J", email: "lol@gmail.com", password: "asdfgh", zip: 98544, city: "Oakland", state: "CA")
-u8 = User.create(first_name: "Rex", last_name: "B", email: "lmao@gmail.com", password: "betttt", zip: 95151, city: "Pomona", state: "CA")
+u8 = User.create(first_name: "Rex", last_name: "B", email: "lo@gmail.com", password: "bettfdtt", zip: 95151, city: "Pomona", state: "CA")
+u9 = User.create(first_name: "Ziyan", last_name: "W", email: "mao@gmail.com", password: "bedtttt", zip: 95851, city: "Redwood City", state: "CA")
+u10 = User.create(first_name: "Tiffany", last_name: "S", email: "huh@gmail.com", password: "beatttt", zip: 92154, city: "Pomona", state: "CA")
+u11 = User.create(first_name: "Jeffrey", last_name: "C", email: "jchan@gmail.com", password: "beatttt", zip: 94108, city: "Daly City", state: "CA")
+u12 = User.create(first_name: "David", last_name: "W", email: "dw33b@gmail.com", password: "ddatt88t", zip: 94108, city: "San Francisco", state: "CA")
+u13 = User.create(first_name: "Jon", last_name: "E", email: "jjj@gmail.com", password: "qqdat8tt", zip: 94538, city: "Fremont", state: "CA")
+u14 = User.create(first_name: "Ira", last_name: "H", email: "japa@gmail.com", password: "ddbgdst", zip: 94108, city: "San Francisco", state: "CA")
+u15 = User.create(first_name: "Ruby", last_name: "M", email: "mmma@gmail.com", password: "moomiu123", zip: 94108, city: "Fremont", state: "CA")
+u16 = User.create(first_name: "Mark", last_name: "K", email: "mmm@gmail.com", password: "passsss3", zip: 94108, city: "San Jose", state: "CA")
+u17 = User.create(first_name: "Jennifer", last_name: "N", email: "jjffb@gmail.com", password: "pa5ssss37", zip: 94108, city: "San Bruno", state: "CA")
+u18 = User.create(first_name: "Bren", last_name: "N", email: "vmjffb@gmail.com", password: "passss37", zip: 94108, city: "Houston", state: "TX")
+u19 = User.create(first_name: "Joslyn", last_name: "W", email: "wwffb@gmail.com", password: "pas4sss37", zip: 94108, city: "Portland", state: "OR")
+u20 = User.create(first_name: "Stephanie", last_name: "D", email: "ssdffb@mail.com", password: "passss3657", zip: 94108, city: "Tracy", state: "CA")
 
 b1 =Business.create(
   name: "Good Mong Kok Bakery",
@@ -37,7 +51,8 @@ b1 =Business.create(
   city: "San Francisco",
   state: "CA",
   zip: 94108,
-  stars: nil,
+  stars: 3.8,
+  phone_number: "(415)-456-7812",
   price: 1,
 )
 b2 = Business.create(
@@ -48,7 +63,8 @@ b2 = Business.create(
   city: "San Francisco",
   state: "CA",
   zip: 94111,
-  stars: 3.8,
+  stars: 4.5,
+  phone_number: "(415)-466-7802",
   price: 1,
 )
 b3 = Business.create(
@@ -60,7 +76,104 @@ b3 = Business.create(
   state: "CA",
   zip: 94107,
   stars: 4.2,
+  phone_number: "(415)-786-1252",
   price: 2,
+)
+b4 = Business.create(
+  name: "Ginger Elizabeth",
+  latitude: 37.7984336,
+  longitude: -122.4355835,
+  address: "3108 Fillmore St",
+  city: "San Francisco",
+  state: "CA",
+  zip: 94123,
+  stars: 4.0,
+  phone_number: "(415)-569-4857",
+  price: 2
+)
+b5 = Business.create(
+  name: "McDonald's",
+  latitude: 37.789295,
+  longitude: -122.407648,
+  address: "441 Sutter St",
+  city: "San Francisco",
+  state: "CA",
+  zip: 94108,
+  stars: 3.0,
+  phone_number: "(415)-556-9802",
+  price: 1
+)
+b6 = Business.create(
+  name: "Taco Negris",
+  latitude: 37.789295,
+  longitude: -122.407648,
+  address: "Niles Blvd",
+  city: "Fremont",
+  state: "CA",
+  zip: 95103,
+  stars: 4.0,
+  phone_number: "(510)-766-062",
+  price: 1
+)
+b7 = Business.create(
+  name: "Taco Bell",
+  latitude: 37.789295,
+  longitude: -122.407648,
+  address: "441 Sutter St",
+  city: "San Francisco",
+  state: "CA",
+  zip: 94108,
+  stars: 2.0,
+  phone_number: "(415)-973-5852",
+  price: 1
+)
+b8 = Business.create(
+  name: "Subway",
+  latitude: 37.789295,
+  longitude: -122.407648,
+  address: "828 Battery",
+  city: "San Francisco",
+  state: "CA",
+  zip: 94108,
+  stars: 2.5,
+  phone_number: "(415)-238-3852",
+  price: 1
+)
+b9 = Business.create(
+  name: "House of Prime Rib",
+  latitude: 37.7933653,
+  longitude: -122.4226817,
+  address: '1906 Van Ness Ave',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94109,
+  stars: 4.5,
+  phone_number: "(415)-238-3002",
+  price: 1
+)
+b10 = Business.create(
+  name: "Rooftop 25",
+  latitude: 37.789295,
+  longitude: -122.407648,
+  address: "25 Lusk St",
+  city: "San Francisco",
+  state: "CA",
+  zip: 94108,
+  stars: 4.0,
+  phone_number: "(415)-495-5875",
+  price: 2
+)
+b11 = Business.create(
+  name: "North Beach Pizza",
+  latitude: 37.789295,
+  longitude: -122.407648,
+  address: "25 Lusk St",
+  city: "San Francisco",
+  state: "CA",
+  zip: 94108,
+  stars: 4.0,
+  phone_number: "(415)-495-5875",
+  price: 2
 )
 
 Category.create(
@@ -87,19 +200,91 @@ Category.create(
   business_id: b3.id,
   category: "Breakfast",
 )
+Category.create(
+  business_id: b4.id,
+  category: "Desserts",
+)
+Category.create(
+  business_id: b4.id,
+  category: "Chocolate",
+)
+Category.create(
+  business_id: b5.id,
+  category: "Burgers",
+)
+Category.create(
+  business_id: b5.id,
+  category: "Fast Food",
+)
+Category.create(
+  business_id: b6.id,
+  category: "Mexican",
+)
+Category.create(
+  business_id: b6.id,
+  category: "Burritos",
+)
+Category.create(
+  business_id: b7.id,
+  category: "Fast Food",
+)
+Category.create(
+  business_id: b8.id,
+  category: "Sandwiches",
+)
+Category.create(
+  business_id: b8.id,
+  category: "Fast Food",
+)
+Category.create(
+  business_id: b9.id,
+  category: "Restaurant",
+)
+Category.create(
+  business_id: b9.id,
+  category: "Steakhouse",
+)
+Category.create(
+  business_id: b9.id,
+  category: "American",
+)
+Category.create(
+  business_id: b5.id,
+  category: "American",
+)
+Category.create(
+  business_id: b10.id,
+  category: "Cocktail",
+)
+Category.create(
+  business_id: b10.id,
+  category: "Bar",
+)
+Category.create(
+  business_id: b11.id,
+  category: "Pizza",
+)
 
 
 Hour.create(
   business_id: b1.id,
-  hours: normal,
+  hours: normal
 )
 Hour.create(
   business_id: b2.id,
-  hours: lunch,
+  hours: lunch
 )
 Hour.create(
   business_id: b3.id,
-  hours: normal,
+  hours: normal
+)
+Hour.create(
+  business_id: b4.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b5.id,
+  hours: late
 )
 
 
@@ -115,6 +300,14 @@ BusinessInfo.create(
 BusinessInfo.create(
   business_id: b3.id,
   details: detail
+)
+BusinessInfo.create(
+  business_id: b4.id,
+  details: detail_1
+)
+BusinessInfo.create(
+  business_id: b5.id,
+  details: detail_1
 )
 
 Review.create(
@@ -127,7 +320,7 @@ Review.create(
 Review.create(
   business_id: b2.id,
   user_id: u1.id,
-  stars: 2,
+  stars: 4,
   text: text,
   post_date: "8/10/2018"
 )
@@ -197,7 +390,49 @@ Review.create(
 Review.create(
   business_id: b2.id,
   user_id: u7.id,
-  stars: 3,
+  stars: 5,
   text: text,
   post_date: "8/10/2018"
+)
+Review.create(
+  business_id: b4.id,
+  user_id: u3.id,
+  stars: 5,
+  text: text,
+  post_date: "8/9/2018"
+)
+Review.create(
+  business_id: b4.id,
+  user_id: u7.id,
+  stars: 2,
+  text: text,
+  post_date: "8/14/2018"
+)
+Review.create(
+  business_id: b4.id,
+  user_id: u2.id,
+  stars: 5,
+  text: text,
+  post_date: "8/15/2018"
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u5.id,
+  stars: 2,
+  text: text,
+  post_date: "7/8/2018"
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u2.id,
+  stars: 4,
+  text: text,
+  post_date: "8/1/2018"
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u6.id,
+  stars: 3,
+  text: text,
+  post_date: "8/15/2018"
 )
