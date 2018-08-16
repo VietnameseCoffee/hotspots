@@ -5,6 +5,7 @@ import Root from './components/root';
 import configureStore from './store/store';
 
 import * as SearchApiUtil from './util/search_api_util';
+import { requestSearch} from './actions/search_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let _preLoadedState;

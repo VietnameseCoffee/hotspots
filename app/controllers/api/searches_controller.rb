@@ -5,7 +5,8 @@ class Api::SearchesController < ApplicationController
   def show
     debugger
     results = search_params
-    1 +1
+    @businesses = [Business.first]
+    render 'api/searches/show'
   end
 
   private
