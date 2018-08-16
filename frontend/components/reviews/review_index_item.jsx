@@ -1,7 +1,8 @@
 import React from 'react';
 
 const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
-  let deleteButton;
+  let deleteButton
+  let profilePic = 5;
   // debugger
   if (review.userId === currentUser) {
     deleteButton = (
@@ -9,12 +10,16 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
         <i class="fa fa-trash" aria-hidden="true"></i>
       </button>);
   }
+
+  if (user.photoUrl) {
+
+  }
   return (
     <li className="review-index-item">
 
       <div className="review-side-bar" >
         <div className="profile-content">
-          <a>Profile img</a>
+          <a><img src={photo}></img></a>
           <ul>
             <li className="user-name">{user.firstName}, {user.lastName.slice(0,1)}.</li>
             <li className="user-place">{user.city}, {user.state}</li>
