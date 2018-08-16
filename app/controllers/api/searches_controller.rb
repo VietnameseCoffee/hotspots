@@ -4,6 +4,8 @@ class Api::SearchesController < ApplicationController
 
   def show
     debugger
+    results = search_params
+    1 +1
   end
 
   private
