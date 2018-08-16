@@ -18,12 +18,20 @@
         height: 135px;
         border: 1px solid #c6c6c6;
         margin-bottom: 4px;
+
       }
 
       ul {
         li {
           margin-top: 2px;
           border-top: 1px, solid #7A7A7A;
+
+          a {
+            color: #0073bb;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
         }
         li:first-child {
           color: #222222;

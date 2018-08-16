@@ -68,21 +68,8 @@
 #   post_date: "08/10/2018"
 #  )
 
-r = Review.first
-r.photo.attach(io: File.open("/Users/appacademy/Documents/paintings/boca.jpg"), filename: "boca.jpg")
-
-#
-# Rails.application.routes.draw do
-#   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-#
-#   namespace :api, defaults: {format: :json} do
-#     resource :session, only: [:create, :destroy]
-#     resource :users, only: [:create, :destroy, :show]
-#
-#     resources :businesses, only: [:create, :show, :index, :update]
-#     resources :reviews, only: [:create, :update, :destroy]
-#   end
-#
-#
-#   root to: 'static_pages#root'
-# end
+# r = Review.first
+# r.photo.attach(io: File.open("/Users/appacademy/Documents/paintings/boca.jpg"), filename: "boca.jpg")
+# okay = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary."
+# good = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit small at times but I think it's great. Definitely return!"
+# meh = "The food really is fine but the service could really use a pickup. Very little people but yet the service was so slow. If I'm craving it then I'll return but I dunno."
