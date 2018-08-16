@@ -13,14 +13,19 @@
 # BusinessInfo.destroy_all
 
 
-lunch = "10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&Closed&Closed"
+lunch = '10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&Closed&Closed'
+normal_2 = '9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&11:00 am - 10:00 pm&Closed'
 normal = '10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 10:00 pm&10:00 am - 10:00 pm&10:00 am - 7:00 pm'
 late = '5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 1:00 am&5:00 am - 1:00 am&5:00 am - 12:00 am'
+night= 'Closed&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 2:00 am&6:00 pm - 2:00 am&4:00 pm - 10:00 pm'
 
 detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No"
 detail_1 = "Takes Reservations:No&Delivery:Yes&Take-out:Yes&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:Yes&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:Yes&Caters:No"
 
-text= "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.       Ut enim ad minim veniam."
+okay = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary."
+text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+good = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit small at times but I think it's great. Definitely return!"
+meh = "The food really is fine but the service could really use a pickup. Very little people but yet the service was so slow. If I'm craving it then I'll return but I dunno."
 
 u1 = User.create(first_name: "Michael", last_name: "Jordan", email: "jordan@gmail.com", password: "123456", zip: 12345, city: "Chicago", state: "IL")
 u2 = User.create(first_name: "Michael", last_name: "Scott", email: "office@gmail.com", password: "office", zip: 12345, city: "New York", state: "NY")
@@ -56,91 +61,91 @@ b1 =Business.create(
   price: 1,
 )
 b2 = Business.create(
-  name: "Wildflower Cafe",
+  name: 'Wildflower Cafe',
   latitude: 37.794143,
   longitude: -122.401591,
-  address: "411 Sansome Street",
-  city: "San Francisco",
-  state: "CA",
+  address: '411 Sansome Street',
+  city: 'San Francisco',
+  state: 'CA',
   zip: 94111,
   stars: 4.5,
-  phone_number: "(415)-466-7802",
+  phone_number: '(415)-466-7802',
   price: 1,
 )
 b3 = Business.create(
-  name: "Plow",
+  name: 'Plow',
   latitude: 37.762585,
   longitude: -122.395434,
-  address: "1299 18th St.",
-  city: "San Francisco",
-  state: "CA",
+  address: '1299 18th St.',
+  city: 'San Francisco',
+  state: 'CA',
   zip: 94107,
   stars: 4.2,
-  phone_number: "(415)-786-1252",
+  phone_number: '(415)-786-1252',
   price: 2,
 )
 b4 = Business.create(
-  name: "Ginger Elizabeth",
+  name: 'Ginger Elizabeth',
   latitude: 37.7984336,
   longitude: -122.4355835,
-  address: "3108 Fillmore St",
-  city: "San Francisco",
-  state: "CA",
+  address: '3108 Fillmore St',
+  city: 'San Francisco',
+  state: 'CA',
   zip: 94123,
   stars: 4.0,
-  phone_number: "(415)-569-4857",
+  phone_number: '(415)-569-4857',
   price: 2
 )
 b5 = Business.create(
   name: "McDonald's",
   latitude: 37.789295,
   longitude: -122.407648,
-  address: "441 Sutter St",
-  city: "San Francisco",
-  state: "CA",
+  address: '441 Sutter St',
+  city: 'San Francisco',
+  state: 'CA',
   zip: 94108,
   stars: 3.0,
-  phone_number: "(415)-556-9802",
+  phone_number: '(415)-556-9802',
   price: 1
 )
 b6 = Business.create(
-  name: "Taco Negris",
-  latitude: 37.789295,
-  longitude: -122.407648,
-  address: "Niles Blvd",
-  city: "Fremont",
-  state: "CA",
-  zip: 95103,
+  name: 'Taco Negris',
+  latitude: 37.576519,
+  longitude: -121.976328,
+  address: '37726 Niles Blvd',
+  city: 'Fremont',
+  state: 'CA',
+  zip: 94503,
   stars: 4.0,
-  phone_number: "(510)-766-062",
+  phone_number: '(510)-766-062',
   price: 1
 )
 b7 = Business.create(
-  name: "Taco Bell",
-  latitude: 37.789295,
-  longitude: -122.407648,
-  address: "441 Sutter St",
-  city: "San Francisco",
-  state: "CA",
-  zip: 94108,
+  name: 'Taco Bell',
+  latitude: 37.778791,
+  longitude: -122.392710,
+  address: '710 3rd St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94107,
   stars: 2.0,
-  phone_number: "(415)-973-5852",
+  phone_number: '(415) 979-1587',
   price: 1
 )
 b8 = Business.create(
-  name: "Subway",
-  latitude: 37.789295,
-  longitude: -122.407648,
-  address: "828 Battery",
-  city: "San Francisco",
-  state: "CA",
-  zip: 94108,
+  name: 'Subway',
+  latitude: 37.798683,
+  longitude: -122.400756,
+  address: '160 Broadway',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94111,
   stars: 2.5,
-  phone_number: "(415)-238-3852",
+  phone_number: '(415) 386-1913',
   price: 1
 )
 b9 = Business.create(
-  name: "House of Prime Rib",
+  name: 'House of Prime Rib',
   latitude: 37.7933653,
   longitude: -122.4226817,
   address: '1906 Van Ness Ave',
@@ -148,121 +153,121 @@ b9 = Business.create(
   state: 'CA',
   zip: 94109,
   stars: 4.5,
-  phone_number: "(415)-238-3002",
-  price: 1
+  phone_number: '(415) 885-4605',
+  price: 3
 )
 b10 = Business.create(
-  name: "Rooftop 25",
-  latitude: 37.789295,
-  longitude: -122.407648,
-  address: "25 Lusk St",
-  city: "San Francisco",
-  state: "CA",
-  zip: 94108,
-  stars: 4.0,
-  phone_number: "(415)-495-5875",
+  name: 'Rooftop 25',
+  latitude: 37.778449,
+  longitude: -122.394401,
+  address: '25 Lusk St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94107,
+  stars: 3.75,
+  phone_number: '(415) 495-5875',
   price: 2
 )
 b11 = Business.create(
-  name: "North Beach Pizza",
-  latitude: 37.789295,
-  longitude: -122.407648,
-  address: "25 Lusk St",
-  city: "San Francisco",
-  state: "CA",
-  zip: 94108,
-  stars: 4.0,
-  phone_number: "(415)-495-5875",
+  name: 'North Beach Pizza',
+  latitude: 37.800682,
+  longitude: -122.407418,
+  address: '1462 Grant Ave',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94133,
+  stars: 3.33,
+  phone_number: '(415) 433-2444',
   price: 2
 )
 
 Category.create(
   business_id: b1.id,
-  category: "Bakeries",
+  category: 'Bakeries',
 )
 Category.create(
   business_id: b1.id,
-  category: "Dim Sum",
+  category: 'Dim Sum',
 )
 Category.create(
   business_id: b1.id,
-  category: "Chinese",
+  category: 'Chinese',
 )
 Category.create(
   business_id: b2.id,
-  category: "Cafe",
+  category: 'Cafe',
 )
 Category.create(
   business_id: b2.id,
-  category: "Salad",
+  category: 'Salad',
 )
 Category.create(
   business_id: b3.id,
-  category: "Breakfast",
+  category: 'Breakfast',
 )
 Category.create(
   business_id: b4.id,
-  category: "Desserts",
+  category: 'Desserts',
 )
 Category.create(
   business_id: b4.id,
-  category: "Chocolate",
+  category: 'Chocolate',
 )
 Category.create(
   business_id: b5.id,
-  category: "Burgers",
+  category: 'Burgers',
 )
 Category.create(
   business_id: b5.id,
-  category: "Fast Food",
+  category: 'Fast Food',
 )
 Category.create(
   business_id: b6.id,
-  category: "Mexican",
+  category: 'Mexican',
 )
 Category.create(
   business_id: b6.id,
-  category: "Burritos",
+  category: 'Burritos',
 )
 Category.create(
   business_id: b7.id,
-  category: "Fast Food",
+  category: 'Fast Food',
 )
 Category.create(
   business_id: b8.id,
-  category: "Sandwiches",
+  category: 'Sandwiches',
 )
 Category.create(
   business_id: b8.id,
-  category: "Fast Food",
+  category: 'Fast Food',
 )
 Category.create(
   business_id: b9.id,
-  category: "Restaurant",
+  category: 'Restaurant',
 )
 Category.create(
   business_id: b9.id,
-  category: "Steakhouse",
+  category: 'Steakhouse',
 )
 Category.create(
   business_id: b9.id,
-  category: "American",
+  category: 'American',
 )
 Category.create(
   business_id: b5.id,
-  category: "American",
+  category: 'American',
 )
 Category.create(
   business_id: b10.id,
-  category: "Cocktail",
+  category: 'Cocktail',
 )
 Category.create(
   business_id: b10.id,
-  category: "Bar",
+  category: 'Bar',
 )
 Category.create(
   business_id: b11.id,
-  category: "Pizza",
+  category: 'Pizza',
 )
 
 
@@ -286,6 +291,30 @@ Hour.create(
   business_id: b5.id,
   hours: late
 )
+Hour.create(
+  business_id: b6.id,
+  hours: normal_2
+)
+Hour.create(
+  business_id: b7.id,
+  hours: late
+)
+Hour.create(
+  business_id: b8.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b9.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b10.id,
+  hours: night
+)
+Hour.create(
+  business_id: b11.id,
+  hours: normal
+)
 
 
 
@@ -309,130 +338,282 @@ BusinessInfo.create(
   business_id: b5.id,
   details: detail_1
 )
+BusinessInfo.create(
+  business_id: b6.id,
+  details: detail_1
+)
+BusinessInfo.create(
+  business_id: b7.id,
+  details: detail_1
+)
+BusinessInfo.create(
+  business_id: b8.id,
+  details: detail_1
+)
+BusinessInfo.create(
+  business_id: b9.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b10.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b11.id,
+  details: detail
+)
+
+
 
 Review.create(
   business_id: b1.id,
   user_id: u1.id,
   stars: 5,
-  text: text,
-  post_date: "8/10/2018"
+  text: good,
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b2.id,
   user_id: u1.id,
   stars: 4,
   text: text,
-  post_date: "8/10/2018"
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b1.id,
   user_id: u2.id,
   stars: 3,
   text: text,
-  post_date: "8/10/2018"
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b3.id,
   user_id: u4.id,
   stars: 4,
-  text: text,
-  post_date: "8/10/2018"
+  text: okay,
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b3.id,
   user_id: u3.id,
   stars: 4,
   text: text,
-  post_date: "8/10/2018"
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b3.id,
   user_id: u2.id,
   stars: 4,
-  text: text,
-  post_date: "8/10/2018"
+  text: good,
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b1.id,
   user_id: u5.id,
   stars: 4,
-  text: text,
-  post_date: "8/10/2018"
+  text: okay,
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b3.id,
   user_id: u5.id,
   stars: 5,
   text: text,
-  post_date: "8/10/2018"
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b1.id,
   user_id: u3.id,
   stars: 4,
-  text: text,
-  post_date: "8/10/2018"
+  text: good,
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b1.id,
   user_id: u8.id,
   stars: 3,
   text: text,
-  post_date: "8/10/2018"
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b3.id,
   user_id: u7.id,
   stars: 4,
   text: text,
-  post_date: "8/10/2018"
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b2.id,
   user_id: u7.id,
   stars: 5,
   text: text,
-  post_date: "8/10/2018"
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b4.id,
   user_id: u3.id,
   stars: 5,
-  text: text,
-  post_date: "8/9/2018"
+  text: good,
+  post_date: '8/9/2018'
 )
 Review.create(
   business_id: b4.id,
   user_id: u7.id,
   stars: 2,
   text: text,
-  post_date: "8/14/2018"
+  post_date: '8/14/2018'
 )
 Review.create(
   business_id: b4.id,
   user_id: u2.id,
   stars: 5,
   text: text,
-  post_date: "8/15/2018"
+  post_date: '8/15/2018'
 )
 Review.create(
   business_id: b5.id,
   user_id: u5.id,
   stars: 2,
   text: text,
-  post_date: "7/8/2018"
+  post_date: '7/8/2018'
 )
 Review.create(
   business_id: b5.id,
   user_id: u2.id,
   stars: 4,
   text: text,
-  post_date: "8/1/2018"
+  post_date: '8/1/2018'
 )
 Review.create(
   business_id: b5.id,
   user_id: u6.id,
   stars: 3,
+  text: okay,
+  post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b6.id,
+  user_id: u2.id,
+  stars: 3,
   text: text,
-  post_date: "8/15/2018"
+  post_date: '8/1/2018'
+)
+Review.create(
+  business_id: b6.id,
+  user_id: u18.id,
+  stars: 4,
+  text: text,
+  post_date: '8/5/2018'
+)
+Review.create(
+  business_id: b6.id,
+  user_id: u16.id,
+  stars: 4,
+  text: text,
+  post_date: '8/12/2018'
+)
+Review.create(
+  business_id: b7.id,
+  user_id: u17.id,
+  stars: 2,
+  text: text,
+  post_date: '8/10/2018'
+)
+Review.create(
+  business_id: b7.id,
+  user_id: u9.id,
+  stars: 2,
+  text: meh,
+  post_date: '8/12/2018'
+)
+Review.create(
+  business_id: b8.id,
+  user_id: u10.id,
+  stars: 3,
+  text: text,
+  post_date: '7/21/2018'
+)
+Review.create(
+  business_id: b8.id,
+  user_id: u20.id,
+  stars: 2,
+  text: meh,
+  post_date: '8/12/2018'
+)
+Review.create(
+  business_id: b9.id,
+  user_id: u20.id,
+  stars: 5,
+  text: text,
+  post_date: '8/1/2018'
+)
+Review.create(
+  business_id: b9.id,
+  user_id: u15.id,
+  stars: 4,
+  text: text,
+  post_date: '8/2/2018'
+)
+Review.create(
+  business_id: b9.id,
+  user_id: u3.id,
+  stars: 4,
+  text: okay,
+  post_date: '8/9/2018'
+)
+Review.create(
+  business_id: b9.id,
+  user_id: u11.id,
+  stars: 5,
+  text: good,
+  post_date: '8/16/2018'
+)
+Review.create(
+  business_id: b10.id,
+  user_id: u4.id,
+  stars: 4,
+  text: text,
+  post_date: '8/7/2018'
+)
+Review.create(
+  business_id: b10.id,
+  user_id: u19.id,
+  stars: 3,
+  text: text,
+  post_date: '8/7/2018'
+)
+Review.create(
+  business_id: b10.id,
+  user_id: u2.id,
+  stars: 4,
+  text: text,
+  post_date: '8/11/2018'
+)
+Review.create(
+  business_id: b10.id,
+  user_id: u1.id,
+  stars: 4,
+  text: good,
+  post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b11.id,
+  user_id: u3.id,
+  stars: 4,
+  text: good,
+  post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b11.id,
+  user_id: u10.id,
+  stars: 3,
+  text: text,
+  post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b11.id,
+  user_id: u15.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/15/2018'
 )
