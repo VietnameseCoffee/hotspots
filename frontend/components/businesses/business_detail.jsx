@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Map from '../maps/map';
+
 const BusinessDetail = ({details}) => {
 
   return (
@@ -8,7 +10,7 @@ const BusinessDetail = ({details}) => {
       <div className="biz-detail">
 
         <div className="map-box">
-          Map Box belongs here
+          <Map />
         </div>
 
         <ul className="biz-info">

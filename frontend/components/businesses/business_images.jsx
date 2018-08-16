@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const BusinessImages = ({imageUrls}) => {
   // debugger
-  const images = imageUrls.map((url) =>(
+  const images = imageUrls.map((url, i) =>(
     <div key ={url.photoUrl} className={`biz-show-img-${i}`}>
       <img src={url.photoUrl}></img>
     </div>
