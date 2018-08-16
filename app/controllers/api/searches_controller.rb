@@ -3,7 +3,7 @@ class Api::SearchesController < ApplicationController
   # no render methods applied
 
   def show
-
+    debugger
   end
 
   private

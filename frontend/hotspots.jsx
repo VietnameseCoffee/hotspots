@@ -4,11 +4,7 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
-import * as ReviewApiUtil from './util/review_api_util';
-import { requestAddReview } from './actions/review_actions';
-
-//test
-import { requestSignup } from './actions/session_actions';
+import * as SearchApiUtil from './util/search_api_util';
 
 document.addEventListener('DOMContentLoaded', () => {
   let _preLoadedState;
@@ -27,10 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={ store }/>, root);
 
 
-  window.ajaxCall = ReviewApiUtil.postReview;
-  window.ajaxCall1 = ReviewApiUtil.patchReview;
-  window.ajaxCall2 = ReviewApiUtil.deleteReview;
-  window.requestAddReview = requestAddReview;
+  window.ajaxCall = SearchApiUtil.showSearch;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
 });
