@@ -27,7 +27,7 @@ const BusinessHeader = ({name, price, tags, id}) => {
       <div className="biz-header-right">
 
         <div className="biz-header-actions">
-          <Link className="write-a-review" to={`/writeareview/${id}`}><i class="fa fa-star"></i>Write a Review</Link>
+          <Link className="write-a-review" to={`/writeareview/${id}`}><i className="fa fa-star"></i>Write a Review</Link>
           <Link className="biz-action" to="/">Add Photo</Link>
           <Link className="biz-action" to="/">Share</Link>
           <Link className="biz-action" to="/">Save</Link>

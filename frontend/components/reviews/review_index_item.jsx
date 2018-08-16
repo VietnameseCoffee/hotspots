@@ -19,7 +19,7 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
 
       <div className="review-side-bar" >
         <div className="profile-content">
-          <a><img src={photo}></img></a>
+          <a></a>
           <ul>
             <li className="user-name">{user.firstName}, {user.lastName.slice(0,1)}.</li>
             <li className="user-place">{user.city}, {user.state}</li>

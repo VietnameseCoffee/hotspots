@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const BusinessImages = ({imageUrls}) => {
   // debugger
-  const images = imageUrls.map((url, i) =>(
-    <div className={`biz-show-img-${i}`}>
-      <img key={url.photoUrl} src={url.photoUrl}></img>
+  const images = imageUrls.map((url) =>(
+    <div key ={url.photoUrl} className={`biz-show-img-${i}`}>
+      <img src={url.photoUrl}></img>
     </div>
     )
   );

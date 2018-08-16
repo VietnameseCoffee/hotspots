@@ -36,6 +36,9 @@ const App = () => {
       <div className="gmaps">
         hurro
       </div>
+      <div className="footer">
+
+      </div>
     </div>
   );
 };
