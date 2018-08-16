@@ -24,7 +24,7 @@ class Api::BusinessesController < ApplicationController
       @info = @business.business_info.to_arr ## IF ? .to_arr : DEFAULT
       @reviews = @business.reviews.reverse
       @users = @reviews.map {|rev| rev.user}
-      @photos = @business.review_photos
+      @photos = @business.review_photos.shuffle[0..2]
 
       render "api/businesses/show"
     else

@@ -12,9 +12,6 @@ class BusinessShow extends React.Component {
   constructor (props) {
     super(props);
 
-    // this.state = {
-    //   headerDetails: props.businessDetails
-    // };
   }
 
   componentDidMount () {
@@ -53,7 +50,7 @@ class BusinessShow extends React.Component {
 
             <div className="biz-sub-header">
               <BusinessDetail details={businessDetails}/>
-              <BusinessImages />
+              <BusinessImages imageUrls={businessDetails.photos}/>
             </div>
 
           </div>

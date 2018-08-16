@@ -1,7 +1,7 @@
 class Business < ApplicationRecord
 
   validates :name, :latitude, :longitude, :address, :city, :state, :zip, presence: true
-  validates :price, inclusion: [1, 2, 3, 4 ]
+  validates :price, inclusion: [1, 2, 3, 4]
 
   has_many :categories, dependent: :destroy
   has_one :hour, dependent: :destroy
