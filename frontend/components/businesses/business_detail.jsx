@@ -10,7 +10,7 @@ const BusinessDetail = ({details}) => {
       <div className="biz-detail">
 
         <div className="map-box">
-          <Map />
+          <Map lat={details.latitude} lng={details.longitude}/>
         </div>
 
         <ul className="biz-info">

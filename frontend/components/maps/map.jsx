@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 
 class Map extends React.Component {
@@ -12,7 +12,7 @@ class Map extends React.Component {
 
   componentDidMount () {
     const mapOptions = {
-      center: { lat: 37.7758, lng: -122.435 }, // this is SF
+      center: { lat: this.props.lat, lng: this.props.lng }, // this is SF
       zoom: 15
     };
     const map = ReactDOM.findDOMNode(this.refs.map);
