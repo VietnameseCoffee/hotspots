@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BusinessImages = ({imageUrls}) => {
-
-  const images = imageUrls.map((url) =>
-    <img src={url.photoUrl}></img>
+  // debugger
+  const images = imageUrls.map((url, i) =>(
+    <div className={`biz-show-img-${i}`}>
+      <img key={url.photoUrl} src={url.photoUrl}></img>
+    </div>
+    )
   );
 
   return (

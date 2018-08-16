@@ -1,6 +1,5 @@
 .biz-header {
   height: 130px;
-  border: 1px solid blue;
 
 
 
@@ -11,7 +10,6 @@
     justify-content: space-between;
 
     .biz-header-left {
-      border: 1px solid blue;
       width: 525px;
       height: 130px;
       position: relative;
@@ -49,7 +47,6 @@
     }
 
     .biz-header-right {
-      border: 1px solid blue;
       width: 400px;
       position: relative;
 
@@ -65,6 +62,10 @@
           font-size: 14px;
           margin-right: 10px;
           border-radius: 3px;
+          .fa-star {
+            margin-right: 8px;
+            font-size: 15px;
+          }
         }
 
         a {
