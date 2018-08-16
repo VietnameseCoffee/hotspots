@@ -5,7 +5,8 @@ import Root from './components/root';
 import configureStore from './store/store';
 
 import * as SearchApiUtil from './util/search_api_util';
-import { requestSearch} from './actions/search_actions';
+import { requestSearch } from './actions/search_actions';
+import { receiveBusiness, RECEIVE_BUSINESS } from './actions/business_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let _preLoadedState;
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   window.ajaxCall = SearchApiUtil.showSearch;
+  window.requestSearch = requestSearch;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
 });

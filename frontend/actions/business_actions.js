@@ -10,7 +10,7 @@ const receiveBusiness = (business) => {
   });
 };
 
-const receiveBusinesses = (businesses) => {
+export const receiveBusinesses = (businesses) => {
   return ({
     type: RECEIVE_BUSINESSES,
     payload: businesses,
