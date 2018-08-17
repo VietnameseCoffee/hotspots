@@ -7,14 +7,18 @@ class ReviewIndexItem extends React.Component {
 
   constructor (props) {
     super(props);
-
     this.handleClick = this.handleClick.bind(this);
+    this.clickTag = this.clickTag.bind(this);
   }
 
   handleClick (e, id) {
     e.preventDefault;
-
     this.props.requestAction(id).then(() => this.props.history.push(`/businesses/${id}`));
+  }
+
+  clicktag (e, tag) {
+
+
   }
 
   render () {
@@ -24,7 +28,7 @@ class ReviewIndexItem extends React.Component {
     let index = this.props.index;
     let price_str = "";
     let anchorTags;
-    // debugger
+    
     while (price_str.length < price) {price_str = price_str.concat("$")};
     anchorTags = tags.map((tag) => <a href="/">{tag}</a>)
     return (

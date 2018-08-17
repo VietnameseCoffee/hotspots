@@ -49,7 +49,7 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
   // change to a picture with a dropdown, place holder from benchbnb
   const greeting = () => (
     <div className="header-group">
-      <h2 className="header-name">Hi, {currentUser.firstName}!, pic here soon!</h2>
+      <div className="header-name">Welcome!</div>
       <button className="header-button" onClick={requestLogout}>Log Out</button>
     </div>
   );
