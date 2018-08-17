@@ -35,7 +35,7 @@ class ReviewIndexItem extends React.Component {
       <li className="biz-index-item">
         <div className="biz-side" >
           <div className="image-container">
-            <div>image link hur</div>
+            <div></div>
           </div>
         </div>
 
