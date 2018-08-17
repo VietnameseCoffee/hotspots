@@ -9,6 +9,7 @@ import SignupHeader from './header/signup_header.jsx';
 import SplashHeader from './splash/splash_header';
 import BusinessShowContainer from './businesses/business_show_container';
 import ReviewFormContainer from './reviews/review_form_container';
+import SearchResultListContainer from './searches/search_results_list_container';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
         <Route path={`/businesses/:businessId`} component={BusinessShowContainer} />
         <Route path={`/writeareview/:businessId`} component={ReviewFormContainer} />
       </div>
+      <SearchResultListContainer/>
       links to show page----
       <Link to="/businesses/1">Good Mong Kok Bakery</Link>-----
       <Link to="/businesses/2">Wildflower Cafe</Link>-----

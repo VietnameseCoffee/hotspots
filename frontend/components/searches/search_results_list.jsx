@@ -1,13 +1,20 @@
 import React from 'react';
 
-// import ReviewIndexItem from './review_index_item';
+import BusinessIndexItem from '../businesses/business_index_item';
 
-const SearchResultList = (prop) => {
-
+const SearchResultList = ({businesses}) => {
+  debugger
   return (
     <div className="search-list">
       <ul>
         <div>hi</div>
+        {businesses.map ((biz, i) => {
+          return (
+          <BusinessIndexItem
+            key={biz.id}
+            biz={biz}
+          />)
+        })}
       </ul>
     </div>
   );

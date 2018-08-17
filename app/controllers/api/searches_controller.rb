@@ -6,7 +6,6 @@ class Api::SearchesController < ApplicationController
     # not dry
     name = search_params[:name].downcase
     place = search_params[:place]
-
     if name == ""
       @search_results = []
       render 'api/searches/show'
@@ -18,6 +17,7 @@ class Api::SearchesController < ApplicationController
         category_results = find_by_category(name)
       else
         #assume has categories hmm
+        tag = biz_results.first.categories.first.category
         category_results = find_by_category(tag)
       end
 
