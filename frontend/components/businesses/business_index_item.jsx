@@ -29,9 +29,11 @@ class ReviewIndexItem extends React.Component {
         </div>
 
         <div className="biz-body" >
+
           <div className="biz-main-info">
+
             <div className="biz-details">
-              <div><span>{index}.</span><span onClick={(e) => this.handleClick(e, this.props.biz.id)}>{biz.name}</span> </div>
+              <div className="link-h3"><span>{index}.</span><span onClick={(e) => this.handleClick(e, this.props.biz.id)}>{biz.name}</span> </div>
               <div><span className={`stars-mid-${biz.stars}`}></span> </div>
               <div><span>{biz.price}</span><span>tags</span></div>
             </div>
@@ -40,6 +42,7 @@ class ReviewIndexItem extends React.Component {
               <div>{biz.phoneNumber}</div>
               <div>{biz.address}</div>
             </div>
+
           </div>
         </div>
       </li>

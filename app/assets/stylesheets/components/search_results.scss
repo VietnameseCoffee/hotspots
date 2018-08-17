@@ -22,9 +22,27 @@
 
       .biz-body {
         width: 450px;
+        font-size: 14px;
         .biz-main-info {
           display: flex;
           justify-content: space-between;
+          div {
+            margin-bottom: 5px;
+          }
+          .biz-details {
+
+            .link-h3 {
+              font-size: 18px;
+              font-weight: 700;
+              span:last-child {
+                color: #0073bb;
+                margin-left: 4px;
+              }
+              span:last-child:hover {
+                cursor: pointer;
+              }
+            }
+          }
 
         }
       }
