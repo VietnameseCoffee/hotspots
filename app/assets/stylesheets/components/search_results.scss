@@ -1,0 +1,35 @@
+.search-main {
+  width: 960px;
+  min-height: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+
+  .search-list {
+
+    .biz-index-item {
+      width: 630px;
+      height: 160px;
+      margin-bottom: 20px;
+      border-top: 1px solid #c6c6c6;
+      display: flex;
+      justify-content: space-between;
+
+      .biz-side {
+        width: 150px;
+        height: 150px;
+      }
+
+      .biz-body {
+        width: 450px;
+        .biz-main-info {
+          display: flex;
+          justify-content: space-between;
+
+        }
+      }
+    }
+
+  }
+
+}

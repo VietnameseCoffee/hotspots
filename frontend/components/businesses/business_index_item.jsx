@@ -22,7 +22,7 @@ class ReviewIndexItem extends React.Component {
 
     return (
       <li className="biz-index-item">
-        <div className="biz-side-bar" >
+        <div className="biz-side" >
           <div className="image-container">
             <div>image lin khur</div>
           </div>
@@ -30,13 +30,13 @@ class ReviewIndexItem extends React.Component {
 
         <div className="biz-body" >
           <div className="biz-main-info">
-            <div className="biz-info">
+            <div className="biz-details">
               <div><span>{index}.</span><span onClick={(e) => this.handleClick(e, this.props.biz.id)}>{biz.name}</span> </div>
               <div><span className={`stars-mid-${biz.stars}`}></span> </div>
               <div><span>{biz.price}</span><span>tags</span></div>
             </div>
 
-            <div className="biz-extras">
+            <div className="biz-address">
               <div>{biz.phoneNumber}</div>
               <div>{biz.address}</div>
             </div>
