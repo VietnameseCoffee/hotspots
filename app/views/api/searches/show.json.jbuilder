@@ -1,1 +1,1 @@
-json.partial! "api/searches/results", businesses: @businesses
+json.partial! "api/searches/results", search_results: @search_results

@@ -1,5 +1,5 @@
 json.businesses do
-  businesses.each do |biz|
+search_results.each do |biz|
     json.set! biz.id do
       json.extract! biz, :id, :name, :address, :city, :state, :price, :stars, :phone_number
 
