@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 
 import SearchResultsList from './search_results_list';
 import { requestBusiness } from '../../actions/business_actions'
+import { requestSearch } from '../../actions/search_actions'
 
 const msp = (state) => {
   return {
@@ -11,7 +12,8 @@ const msp = (state) => {
 
 const mdp = dispatch => {
   return {
-    requestBusiness: (id) => dispatch(requestBusiness(id))
+    requestBusiness: (id) => dispatch(requestBusiness(id)),
+    requestSearch: (query) => dispatch(requestSearch(query))
   };
 };
 

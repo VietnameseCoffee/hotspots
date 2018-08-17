@@ -8,12 +8,13 @@ class SearchResultList extends React.Component {
     super(props)
   }
 
-
+  componentDidMount () {
+    this.props.requestSearch({name: this.props.match.params.query});
+  }
 
   componentWillReceiveProps(nextProps) {
-    // debugger
-    if (this.props.match.params.businessId !== nextProps.match.params.businessId) {
-      this.props.requestBusiness(nextProps.match.params.businessId);
+    if (this.props.match.params.query !== nextProps.match.params.query) {
+      this.props.requestSearch({name: this.props.match.params.query});
     }
   }
 
