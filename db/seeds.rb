@@ -263,7 +263,7 @@ Category.create(
 )
 Category.create(
   business_id: b10.id,
-  category: 'Bar',
+  category: 'Bars',
 )
 Category.create(
   business_id: b11.id,

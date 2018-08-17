@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import UserHeaderContainer from '../header/user_header_container';
 import SplashHeaderTop from './splash_header_top';
 import SearchBarContainer from '../header/search_bar_container';
-import NavBar from '../header/nav_bar';
+import NavBar from '../header/nav_bar'; // need to implement
 
 const SplashHeader = () => {
 
@@ -30,7 +30,7 @@ const SplashHeader = () => {
         </div>
 
         <div className="nav-bar">
-          <NavBar />
+
         </div>
 
       </div>
