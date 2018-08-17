@@ -1,7 +1,7 @@
 import * as SearchApiUtil from '../util/search_api_util';
-import { receiveBusinesses } from './business_actions';
+import { receiveBusinesses, RECEIVE_BUSINESSES } from './business_actions';
 
-export const requestSearch = (search) => (dispatch) => {
+export const requestSearch = (search) => dispatch => {
   return (SearchApiUtil.showSearch(search)
     .then(res => dispatch(receiveBusinesses(res)))
   );

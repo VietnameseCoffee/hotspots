@@ -1,15 +1,17 @@
 import { connect } from 'react-redux';
 
 import SearchBar from './search_bar';
-// import requestSearch from '../../util/search_util'??
+import { requestSearch } from '../../actions/search_actions';
 
- const msp = () => {
+const msp = () => {
    return {};
- };
+};
 
- const mdp = () => {
+const mdp = (dispatch) => {
+   return ({
+      test: requestSearch,
+      search: (query) => dispatch(requestSearch(query))
+   });
+};
 
-   return {};
- };
-
- export default connect(msp, mdp)(SearchBar);
+export default connect(msp, mdp)(SearchBar);

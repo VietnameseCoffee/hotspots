@@ -7,15 +7,19 @@ class Api::SearchesController < ApplicationController
     name = search_params[:name].downcase
     place = search_params[:place]
 
+    if name == ""
+      @search_result = []
+      render 'api/searches/show'
+      return nil
+    end
+
     biz_results = Business.where('LOWER(name) like ?', "#{name}%")
-    # debugger
+
     if biz_results.empty?
       biz_results = [];
       category_results = find_by_category(name)
     else
       #assume has categories hmm
-      tag = biz_results.first.categories.first.category.downcase
-      # debugger
       category_results = find_by_category(tag)
     end
 
