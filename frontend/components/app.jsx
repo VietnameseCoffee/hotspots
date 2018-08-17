@@ -31,10 +31,6 @@ const App = () => {
         <Route path={`/writeareview/:businessId`} component={ReviewFormContainer} />
         <Route path={`/searches`} component={SearchResultListContainer} />
       </div>
-      links to show page----
-      <Link to="/businesses/1">Good Mong Kok Bakery</Link>-----
-      <Link to="/businesses/2">Wildflower Cafe</Link>-----
-      <Link to="/businesses/3">Plow</Link>-----
 
       <div className="footer">
 
