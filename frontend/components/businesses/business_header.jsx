@@ -1,14 +1,19 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link, Route, withRouter } from 'react-router-dom';
 
 import * as starUtil from '../../util/round_stars_util'
 
-const BusinessHeader = ({name, price, tags, id, stars}) => {
+const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history}) => {
   let price_str = "";
   let anchorTags;
 
+  const clickTag1 = (e, tag) =>{
+    e.preventDefault;
+    requestSearch({name: tag}).then(() => history.push(`/searches/${tag}`))
+  };
+
   while (price_str.length < price) {price_str = price_str.concat("$")};
-  anchorTags = tags.map((tag) => <Link key={tag}to={`/`}>{tag}</Link>)
+  anchorTags = tags.map((tag) => <a onClick={(e) => clickTag1(e, tag)}>{tag}</a>);
 
   return (
     <div className="biz-header-container">
@@ -42,6 +47,11 @@ const BusinessHeader = ({name, price, tags, id, stars}) => {
   );
 };
 
+const clickTag1 = (e, tag) =>{
+  e.preventDefault;
+  this.props.requestSearch({name: tag});
+};
+
 // const rounded = (stars) => {
 //   return (Math.round(stars * 2) / 2 ).toString().split(".").join("-");
 // }
@@ -49,4 +59,4 @@ const BusinessHeader = ({name, price, tags, id, stars}) => {
 // https://stackoverflow.com/questions/19390644/round-number-to-nearest-5-decimal
 
 
-export default BusinessHeader;
+export default withRouter(BusinessHeader);

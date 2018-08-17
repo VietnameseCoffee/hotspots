@@ -14,7 +14,8 @@ const msp = ({entities}, ownProps) => {
 
 const mdp = (dispatch) => {
   return {
-    requestBusiness: (name) => dispatch(requestBusiness(name))
+    requestBusiness: (name) => dispatch(requestBusiness(name)),
+    requestSearch: (query) => dispatch(requestSearch(query))
   };
 };
 
