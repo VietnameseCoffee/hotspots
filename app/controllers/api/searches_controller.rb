@@ -8,23 +8,22 @@ class Api::SearchesController < ApplicationController
     place = search_params[:place]
 
     if name == ""
-      @search_result = []
+      @search_results = []
       render 'api/searches/show'
-      return nil
-    end
-
-    biz_results = Business.where('LOWER(name) like ?', "#{name}%")
-
-    if biz_results.empty?
-      biz_results = [];
-      category_results = find_by_category(name)
     else
-      #assume has categories hmm
-      category_results = find_by_category(tag)
-    end
+      biz_results = Business.where('LOWER(name) like ?', "#{name}%")
 
-    @search_results = (biz_results + category_results).uniq
-    render 'api/searches/show'
+      if biz_results.empty?
+        biz_results = [];
+        category_results = find_by_category(name)
+      else
+        #assume has categories hmm
+        category_results = find_by_category(tag)
+      end
+
+      @search_results = (biz_results + category_results).uniq
+      render 'api/searches/show'
+    end
   end
 
   private
