@@ -1,4 +1,3 @@
-debugger
 json.businesses do
 search_results.each do |biz|
     json.set! biz.id do
