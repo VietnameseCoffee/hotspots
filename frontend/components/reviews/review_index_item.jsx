@@ -3,7 +3,6 @@ import React from 'react';
 const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
   let deleteButton
   let profilePic = 5;
-  // debugger
   if (review.userId === currentUser) {
     deleteButton = (
       <button onClick={() => deleteReview(review.id).then( () => console.log("hi"))}>

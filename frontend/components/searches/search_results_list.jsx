@@ -2,7 +2,7 @@ import React from 'react';
 
 import BusinessIndexItem from '../businesses/business_index_item';
 
-const SearchResultList = ({businesses}) => {
+const SearchResultList = ({businesses, requestBusiness}) => {
   return (
     <div className="search-list">
       <ul>
@@ -13,6 +13,7 @@ const SearchResultList = ({businesses}) => {
             key={biz.id}
             biz={biz}
             index={i + 1}
+            requestAction={requestBusiness}
           />)
         })}
       </ul>

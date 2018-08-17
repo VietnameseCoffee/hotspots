@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import SearchResultsList from './search_results_list';
+import { requestBusiness } from '../../actions/business_actions'
 
 const msp = (state) => {
   return {
@@ -9,7 +10,9 @@ const msp = (state) => {
 };
 
 const mdp = dispatch => {
-  return {};
+  return {
+    requestBusiness: (id) => dispatch(requestBusiness(id))
+  };
 };
 
 export default connect(msp, mdp)(SearchResultsList);
