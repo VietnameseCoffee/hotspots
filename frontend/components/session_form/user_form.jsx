@@ -99,7 +99,6 @@ class UserForm extends React.Component {
   }
 
   birthdayRender() {
-    // debugger
     const days = this.daysOptions();
     const years = this.yearOptions();
     const months = this.monthOptions();
