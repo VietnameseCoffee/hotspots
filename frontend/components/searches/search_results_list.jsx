@@ -11,7 +11,7 @@ class SearchResultList extends React.Component {
 
 
   componentWillReceiveProps(nextProps) {
-    debugger
+    // debugger
     if (this.props.match.params.businessId !== nextProps.match.params.businessId) {
       this.props.requestBusiness(nextProps.match.params.businessId);
     }

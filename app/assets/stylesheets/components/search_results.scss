@@ -11,6 +11,7 @@
       width: 630px;
       height: 160px;
       margin-bottom: 20px;
+      padding-top: 5px;
       border-top: 1px solid #c6c6c6;
       display: flex;
       justify-content: space-between;
@@ -29,6 +30,9 @@
           div {
             margin-bottom: 5px;
           }
+          span {
+            margin-left: 3px;
+          }
           .biz-details {
 
             .link-h3 {
@@ -42,6 +46,10 @@
                 cursor: pointer;
               }
             }
+          }
+
+          .biz-address {
+            text-align: right;
           }
 
         }
