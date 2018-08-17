@@ -9,7 +9,7 @@ const searchResultsReducer = (state = [], action ) => {
     case RECEIVE_BUSINESSES:
       return action.payload.results;
     default:
-        return [];
+        return state;
   }
 };
 

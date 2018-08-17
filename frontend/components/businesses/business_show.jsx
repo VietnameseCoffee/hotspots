@@ -27,6 +27,7 @@ class BusinessShow extends React.Component {
 
 
   render () {
+    debugger
     let businessDetails = this.props.businessDetails;
 
     if (!businessDetails) {
