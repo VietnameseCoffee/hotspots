@@ -21,8 +21,7 @@ const SplashHeader = () => {
         </div>
 
         <div className="splash-logo">
-          <div className="loader"></div>
-            I CANT DECIDE ON A LOGOO
+          <div className="logo"></div>
         </div>
 
         <div className="splash-search-bar">
