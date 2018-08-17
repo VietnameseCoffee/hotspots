@@ -7,7 +7,7 @@ class Api::SearchesController < ApplicationController
     name = search_params[:name].downcase
     place = search_params[:place]
     if name == ""
-      @search_results = []
+      @search_results = Business.all
       render 'api/searches/show'
     else
       biz_results = Business.where('LOWER(name) like ?', "#{name}%")

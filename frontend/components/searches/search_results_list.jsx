@@ -12,11 +12,11 @@ class SearchResultList extends React.Component {
     this.props.requestSearch({name: this.props.match.params.query});
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.match.params.query !== nextProps.match.params.query) {
-      this.props.requestSearch({name: this.props.match.params.query});
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   if (this.props.match.params.query !== nextProps.match.params.query) {
+  //     this.props.requestSearch({name: this.props.match.params.query});
+  //   }
+  // }
 
 
   render () {
