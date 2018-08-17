@@ -5,9 +5,9 @@ const SplashHeaderTop = () => {
 
   return (
     <ul>
-      <li><Link to="/">Write a Review</Link></li>
+      <li><Link to={`/writeareview/1`}>Write a Review</Link></li>
       <li><Link to="/">Events</Link></li>
-      <li><Link to="/">Git</Link></li>
+      <li><a href="https://github.com/VietnameseCoffee/hotspots">Git</a></li>
     </ul>
   );
 };
