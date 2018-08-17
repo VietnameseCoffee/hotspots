@@ -16,6 +16,8 @@ class SearchResultList extends React.Component {
   render () {
     let businesses = this.props.businesses;
     let requestBusiness = this.props.requestBusiness;
+    let requestSearch = this.props.requestSearch;
+
     return (
       <div className="search-main">
         <h2>Search Results</h2>
@@ -27,7 +29,8 @@ class SearchResultList extends React.Component {
               key={biz.id}
               biz={biz}
               index={i + 1}
-              requestAction={requestBusiness}
+              requestBusiness={requestBusiness}
+              requestSearch={requestSearch}
               />)
             })}
             </ul>

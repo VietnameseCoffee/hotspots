@@ -13,12 +13,12 @@ class ReviewIndexItem extends React.Component {
 
   handleClick (e, id) {
     e.preventDefault;
-    this.props.requestAction(id).then(() => this.props.history.push(`/businesses/${id}`));
+    this.props.requestBusiness(id).then(() => this.props.history.push(`/businesses/${id}`));
   }
 
-  clicktag (e, tag) {
-
-
+  clickTag (e, tag) {
+    e.preventDefault;
+    this.props.requestSearch({name: tag});
   }
 
   render () {
@@ -28,14 +28,14 @@ class ReviewIndexItem extends React.Component {
     let index = this.props.index;
     let price_str = "";
     let anchorTags;
-    
+
     while (price_str.length < price) {price_str = price_str.concat("$")};
-    anchorTags = tags.map((tag) => <a href="/">{tag}</a>)
+    anchorTags = tags.map((tag) => <a onClick={(e) => this.clickTag(e, tag)}>{tag}</a>)
     return (
       <li className="biz-index-item">
         <div className="biz-side" >
           <div className="image-container">
-            <div>image lin khur</div>
+            <div>image link hur</div>
           </div>
         </div>
 

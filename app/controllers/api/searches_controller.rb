@@ -3,7 +3,6 @@ class Api::SearchesController < ApplicationController
   # no render methods applied
 
   def show
-    # not dry
     name = search_params[:name].downcase
     place = search_params[:place]
     if name == ""
