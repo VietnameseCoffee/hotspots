@@ -1,5 +1,5 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 import * as starUtil from '../../util/round_stars_util'
 
 class ReviewIndexItem extends React.Component {
@@ -19,13 +19,15 @@ class ReviewIndexItem extends React.Component {
 
   render () {
     let biz = this.props.biz;
+    let tags = biz.categories
     let price = this.props.biz.price
     let index = this.props.index;
     let price_str = "";
     let anchorTags;
 
     while (price_str.length < price) {price_str = price_str.concat("$")};
-
+    anchorTags = tags.map((tag) => <a>{tag}</a>)
+    debugger
     return (
       <li className="biz-index-item">
         <div className="biz-side" >
