@@ -24,10 +24,9 @@ class ReviewIndexItem extends React.Component {
     let index = this.props.index;
     let price_str = "";
     let anchorTags;
-
+    // debugger
     while (price_str.length < price) {price_str = price_str.concat("$")};
-    anchorTags = tags.map((tag) => <a>{tag}</a>)
-    debugger
+    anchorTags = tags.map((tag) => <a href="/">{tag}</a>)
     return (
       <li className="biz-index-item">
         <div className="biz-side" >
@@ -43,7 +42,7 @@ class ReviewIndexItem extends React.Component {
             <div className="biz-details">
               <div className="link-h3"><span>{index}.</span><span onClick={(e) => this.handleClick(e, this.props.biz.id)}>{biz.name}</span> </div>
               <div><span className={`stars-mid-${starUtil.round(biz.stars)}`}></span> </div>
-              <div><span>{price_str}</span><span>tags</span></div>
+              <div><span>{price_str}</span><span>{anchorTags}</span></div>
             </div>
 
             <div className="biz-address">
