@@ -9,10 +9,19 @@ class SearchResultList extends React.Component {
   }
 
 
+
+  componentWillReceiveProps(nextProps) {
+    debugger
+    if (this.props.match.params.businessId !== nextProps.match.params.businessId) {
+      this.props.requestBusiness(nextProps.match.params.businessId);
+    }
+  }
+
+
   render () {
     let businesses = this.props.businesses;
     let requestBusiness = this.props.requestBusiness;
-  return (
+    return (
       <div className="search-main">
         <h2>Search Results</h2>
         <div className="search-list">

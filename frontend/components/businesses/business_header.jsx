@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
+import * as starUtil from '../../util/round_stars_util'
+
 const BusinessHeader = ({name, price, tags, id, stars}) => {
   let price_str = "";
   let anchorTags;
@@ -14,7 +16,7 @@ const BusinessHeader = ({name, price, tags, id, stars}) => {
         <h1>{name}</h1>
 
         <div className="stars">
-          <div className={`stars-big-${rounded(stars)}`}></div><span>Num Ratings</span>
+          <div className={`stars-big-${starUtil.round(stars)}`}></div><span>Num Ratings</span>
         </div>
 
         <div className="tags-price">
@@ -40,9 +42,9 @@ const BusinessHeader = ({name, price, tags, id, stars}) => {
   );
 };
 
-const rounded = (stars) => {
-  return (Math.round(stars * 2) / 2 ).toString().split(".").join("-");
-}
+// const rounded = (stars) => {
+//   return (Math.round(stars * 2) / 2 ).toString().split(".").join("-");
+// }
 // super simple algorithm blew mah mind
 // https://stackoverflow.com/questions/19390644/round-number-to-nearest-5-decimal
 
