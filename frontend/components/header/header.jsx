@@ -15,13 +15,17 @@ const Header = () => {
         </Link>
       </div>
 
-      <div className="header-search-bar">
-        <SearchBarContainer />
+      <div className="header-search-bar-wrapper">
+        <div className="header-search-bar">
+          <SearchBarContainer />
+        </div>
       </div>
+
 
       <div className="header-right">
         <UserHeaderContainer />
       </div>
+
     </div>
   );
 };
