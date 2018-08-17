@@ -33,10 +33,10 @@ const App = () => {
       <Link to="/businesses/1">Good Mong Kok Bakery</Link>-----
       <Link to="/businesses/2">Wildflower Cafe</Link>-----
       <Link to="/businesses/3">Plow</Link>-----
-      
+
       <div className="footer">
 
-      </div>s
+      </div>
     </div>
   );
 };

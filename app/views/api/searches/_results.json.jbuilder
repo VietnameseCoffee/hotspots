@@ -9,4 +9,9 @@ search_results.each do |biz|
   end
 end
 
+result_id_arr = []
+search_results.each {|el| result_id_arr.push(el.id)}
+json.results result_id_arr
+
+
 # Associations should be done in controller?
