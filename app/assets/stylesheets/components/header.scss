@@ -33,12 +33,18 @@
         form {
           display: flex;
           justify-content: center;
+
+          input {
+            text-align: left;
+            float: left;
+          }
         }
 
         label {
           float: left;
           font-weight: 600;
           color: #666;
+          margin-right: 5px;
         }
 
         .search-business {
