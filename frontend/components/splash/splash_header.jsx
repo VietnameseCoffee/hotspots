@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Route } from 'react-router-dom'
 import UserHeaderContainer from '../header/user_header_container';
 import SplashHeaderTop from './splash_header_top';
 import SearchBarContainer from '../header/search_bar_container';

@@ -9,7 +9,6 @@ const msp = () => {
 
 const mdp = (dispatch) => {
    return ({
-      test: requestSearch,
       search: (query) => dispatch(requestSearch(query))
    });
 };

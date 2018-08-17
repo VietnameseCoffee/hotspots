@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
 
 import { requestLogout, requestLogin } from '../../actions/session_actions';
 import UserHeader from './user_header';
