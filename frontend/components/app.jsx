@@ -29,7 +29,7 @@ const App = () => {
         <AuthRoute exact path="/signup" component={ SignupFormContainer }/>
         <Route path={`/businesses/:businessId`} component={BusinessShowContainer} />
         <Route path={`/writeareview/:businessId`} component={ReviewFormContainer} />
-        <Route path={`/searches`} component={SearchResultListContainer} />
+        <Route path={`/searches/:query`} component={SearchResultListContainer} />
       </div>
 
       <div className="footer">
