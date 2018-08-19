@@ -13,7 +13,7 @@ const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history}) 
   };
 
   while (price_str.length < price) {price_str = price_str.concat("$")};
-  anchorTags = tags.map((tag) => <a onClick={(e) => clickTag1(e, tag)}>{tag}</a>);
+  anchorTags = tags.map((tag) => <a key={tag}onClick={(e) => clickTag1(e, tag)}>{tag}</a>);
 
   return (
     <div className="biz-header-container">

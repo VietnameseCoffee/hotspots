@@ -39,9 +39,9 @@ class SearchBar extends React.Component {
         <div className="search-location">
           <label id="location">Near</label>
           <input
-            placeholder="San Francisco"
+            placeholder="Location search soon!"
             htmlFor="location"
-            value={this.state.location}
+            value={this.state.place}
             onChange={this.update('location')}></input>
         </div>
 
