@@ -3,7 +3,7 @@ import { Link, Route, withRouter } from 'react-router-dom';
 
 import * as starUtil from '../../util/round_stars_util'
 
-const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history}) => {
+const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history, numReviews}) => {
   let price_str = "";
   let anchorTags;
 
@@ -21,7 +21,7 @@ const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history}) 
         <h1>{name}</h1>
 
         <div className="stars">
-          <div className={`stars-big-${starUtil.round(stars)}`}></div><span>Num Ratings</span>
+          <div className={`stars-big-${starUtil.round(stars)}`}></div><span>{numReviews} reviews</span>
         </div>
 
         <div className="tags-price">

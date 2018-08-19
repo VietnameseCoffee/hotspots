@@ -34,7 +34,7 @@ class BusinessShow extends React.Component {
         <div>Loading...</div>
       );
     }
-    
+
     return (
       <div className="biz-show">
         <div className="biz-gray-top">
@@ -47,7 +47,8 @@ class BusinessShow extends React.Component {
                 price={businessDetails.price}
                 tags={businessDetails.tags}
                 stars={businessDetails.stars}
-                requestSearch={this.props.requestSearch}/>
+                requestSearch={this.props.requestSearch}
+                numReviews={businessDetails.reviewIds.length}/>
             </div>
 
             <div className="biz-sub-header">
