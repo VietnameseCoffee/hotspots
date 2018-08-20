@@ -3,7 +3,9 @@ import { REMOVE_REVIEW } from '../actions/review_actions';
 
 import merge from 'lodash/merge';
 
-const businessesReducer = (state = {}, action) => {
+const _initialState = { hotSpots: [] }
+
+const businessesReducer = (state = _initialState, action) => {
   Object.freeze(state);
   let payload = action.payload;
 

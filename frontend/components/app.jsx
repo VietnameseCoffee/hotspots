@@ -10,6 +10,7 @@ import SplashHeader from './splash/splash_header';
 import BusinessShowContainer from './businesses/business_show_container';
 import ReviewFormContainer from './reviews/review_form_container';
 import SearchResultListContainer from './searches/search_results_list_container';
+import SplashMainContainer from './splash/splash_main_container';
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path={`/businesses/:businessId`} component={BusinessShowContainer} />
         <Route path={`/writeareview/:businessId`} component={ReviewFormContainer} />
         <Route path={`/searches/:query`} component={SearchResultListContainer} />
+        <Route exact path={`/`} component={SplashMainContainer} />
       </div>
 
       <div className="footer">

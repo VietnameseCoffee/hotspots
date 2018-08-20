@@ -9,7 +9,7 @@ json.businesses do
       json.num_reviews biz.reviews.count
     end
 
-    json.hotspots hotspots
+    json.hot_spots hotspots
   end
 
 end

@@ -1,20 +1,19 @@
 import { connect } from 'react-redux';
 
 import SplashMain from './splash_main';
-import { requestBusiness } from '../../actions/business_actions';
+import { requestBusinesses } from '../../actions/business_actions';
 
 const msp = ({ entities }) => {
+  debugger
   return ({
-    businesses: state.entities.businesses
-
+    businesses: entities.businesses.hotSpots.map((id) => entities.businesses[id])
   });
 };
 
 const mdp = (dispatch) => {
   return {
-    action: (formReview) => dispatch(requestAddReview(formReview)),
-    requestBusiness: (id) => dispatch(requestBusiness(id))
+    requestBusinesses: () => dispatch(requestBusinesses())
   };
 };
 
-export default connect(msp, mdp)(ReviewForm);
+export default connect(msp, mdp)(SplashMain);
