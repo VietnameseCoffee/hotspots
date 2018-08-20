@@ -5,6 +5,9 @@ class Api::ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     if @review.save
+      debugger
+      update_stars(Business.find(@review.business_id))
+
       render "api/reviews/show"
     else
       render json: @review.errors.full_messages, status: 422
@@ -51,5 +54,14 @@ class Api::ReviewsController < ApplicationController
       :text,
       :post_date
     )
+  end
+
+  def update_stars(business)
+    debugger
+    num_reviews = business.reviews.length
+    total_stars = ((num_reviews - 1) * business.stars) + @review.stars
+    business.stars = total_stars / num_reviews
+    business.save
+    return "lol"
   end
 end
