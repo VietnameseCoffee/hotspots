@@ -32,11 +32,10 @@ class Api::BusinessesController < ApplicationController
   end
 
   def index
-    # result = []
-    @business = Business.find_by(name: params[:search][:input])
-    # if find add to array, then look for tags of the first result
-    # pick a tag and search via tag for similar flavor restaurants
-
+    @biz_array = []
+    @businesses = Business.where("stars > ?", 3.79)
+    @businesses.each do {|biz| @biz_array.push(biz.id)}
+    render "api/businesses/index"
   end
 
   private
