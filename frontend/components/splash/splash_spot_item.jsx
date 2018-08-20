@@ -25,14 +25,13 @@ class SplashSpotItem extends React.Component {
         <div className="splash-biz-body" >
 
           <div className="splash-biz-main-info">
-
             <div className="link-h3"><span onClick={(e) => {}}>{biz.name}</span> </div>
-            <div><span className={`stars-mid-${starUtil.round(biz.stars)}`}></span></div>
+            <div>
+              <span className={`stars-mid-${starUtil.round(biz.stars)}`}></span>
+              <span>{biz.numReviews} reviews</span>
+            </div>
             <div><span>{price_str}</span><span>{anchorTags}</span></div>
-
             <div><span>{biz.city},</span><span>{biz.state}</span></div>
-
-
           </div>
         </div>
       </div>

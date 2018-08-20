@@ -16,7 +16,7 @@ class SplashMain extends React.Component {
 
     return (
       <div className="splash-main-container">
-        <div className="hot-spots-container">
+        <div className="splash-parts-container">
           <h2>Hot Spots to Check out!</h2>
           <div className="hot-spots-grid">
             {businesses}

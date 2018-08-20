@@ -1,0 +1,47 @@
+.splash-main-container {
+
+
+  .splash-parts-container {
+    width: 960px;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      margin: 25px 0 25px 0;
+      border-bottom: 1px solid #c6c6c6;
+      padding-bottom: 20px;
+    }
+    .hot-spots-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+
+      .splash-biz-item {
+        border: 1px solid #c6c6c6;
+        border-radius: 4px;
+
+        .splash-biz-body {
+          padding: 9px;
+          .splash-biz-main-info {
+            .link-h3 {
+              font-size: 18px;
+              font-weight: 700;
+              span {
+                color: #0073bb;
+
+              }
+              span:hover {
+                cursor: pointer;
+              }
+            }
+
+            div {
+              margin: 5px 0 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
