@@ -13,8 +13,11 @@ class SplashSpotItem extends React.Component {
 
   handleClick (e, id) {
     e.preventDefault;
-    this.props.requestBusiness(id).then(() => this.props.history.push(`/businesses/${id}`));
+    this.props.requestBusiness(id).then(
+      () => {this.props.history.push(`/businesses/${id}`)
+      document.body.scrollTop = document.documentElement.scrollTop = 0;});
   }
+  // scrollTop help from stackoverflow
 
   render () {
     let biz = this.props.biz;
@@ -34,7 +37,7 @@ class SplashSpotItem extends React.Component {
         <div className="splash-biz-body" >
 
           <div className="splash-biz-main-info">
-            <div className="link-h3"><span onClick={(e) => this.handleClick(e, this.props.biz.id)}>{biz.name}</span> </div>
+            <div className="link-h3"><span onClick={(e) => this.handleClick(e, this.props.biz.id)}>{biz.name}</span></div>
             <div>
               <span className={`stars-mid-${starUtil.round(biz.stars)}`}></span>
               <span>{biz.numReviews} reviews</span>
@@ -50,4 +53,4 @@ class SplashSpotItem extends React.Component {
 
 
 
-export default SplashSpotItem;
+export default withRouter(SplashSpotItem);
