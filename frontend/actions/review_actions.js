@@ -12,9 +12,9 @@ export const recieveReview = (review) => ({
   payload: { review }
 });
 
-export const removeReview = (review) => ({
+export const removeReview = ({review, newStars}) => ({
   type: REMOVE_REVIEW,
-  payload: { review }
+  payload: { review, newStars }
 });
 
 export const recieveReviewErrors = (errors) => ({

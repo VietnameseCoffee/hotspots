@@ -5,9 +5,7 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
   let profilePic = 5;
   if (review.userId === currentUser) {
     deleteButton = (
-      <button onClick={() => {
-          debugger
-            deleteReview(review.id)}}>
+      <button onClick={() => {deleteReview(review.id)}}>
         <i className="fa fa-trash" aria-hidden="true"></i>
       </button>);
   }

@@ -14,6 +14,7 @@ const businessesReducer = (state = {}, action) => {
       return merge({}, state, payload.businesses);
     case REMOVE_REVIEW:
       let _newState = merge({}, state);
+      _newState[payload.review.businessId].stars = payload.newStars
       let reviewIds = _newState[payload.review.businessId].reviewIds;
       let index = reviewIds.indexOf(payload.review.id);
       reviewIds.splice(index, 1);

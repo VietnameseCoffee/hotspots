@@ -26,12 +26,12 @@ class Api::ReviewsController < ApplicationController
   end
 
   def destroy
-
     @review = Review.find(params[:id])
-    debugger
+
     if @review
       @review.destroy
-      update_stars(Business.find(@review.business_id), false)
+      @business = Business.find(@review.business_id)
+      update_stars(@business, false)
       render "api/reviews/show"
     else
       render json: ["This review doesn't exist"], status: 404
@@ -57,13 +57,11 @@ class Api::ReviewsController < ApplicationController
   end
 
   def update_stars(business, create_status)
-    debugger
     action_int = (create_status ? 1 : -1)
 
     num_reviews = business.reviews.length
     total_stars = ((num_reviews - (action_int)) * business.stars) + (@review.stars * action_int)
     business.stars = total_stars / num_reviews
     business.save
-    return "lol"
   end
 end
