@@ -5,8 +5,7 @@ import Root from './components/root';
 import configureStore from './store/store';
 
 import * as SearchApiUtil from './util/search_api_util';
-import { requestSearch } from './actions/search_actions';
-import { receiveBusiness, RECEIVE_BUSINESS } from './actions/business_actions';
+import { requestBusinesses, receiveHotSpots, RECEIVE_HOT_SPOTS } from './actions/business_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let _preLoadedState;
@@ -23,5 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={ store }/>, root);
+
+  window.requestBusinesses = requestBusinesses;
+  window.dispatch = store.dispatch;
+  window.receiveHotSpots = receiveHotSpots;
 
 });

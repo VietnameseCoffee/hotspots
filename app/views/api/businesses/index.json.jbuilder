@@ -1,1 +1,1 @@
-json.partial! "api/businesses/businesses", businesses: @businesses, @hotspots = hotspots
+json.partial! "api/businesses/businesses", businesses: @businesses, hotspots: @hotspots

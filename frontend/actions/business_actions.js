@@ -2,6 +2,7 @@ import * as BusinessApiUtil from '../util/business_api_util';
 
 export const RECEIVE_BUSINESS = 'RECEIVE_BUSINESS';
 export const RECEIVE_BUSINESSES = 'RECEIVE_BUSINESSES';
+export const RECEIVE_HOT_SPOTS = 'RECEIVE_HOT_SPOTS';
 
 const receiveBusiness = (business) => {
   return ({
@@ -17,10 +18,10 @@ export const receiveBusinesses = (businesses) => {
   });
 };
 
-export const receiveHotSpots = ({ businesses, hotspots }) => {
+export const receiveHotSpots = (businesses) => {
   return ({
-    type: RECEIVE_BUSINESSES,
-    payload: { businesses, hotspots }
+    type: RECEIVE_HOT_SPOTS,
+    payload: businesses
   });
 };
 

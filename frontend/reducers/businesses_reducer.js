@@ -1,4 +1,4 @@
-import { RECEIVE_BUSINESS, RECEIVE_BUSINESSES } from '../actions/business_actions';
+import { RECEIVE_BUSINESS, RECEIVE_BUSINESSES, RECEIVE_HOT_SPOTS } from '../actions/business_actions';
 import { REMOVE_REVIEW } from '../actions/review_actions';
 
 import merge from 'lodash/merge';
@@ -11,6 +11,8 @@ const businessesReducer = (state = {}, action) => {
     case RECEIVE_BUSINESS:
       return merge({}, state, {[payload.business.id]: payload.business });
     case RECEIVE_BUSINESSES:
+      return merge({}, state, payload.businesses);
+    case RECEIVE_HOT_SPOTS:
       return merge({}, state, payload.businesses);
     case REMOVE_REVIEW:
       let _newState = merge({}, state);

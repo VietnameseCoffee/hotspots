@@ -1,6 +1,6 @@
 json.key_format! camelize: :lower
 json.businesses do
-search_results.each do |biz|
+  search_results.each do |biz|
     json.set! biz.id do
       json.extract! biz, :id, :name, :address, :city, :state, :price, :stars, :phone_number
 
