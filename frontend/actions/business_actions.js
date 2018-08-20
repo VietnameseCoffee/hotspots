@@ -17,7 +17,19 @@ export const receiveBusinesses = (businesses) => {
   });
 };
 
+export const receiveHotSpots = ({ businesses, hotspots }) => {
+  return ({
+    type: RECEIVE_BUSINESSES,
+    payload: { businesses, hotspots }
+  });
+};
+
 export const requestBusiness = (id) => (dispatch) => {
   return (BusinessApiUtil.showBusiness(id)
     .then( business => dispatch(receiveBusiness(business))));
+};
+
+export const requestBusinesses = () => (dispatch) => {
+  return (BusinessApiUtil.indexBusinesses()
+    .then( res => dispatch(receiveHotSpots(res))));
 };

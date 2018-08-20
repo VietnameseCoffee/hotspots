@@ -32,9 +32,9 @@ class Api::BusinessesController < ApplicationController
   end
 
   def index
-    @biz_array = []
-    @businesses = Business.where("stars > ?", 3.79)
-    @businesses.each do {|biz| @biz_array.push(biz.id)}
+    @hotspots = []
+    @businesses = Business.where("stars > ?", 3.79).shuffle[0..5]
+    @businesses.each do {|biz| @hotspots.push(biz.id)}
     render "api/businesses/index"
   end
 

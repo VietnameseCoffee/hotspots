@@ -15,10 +15,9 @@ export const showBusiness = (id) => (
   })
 );
 
-export const indexBusinesses = (search) => (
+export const indexBusinesses = () => (
   $.ajax({
     type: 'GET',
     url: `/api/businesses`,
-    data: { search }
   })
 );
