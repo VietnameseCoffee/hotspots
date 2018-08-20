@@ -12,7 +12,10 @@ class SplashMain extends React.Component {
   render () {
 
     let businesses = this.props.businesses.map(
-      (biz) => <SplashSpotItem key={biz.id} biz={biz} />);
+      (biz) => <SplashSpotItem
+        key={biz.id}
+        biz={biz}
+        requestBusiness={this.props.requestBusiness}/>);
 
     return (
       <div className="splash-main-container">

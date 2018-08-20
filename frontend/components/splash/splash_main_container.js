@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 
 import SplashMain from './splash_main';
-import { requestBusinesses } from '../../actions/business_actions';
+import { requestBusinesses, requestBusiness } from '../../actions/business_actions';
+
 
 const msp = ({ entities }) => {
   return ({
@@ -11,7 +12,8 @@ const msp = ({ entities }) => {
 
 const mdp = (dispatch) => {
   return {
-    requestBusinesses: () => dispatch(requestBusinesses())
+    requestBusinesses: () => dispatch(requestBusinesses()),
+    requestBusiness: (id) => dispatch(requestBusiness(id))
   };
 };
 

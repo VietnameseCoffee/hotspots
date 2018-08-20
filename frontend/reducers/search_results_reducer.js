@@ -7,7 +7,7 @@ const searchResultsReducer = (state = [], action ) => {
   let payload = action.payload;
   switch (action.type) {
     case RECEIVE_BUSINESSES:
-      return action.payload.businesses;
+      return action.payload.results;
     default:
         return state;
   }

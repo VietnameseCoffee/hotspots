@@ -5,6 +5,7 @@ import { requestBusiness } from '../../actions/business_actions'
 import { requestSearch } from '../../actions/search_actions'
 
 const msp = (state) => {
+
   return {
     businesses: state.search.map ((id) => state.entities.businesses[id])
   };
