@@ -4,7 +4,6 @@ import SplashMain from './splash_main';
 import { requestBusinesses } from '../../actions/business_actions';
 
 const msp = ({ entities }) => {
-  debugger
   return ({
     businesses: entities.businesses.hotSpots.map((id) => entities.businesses[id])
   });
