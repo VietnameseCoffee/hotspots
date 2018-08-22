@@ -2,7 +2,7 @@
 # Hot Spots
 
 ## Live
-  Live
+  [Live](https://hot-spots-app.herokuapp.com/#/)
 
 ## Intro
 
