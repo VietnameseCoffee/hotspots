@@ -22,6 +22,8 @@ night= 'Closed&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 2
 detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No"
 detail_1 = "Takes Reservations:No&Delivery:Yes&Take-out:Yes&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:Yes&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:Yes&Caters:No"
 
+bad = "This place is terrible, I have no idea why someone would recommend this place. Steer clear away from here for the sake of the children"
+great = "I love this spot! This is easily the hottest place in neighborhood! I'll definitely go out of my way to bring people in! Also everyone has to try the special."
 okay = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary."
 text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 good = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit small at times but I think it's great. Definitely return!"
@@ -180,6 +182,54 @@ b11 = Business.create(
   phone_number: '(415) 433-2444',
   price: 2
 )
+b12 = Business.create(
+  name: 'Super Duper Burgers',
+  latitude: 37.791481,
+  longitude: -122.404148,
+  address: '346 Kearny St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94108,
+  stars: 3.5,
+  phone_number: '(415) 677-9936',
+  price: 2
+)
+b13 = Business.create(
+  name: 'Philz Coffee',
+  latitude: 37.794314,
+  longitude: -122.395245,
+  address: '5 Embarcadero Center',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94111,
+  stars: 4.0,
+  phone_number: '(415) 321-1499',
+  price: 1
+)
+b14 = Business.create(
+  name: "Ike's Love and Sandiwches",
+  latitude: 37.785065,
+  longitude: -122.419652,
+  address: '901 Polk St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94113,
+  stars: 3.0,
+  phone_number: '(415) 351-1972',
+  price: 1
+)
+b15 = Business.create(
+  name: "Zeitgeist",
+  latitude: 37.769772,
+  longitude: -122.422019,
+  address: '199 Valencia St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94103,
+  stars: 3.5,
+  phone_number: '(415) 255-7505',
+  price: 2
+)
 
 Category.create(
   business_id: b1.id,
@@ -269,6 +319,30 @@ Category.create(
   business_id: b11.id,
   category: 'Pizza',
 )
+Category.create(
+  business_id: b12.id,
+  category: 'Burgers',
+)
+Category.create(
+  business_id: b12.id,
+  category: 'American',
+)
+Category.create(
+  business_id: b13.id,
+  category: 'Cafe',
+)
+Category.create(
+  business_id: b14.id,
+  category: 'Sandwiches',
+)
+Category.create(
+  business_id: b15.id,
+  category: 'Bars',
+)
+Category.create(
+  business_id: b15.id,
+  category: 'Burgers',
+)
 
 
 Hour.create(
@@ -315,6 +389,22 @@ Hour.create(
   business_id: b11.id,
   hours: normal
 )
+Hour.create(
+  business_id: b12.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b13.id,
+  hours: normal_2
+)
+Hour.create(
+  business_id: b14.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b15.id,
+  hours: normal
+)
 
 
 
@@ -360,6 +450,22 @@ BusinessInfo.create(
 )
 BusinessInfo.create(
   business_id: b11.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b12.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b13.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b14.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b15.id,
   details: detail
 )
 
@@ -572,7 +678,7 @@ Review.create(
   business_id: b10.id,
   user_id: u4.id,
   stars: 4,
-  text: text,
+  text: great,
   post_date: '8/7/2018'
 )
 Review.create(
@@ -600,7 +706,7 @@ Review.create(
   business_id: b11.id,
   user_id: u3.id,
   stars: 4,
-  text: good,
+  text: great,
   post_date: '8/15/2018'
 )
 Review.create(
@@ -616,4 +722,88 @@ Review.create(
   stars: 3,
   text: meh,
   post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b12.id,
+  user_id: u19.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/11/2018'
+)
+Review.create(
+  business_id: b12.id,
+  user_id: u5.id,
+  stars: 4,
+  text: good,
+  post_date: '8/12/2018'
+)
+Review.create(
+  business_id: b13.id,
+  user_id: u6.id,
+  stars: 4,
+  text: good,
+  post_date: '8/2/2018'
+)
+Review.create(
+  business_id: b13.id,
+  user_id: u5.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/16/2018'
+)
+Review.create(
+  business_id: b13.id,
+  user_id: u11.id,
+  stars: 5,
+  text: great,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b13.id,
+  user_id: u7.id,
+  stars: 4,
+  text: great,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b14.id,
+  user_id: u17.id,
+  stars: 3,
+  text: good,
+  post_date: '8/10/2018'
+)
+Review.create(
+  business_id: b14.id,
+  user_id: u14.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/13/2018'
+)
+Review.create(
+  business_id: b15.id,
+  user_id: u14.id,
+  stars: 1,
+  text: bad,
+  post_date: '8/1/2018'
+)
+Review.create(
+  business_id: b15.id,
+  user_id: u4.id,
+  stars: 5,
+  text: great,
+  post_date: '8/10/2018'
+)
+Review.create(
+  business_id: b15.id,
+  user_id: u19.id,
+  stars: 4,
+  text: meh,
+  post_date: '8/10/2018'
+)
+Review.create(
+  business_id: b15.id,
+  user_id: u2.id,
+  stars: 4,
+  text: good,
+  post_date: '8/18/2018'
 )
