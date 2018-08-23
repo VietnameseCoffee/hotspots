@@ -14,18 +14,19 @@
 
 
 lunch = '10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&10:30 am - 2:30 pm&Closed&Closed'
-normal_2 = '9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&11:00 am - 10:00 pm&Closed'
+norm_7 = '9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&9:30 am - 7:00 pm&11:00 am - 10:00 pm&Closed'
 normal = '10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 9:00 pm&10:00 am - 10:00 pm&10:00 am - 10:00 pm&10:00 am - 7:00 pm'
 late = '5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 12:00am&5:00 am - 1:00 am&5:00 am - 1:00 am&5:00 am - 12:00 am'
 night= 'Closed&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 2:00 am&6:00 pm - 2:00 am&4:00 pm - 10:00 pm'
 
 detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No"
-detail_1 = "Takes Reservations:No&Delivery:Yes&Take-out:Yes&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:Yes&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:Yes&Caters:No"
+detail_casual = "Takes Reservations:No&Delivery:Yes&Take-out:Yes&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:Yes&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:Yes&Caters:No"
 
 bad = "This place is terrible, I have no idea why someone would recommend this place. Steer clear away from here for the sake of the children"
 meh = "The food really is fine but the service could really use a pickup. Very little people but yet the service was so slow. If I'm craving it then I'll return but I dunno."
 okay = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary."
 text = "This place was pleasant. Some of the food is surprisingly pricy for the amount given while others were absurdly cheap, very odd."
+gshort = "Place is cool, I like it, will come back"
 ambig = "Honestly the food was all right, my friend's order was honestly bland but mine was amazing so it averages out."
 good = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit small at times but I think it's great. Definitely return!"
 great = "I love this spot! This is easily the hottest place in neighborhood! I'll definitely go out of my way to bring people in! Also everyone has to try the special."
@@ -280,6 +281,18 @@ b19 = Business.create(
   phone_number: '(415) 989-8898',
   price: 1
 )
+b20 = Business.create(
+  name: "Starbucks",
+  latitude: 37.802747,
+  longitude: -122.403060,
+  address: '1255 Battery St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94111,
+  stars: 3.0,
+  phone_number: '(415) 402-0379',
+  price: 1
+)
 
 # categories cyo
 
@@ -423,6 +436,18 @@ Category.create(
   business_id: b19.id,
   category: 'Chinese',
 )
+Category.create(
+  business_id: b20.id,
+  category: 'Cafe',
+)
+Category.create(
+  business_id: b20.id,
+  category: 'Coffee',
+)
+Category.create(
+  business_id: b20.id,
+  category: 'Tea',
+)
 
 
 # Hours hyo
@@ -449,7 +474,7 @@ Hour.create(
 )
 Hour.create(
   business_id: b6.id,
-  hours: normal_2
+  hours: norm_7
 )
 Hour.create(
   business_id: b7.id,
@@ -477,7 +502,7 @@ Hour.create(
 )
 Hour.create(
   business_id: b13.id,
-  hours: normal_2
+  hours: norm_7
 )
 Hour.create(
   business_id: b14.id,
@@ -493,7 +518,7 @@ Hour.create(
 )
 Hour.create(
   business_id: b17.id,
-  hours: normal_2
+  hours: norm_7
 )
 Hour.create(
   business_id: b18.id,
@@ -501,7 +526,11 @@ Hour.create(
 )
 Hour.create(
   business_id: b19.id,
-  hours: normal_2
+  hours: norm_7
+)
+Hour.create(
+  business_id: b20.id,
+  hours: norm_7
 )
 
 # Biz info byo
@@ -520,23 +549,23 @@ BusinessInfo.create(
 )
 BusinessInfo.create(
   business_id: b4.id,
-  details: detail_1
+  details: detail_casual
 )
 BusinessInfo.create(
   business_id: b5.id,
-  details: detail_1
+  details: detail_casual
 )
 BusinessInfo.create(
   business_id: b6.id,
-  details: detail_1
+  details: detail_casual
 )
 BusinessInfo.create(
   business_id: b7.id,
-  details: detail_1
+  details: detail_casual
 )
 BusinessInfo.create(
   business_id: b8.id,
-  details: detail_1
+  details: detail_casual
 )
 BusinessInfo.create(
   business_id: b9.id,
@@ -568,7 +597,7 @@ BusinessInfo.create(
 )
 BusinessInfo.create(
   business_id: b16.id,
-  details: detail_1
+  details: detail_casual
 )
 BusinessInfo.create(
   business_id: b17.id,
@@ -576,11 +605,15 @@ BusinessInfo.create(
 )
 BusinessInfo.create(
   business_id: b18.id,
-  details: detail_1
+  details: detail_casual
 )
 BusinessInfo.create(
   business_id: b19.id,
-  details: detail_1
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b20.id,
+  details: detail_casual
 )
 
 # reviews ryo
@@ -603,7 +636,7 @@ Review.create(
   business_id: b1.id,
   user_id: u2.id,
   stars: 3,
-  text: text,
+  text: meh,
   post_date: '8/10/2018'
 )
 Review.create(
@@ -617,7 +650,7 @@ Review.create(
   business_id: b3.id,
   user_id: u3.id,
   stars: 4,
-  text: text,
+  text: great,
   post_date: '8/10/2018'
 )
 Review.create(
@@ -638,7 +671,7 @@ Review.create(
   business_id: b3.id,
   user_id: u5.id,
   stars: 5,
-  text: text,
+  text: love,
   post_date: '8/10/2018'
 )
 Review.create(
@@ -652,14 +685,14 @@ Review.create(
   business_id: b1.id,
   user_id: u8.id,
   stars: 3,
-  text: text,
+  text: meh,
   post_date: '8/10/2018'
 )
 Review.create(
   business_id: b3.id,
   user_id: u7.id,
   stars: 4,
-  text: text,
+  text: good,
   post_date: '8/10/2018'
 )
 Review.create(
@@ -680,7 +713,7 @@ Review.create(
   business_id: b4.id,
   user_id: u7.id,
   stars: 2,
-  text: text,
+  text: ambig,
   post_date: '8/14/2018'
 )
 Review.create(
@@ -694,14 +727,14 @@ Review.create(
   business_id: b5.id,
   user_id: u5.id,
   stars: 2,
-  text: text,
+  text: meh,
   post_date: '7/8/2018'
 )
 Review.create(
   business_id: b5.id,
   user_id: u2.id,
   stars: 4,
-  text: text,
+  text: ambig,
   post_date: '8/1/2018'
 )
 Review.create(
@@ -785,7 +818,7 @@ Review.create(
   business_id: b9.id,
   user_id: u11.id,
   stars: 5,
-  text: good,
+  text: gshort,
   post_date: '8/16/2018'
 )
 Review.create(
@@ -806,7 +839,7 @@ Review.create(
   business_id: b10.id,
   user_id: u2.id,
   stars: 4,
-  text: text,
+  text: gshort,
   post_date: '8/11/2018'
 )
 Review.create(
@@ -869,7 +902,7 @@ Review.create(
   business_id: b13.id,
   user_id: u11.id,
   stars: 5,
-  text: great,
+  text: gshort,
   post_date: '8/17/2018'
 )
 Review.create(
@@ -918,7 +951,7 @@ Review.create(
   business_id: b15.id,
   user_id: u2.id,
   stars: 4,
-  text: good,
+  text: gshort,
   post_date: '8/18/2018'
 )
 Review.create(
@@ -967,7 +1000,7 @@ Review.create(
   business_id: b17.id,
   user_id: u15.id,
   stars: 5,
-  text: good,
+  text: gshort,
   post_date: '8/13/2018'
 )
 Review.create(
@@ -1009,27 +1042,41 @@ Review.create(
   business_id: b19.id,
   user_id: u2.id,
   stars: 4,
-  text: love,
+  text: gshort,
   post_date: '8/4/2018'
 )
 Review.create(
   business_id: b19.id,
   user_id: u18.id,
   stars: 3,
-  text: love,
+  text: meh,
   post_date: '8/4/2018'
 )
 Review.create(
   business_id: b19.id,
   user_id: u10.id,
   stars: 4,
-  text: love,
+  text: text,
   post_date: '8/10/2018'
 )
 Review.create(
   business_id: b19.id,
   user_id: u11.id,
   stars: 4,
-  text: love,
+  text: good,
   post_date: '8/21/2018'
+)
+Review.create(
+  business_id: b20.id,
+  user_id: u18.id,
+  stars: 3,
+  text: gshort,
+  post_date: '8/21/2018'
+)
+Review.create(
+  business_id: b20.id,
+  user_id: u10.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/22/2018'
 )
