@@ -23,11 +23,13 @@ detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Ye
 detail_1 = "Takes Reservations:No&Delivery:Yes&Take-out:Yes&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:Yes&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:Yes&Caters:No"
 
 bad = "This place is terrible, I have no idea why someone would recommend this place. Steer clear away from here for the sake of the children"
-great = "I love this spot! This is easily the hottest place in neighborhood! I'll definitely go out of my way to bring people in! Also everyone has to try the special."
-okay = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary."
-text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-good = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit small at times but I think it's great. Definitely return!"
 meh = "The food really is fine but the service could really use a pickup. Very little people but yet the service was so slow. If I'm craving it then I'll return but I dunno."
+okay = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary."
+text = "This place was pleasant. Some of the food is surprisingly pricy for the amount given while others were absurdly cheap, very odd."
+ambig = "Honestly the food was all right, my friend's order was honestly bland but mine was amazing so it averages out."
+good = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit small at times but I think it's great. Definitely return!"
+great = "I love this spot! This is easily the hottest place in neighborhood! I'll definitely go out of my way to bring people in! Also everyone has to try the special."
+love = 'Never thought I would say this place is to die for anywhere until now. Please for the sake of your grandparents please try this place out.'
 
 u1 = User.create(first_name: "Michael", last_name: "Jordan", email: "jordan@gmail.com", password: "123456", zip: 12345, city: "Chicago", state: "IL")
 u2 = User.create(first_name: "Michael", last_name: "Scott", email: "office@gmail.com", password: "office", zip: 12345, city: "New York", state: "NY")
@@ -230,6 +232,56 @@ b15 = Business.create(
   phone_number: '(415) 255-7505',
   price: 2
 )
+b16 = Business.create(
+  name: "Missouri Lounge",
+  latitude: 37.859214,
+  longitude: -122.289394,
+  address: '2600 San Pablo Ave',
+  city: 'Berkeley',
+  state: 'CA',
+  zip: 94316,
+  stars: 4.333,
+  phone_number: '(510) 548-2080',
+  price: 1
+)
+b17 = Business.create(
+  name: "Chez Maman East",
+  latitude: 37.762529,
+  longitude: -122.396843,
+  address: '1401 18th St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94107,
+  stars: 5.0,
+  phone_number: '(415) 655-9542',
+  price: 2
+)
+b18 = Business.create(
+  name: "Bi-Rite Creamery",
+  latitude: 37.761497,
+  longitude: -122.425749,
+  address: '3692 18th St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94110,
+  stars: 4.0,
+  phone_number: '(415) 626-5600',
+  price: 1
+)
+b19 = Business.create(
+  name: "Sam Wo Restaurant",
+  latitude: 37.794414,
+  longitude: -122.405000,
+  address: '713 Clay St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94108,
+  stars: 3.5,
+  phone_number: '(415) 989-8898',
+  price: 1
+)
+
+# categories cyo
 
 Category.create(
   business_id: b1.id,
@@ -343,7 +395,37 @@ Category.create(
   business_id: b15.id,
   category: 'Burgers',
 )
+Category.create(
+  business_id: b16.id,
+  category: 'Bars',
+)
+Category.create(
+  business_id: b16.id,
+  category: 'American',
+)
+Category.create(
+  business_id: b17.id,
+  category: 'Burgers',
+)
+Category.create(
+  business_id: b17.id,
+  category: 'French',
+)
+Category.create(
+  business_id: b18.id,
+  category: 'Ice Cream',
+)
+Category.create(
+  business_id: b18.id,
+  category: 'Bakeries',
+)
+Category.create(
+  business_id: b19.id,
+  category: 'Chinese',
+)
 
+
+# Hours hyo
 
 Hour.create(
   business_id: b1.id,
@@ -405,8 +487,24 @@ Hour.create(
   business_id: b15.id,
   hours: normal
 )
+Hour.create(
+  business_id: b16.id,
+  hours: late
+)
+Hour.create(
+  business_id: b17.id,
+  hours: normal_2
+)
+Hour.create(
+  business_id: b18.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b19.id,
+  hours: normal_2
+)
 
-
+# Biz info byo
 
 BusinessInfo.create(
   business_id: b1.id,
@@ -468,8 +566,24 @@ BusinessInfo.create(
   business_id: b15.id,
   details: detail
 )
+BusinessInfo.create(
+  business_id: b16.id,
+  details: detail_1
+)
+BusinessInfo.create(
+  business_id: b17.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b18.id,
+  details: detail_1
+)
+BusinessInfo.create(
+  business_id: b19.id,
+  details: detail_1
+)
 
-
+# reviews ryo
 
 Review.create(
   business_id: b1.id,
@@ -806,4 +920,116 @@ Review.create(
   stars: 4,
   text: good,
   post_date: '8/18/2018'
+)
+Review.create(
+  business_id: b16.id,
+  user_id: u1.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/3/2018'
+)
+Review.create(
+  business_id: b16.id,
+  user_id: u8.id,
+  stars: 5,
+  text: good,
+  post_date: '8/8/2018'
+)
+Review.create(
+  business_id: b16.id,
+  user_id: u4.id,
+  stars: 5,
+  text: good,
+  post_date: '8/20/2018'
+)
+Review.create(
+  business_id: b17.id,
+  user_id: u3.id,
+  stars: 5,
+  text: good,
+  post_date: '7/22/2018'
+)
+Review.create(
+  business_id: b17.id,
+  user_id: u20.id,
+  stars: 5,
+  text: great,
+  post_date: '8/2/2018'
+)
+Review.create(
+  business_id: b17.id,
+  user_id: u19.id,
+  stars: 5,
+  text: good,
+  post_date: '8/11/2018'
+)
+Review.create(
+  business_id: b17.id,
+  user_id: u15.id,
+  stars: 5,
+  text: good,
+  post_date: '8/13/2018'
+)
+Review.create(
+  business_id: b17.id,
+  user_id: u7.id,
+  stars: 5,
+  text: love,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b17.id,
+  user_id: u11.id,
+  stars: 5,
+  text: great,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b18.id,
+  user_id: u9.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/6/2018'
+)
+Review.create(
+  business_id: b18.id,
+  user_id: u13.id,
+  stars: 4,
+  text: great,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b18.id,
+  user_id: u1.id,
+  stars: 5,
+  text: love,
+  post_date: '8/24/2018'
+)
+Review.create(
+  business_id: b19.id,
+  user_id: u2.id,
+  stars: 4,
+  text: love,
+  post_date: '8/4/2018'
+)
+Review.create(
+  business_id: b19.id,
+  user_id: u18.id,
+  stars: 3,
+  text: love,
+  post_date: '8/4/2018'
+)
+Review.create(
+  business_id: b19.id,
+  user_id: u10.id,
+  stars: 4,
+  text: love,
+  post_date: '8/10/2018'
+)
+Review.create(
+  business_id: b19.id,
+  user_id: u11.id,
+  stars: 4,
+  text: love,
+  post_date: '8/21/2018'
 )
