@@ -293,6 +293,54 @@ b20 = Business.create(
   phone_number: '(415) 402-0379',
   price: 1
 )
+b21 = Business.create(
+  name: "Marufuku Ramen",
+  latitude: 37.785226,
+  longitude: -122.432395,
+  address: '1581 Webster St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94111,
+  stars: 4.0,
+  phone_number: '(415) 872-9786',
+  price: 2
+)
+b22 = Business.create(
+  name: "Sunflower Restaurant",
+  latitude: 37.764832,
+  longitude: -122.421944,
+  address: '3111 16th St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94101,
+  stars: 3.0,
+  phone_number: '(415) 626-5023',
+  price: 1
+)
+b23 = Business.create(
+  name: "The Beehive",
+  latitude: 37.759445,
+  longitude: -122.421417,
+  address: '842 Valencia St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94107,
+  stars: 4.0,
+  phone_number: '(415) 306-8209',
+  price: 2
+)
+b24 = Business.create(
+  name: "F8 Nightclub and Bar",
+  latitude: 37.775198,
+  longitude: -122.409941,
+  address: '1192 Folsom',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94103,
+  stars: 4.8,
+  phone_number: '(415) 857-1192',
+  price: 2
+)
 
 # categories cyo
 
@@ -448,6 +496,42 @@ Category.create(
   business_id: b20.id,
   category: 'Tea',
 )
+Category.create(
+  business_id: b21.id,
+  category: 'Japanese',
+)
+Category.create(
+  business_id: b21.id,
+  category: 'Ramen',
+)
+Category.create(
+  business_id: b22.id,
+  category: 'Vietnamese',
+)
+Category.create(
+  business_id: b23.id,
+  category: 'Bars',
+)
+Category.create(
+  business_id: b23.id,
+  category: 'Lounges',
+)
+Category.create(
+  business_id: b24.id,
+  category: 'Clubs',
+)
+Category.create(
+  business_id: b24.id,
+  category: 'Lounges',
+)
+Category.create(
+  business_id: b24.id,
+  category: 'Dance',
+)
+Category.create(
+  business_id: b24.id,
+  category: 'Bars',
+)
 
 
 # Hours hyo
@@ -532,6 +616,22 @@ Hour.create(
   business_id: b20.id,
   hours: norm_7
 )
+Hour.create(
+  business_id: b21.id,
+  hours: norm_7
+)
+Hour.create(
+  business_id: b22.id,
+  hours: norm
+)
+Hour.create(
+  business_id: b23.id,
+  hours: late
+)
+Hour.create(
+  business_id: b24.id,
+  hours: late
+)
 
 # Biz info byo
 
@@ -614,6 +714,22 @@ BusinessInfo.create(
 BusinessInfo.create(
   business_id: b20.id,
   details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b21.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b22.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b23.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b24.id,
+  details: detail
 )
 
 # reviews ryo
@@ -1078,5 +1194,68 @@ Review.create(
   user_id: u10.id,
   stars: 3,
   text: meh,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b21.id,
+  user_id: u10.id,
+  stars: 4,
+  text: good,
+  post_date: '8/9/2018'
+)
+Review.create(
+  business_id: b21.id,
+  user_id: u11.id,
+  stars: 4,
+  text: gshort,
+  post_date: '8/9/2018'
+)
+Review.create(
+  business_id: b22.id,
+  user_id: u14.id,
+  stars: 3,
+  text: meh,
+  post_date: '8/10/2018'
+)
+Review.create(
+  business_id: b23.id,
+  user_id: u14.id,
+  stars: 4,
+  text: good,
+  post_date: '8/18/2018'
+)
+Review.create(
+  business_id: b24.id,
+  user_id: u12.id,
+  stars: 5,
+  text: good,
+  post_date: '8/6/2018'
+)
+Review.create(
+  business_id: b24.id,
+  user_id: u18.id,
+  stars: 4,
+  text: meh,
+  post_date: '8/18/2018'
+)
+Review.create(
+  business_id: b24.id,
+  user_id: u2.id,
+  stars: 5,
+  text: great,
+  post_date: '8/18/2018'
+)
+Review.create(
+  business_id: b24.id,
+  user_id: u8.id,
+  stars: 5,
+  text: love,
+  post_date: '8/19/2018'
+)
+Review.create(
+  business_id: b24.id,
+  user_id: u20.id,
+  stars: 5,
+  text: "Esta plays here and it gets lit, can't ask for anything else here",
   post_date: '8/22/2018'
 )
