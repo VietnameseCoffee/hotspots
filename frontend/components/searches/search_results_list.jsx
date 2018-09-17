@@ -18,7 +18,7 @@ class SearchResultList extends React.Component {
     let requestBusiness = this.props.requestBusiness;
     let requestSearch = this.props.requestSearch;
 
-    if (businesses.empty?) {
+    if (businesses) {
       // return (
       //   <div>Search result turned up nothing please try again</div>
       // )
