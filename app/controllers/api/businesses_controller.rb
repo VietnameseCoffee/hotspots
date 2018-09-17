@@ -14,13 +14,12 @@ class Api::BusinessesController < ApplicationController
   end
 
   def show
-    # NEED refactor, does it requery again after includes, supa slow?
-    # SUPER FRAGILE RN
-    @business = Business.includes(:categories, :hour, :business_info, reviews: [:user])
+
+    @business = Business.includes(:categories, :hour, :business_info, :images, reviews: [:user])
       .where(id: params[:business][:id])
       .references(:categories, :hour, :business_info, :reviews)
 
-    # debugger
+
     if @business.length == 1
       @business.each do |biz|
         @categories = biz.categories.pluck(:category)
@@ -28,6 +27,7 @@ class Api::BusinessesController < ApplicationController
         @info = biz.business_info.to_arr ## IF ? .to_arr : DEFAULT
         @reviews = biz.reviews.reverse
         @users = @reviews.map {|rev| rev.user}
+        @images = biz.images
       end
       @business = @business[0]
       render "api/businesses/show"
