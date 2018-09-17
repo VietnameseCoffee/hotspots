@@ -30,9 +30,9 @@ json.users do
   users.each do |user|
     json.set! user.id do
       json.extract! user, :id, :first_name, :last_name, :city, :state
-      if user.photo.attached?
-        json.photoUrl url_for(user.photo)
-      end
+      # if user.photo.attached?
+      #   json.photoUrl url_for(user.photo)
+      # end
     end
   end
 end

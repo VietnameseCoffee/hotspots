@@ -16,7 +16,7 @@ class Api::BusinessesController < ApplicationController
   def show
     # NEED refactor, does it requery again after includes, supa slow?
     # SUPER FRAGILE RN
-    @business = Business.includes(:categories, :hour, :business_info, :reviews)
+    @business = Business.includes(:categories, :hour, :business_info, reviews: [:user])
       .where(id: params[:business][:id])
       .references(:categories, :hour, :business_info, :reviews)
 
