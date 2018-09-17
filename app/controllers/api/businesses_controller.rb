@@ -27,7 +27,7 @@ class Api::BusinessesController < ApplicationController
         @info = biz.business_info.to_arr ## IF ? .to_arr : DEFAULT
         @reviews = biz.reviews.reverse
         @users = @reviews.map {|rev| rev.user}
-        @images = biz.images
+        @photos = biz.images
       end
       @business = @business[0]
       render "api/businesses/show"

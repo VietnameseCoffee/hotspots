@@ -5,7 +5,7 @@ json.business do
   json.hours hours
   json.info info
   json.reviewIds reviews.map { |rev| rev.id }
-  json.imageIds images.map { |img| img.id }
+  json.photoIds photos.map { |photo| photo.id }
   # json.photos do
   #   json.array! photos do |photo|
   #     json.photoUrl url_for(photo)
@@ -38,10 +38,10 @@ json.users do
   end
 end
 
-json.images do
-  images.each do |img|
-    json.set! img.id do
-      json.extract! img, :user_id, :business_id
+json.photos do
+  photos.each do |photo|
+    json.set! photo.id do
+      json.extract! photo, :user_id, :business_id
     end
   end
 end
