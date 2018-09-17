@@ -18,6 +18,12 @@ class SearchResultList extends React.Component {
     let requestBusiness = this.props.requestBusiness;
     let requestSearch = this.props.requestSearch;
 
+    if (businesses.empty?) {
+      // return (
+      //   <div>Search result turned up nothing please try again</div>
+      // )
+    }
+
     return (
       <div className="search-main">
         <h2>Search Results</h2>
