@@ -5,11 +5,11 @@ json.business do
   json.hours hours
   json.info info
   json.reviewIds reviews.map {|rev| rev.id }
-  json.photos do
-    json.array! photos do |photo|
-      json.photoUrl url_for(photo)
-    end
-  end
+  # json.photos do
+  #   json.array! photos do |photo|
+  #     json.photoUrl url_for(photo)
+  #   end
+  # end
 end
 
 
@@ -17,11 +17,11 @@ json.reviews do
   reviews.each do |rev|
     json.set! rev.id do
       json.extract! rev, :id, :business_id, :user_id, :stars, :text, :post_date
-      json.photos do
-        rev.photos.each do |photo|
-          json.photoUrl url_for(photo)
-        end
-      end
+      # json.photos do
+      #   rev.photos.each do |photo|
+      #     json.photoUrl url_for(photo)
+      #   end
+      # end
     end
   end
 end
