@@ -7,8 +7,6 @@ class Business < ApplicationRecord
   has_one :hour, dependent: :destroy
   has_one :business_info, dependent: :destroy
   has_many :reviews, dependent: :destroy
+  has_many :images
 
-  has_many :review_photos,
-    through: :reviews,
-    source: :photos_attachments
 end
