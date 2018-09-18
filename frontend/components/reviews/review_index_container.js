@@ -4,7 +4,7 @@ import ReviewIndex from './review_index';
 import { requestDeleteReview } from '../../actions/review_actions';
 
 const msp = (state, ownProps) => {
-  // refactor into selector
+
   let revUsers = {}, entities = state.entities;
   let userIds = ownProps.reviewIds.map((revId) => entities.reviews[revId].userId);
 

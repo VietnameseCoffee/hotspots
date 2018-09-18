@@ -7,9 +7,7 @@ import { requestSearch } from '../../actions/search_actions';
 const msp = ({entities}, ownProps) => {
   return {
     businessId: parseInt(ownProps.match.params.businessId),
-    businessDetails: entities.businesses[ownProps.match.params.businessId],
-    imageUrls: [],
-    extrainfo: {}
+    businessDetails: entities.businesses[ownProps.match.params.businessId]
   };
 };
 

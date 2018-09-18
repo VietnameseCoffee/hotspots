@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import BusinessHeader from './business_header';
 import BusinessDetail from './business_detail';
-import BusinessImages from './business_images';
+import BusinessImagesContainer from './business_images_container';
 import BusinessPrimary from './business_primary';
 import BusinessAside from './business_aside';
 
@@ -31,7 +31,7 @@ class BusinessShow extends React.Component {
 
     if (!businessDetails) {
       return (
-        <div>Loading...</div>
+        <div className="loading">Loading...</div>
       );
     }
 
@@ -53,7 +53,7 @@ class BusinessShow extends React.Component {
 
             <div className="biz-sub-header">
               <BusinessDetail details={businessDetails}/>
-              <BusinessImages imageUrls={businessDetails.photos}/>
+              <BusinessImagesContainer photoIds={businessDetails.photoIds}/>
             </div>
 
           </div>
