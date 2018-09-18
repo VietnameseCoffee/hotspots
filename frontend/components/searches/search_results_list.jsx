@@ -27,6 +27,7 @@ class SearchResultList extends React.Component {
     return (
       <div className="search-main">
         <h2>Search Results</h2>
+
         <div className="search-list">
           <ul>
           {businesses.map ((biz, i) => {
@@ -41,6 +42,13 @@ class SearchResultList extends React.Component {
             })}
             </ul>
         </div>
+
+        <div className="search-aside">
+          <div className="search-maps">
+
+          </div>
+        </div>
+
       </div>
     );
   }
