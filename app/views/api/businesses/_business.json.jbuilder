@@ -39,9 +39,10 @@ json.users do
 end
 
 json.photos do
-  photos.each do |photo|
-    json.set! photo.id do
-      json.extract! photo, :user_id, :business_id
+  photos.each do |pic|
+    json.set! pic.id do
+      json.extract! pic, :user_id, :business_id
+      json.photoUrl url_for(pic.photo)
     end
   end
 end
