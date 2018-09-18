@@ -8,7 +8,8 @@ end
 
 
 
-# a.photo.attach(io: open("https://s3-us-west-1.amazonaws.com/aafullstack-dev/23BL2hZ9aMmoNNeWp9Qmjd8G"), filename: "dumplings.jpg")
-
 # Desktop
 # a.photo.attach(io: File.open("/Users/appacademy/Desktop/images/01dimsum.jpg"), filename: "01dimsum.jpg")
+
+# Webserver?
+# b.photo.attach(io: open("https://s3-us-west-1.amazonaws.com/aafullstack-dev/Ci1d7c2PcwSX8GSFXVkkaSyx"), filename: "Ci1d7c2PcwSX8GSFXVkkaSyx")
