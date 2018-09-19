@@ -4,7 +4,7 @@ import BusinessImages from './business_images';
 
 const msp = ({ entities }, ownProps) => {
   return {
-    photoUrls: ownProps.photoIds.map((id) => entities.photos[id])
+    photos: ownProps.photoIds.map((id) => entities.photos[id])
   }
 }
 

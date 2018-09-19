@@ -2,7 +2,7 @@ import React from 'react';
 import {withRouter, Link} from 'react-router-dom'
 import * as starUtil from '../../util/round_stars_util'
 
-class ReviewIndexItem extends React.Component {
+class BusinessIndexItem extends React.Component {
 
 
   constructor (props) {
@@ -25,8 +25,9 @@ class ReviewIndexItem extends React.Component {
 
   render () {
     let biz = this.props.biz;
-    let tags = biz.categories
-    let price = this.props.biz.price
+    let photoUrl = this.props.photo.photoUrl;
+    let tags = biz.categories;
+    let price = this.props.biz.price;
     let index = this.props.index;
     let price_str = "";
     let anchorTags;
@@ -37,7 +38,7 @@ class ReviewIndexItem extends React.Component {
       <li className="biz-index-item">
         <div className="biz-side" >
           <div className="image-container">
-            <div></div>
+            <img src={photoUrl}></img>
           </div>
         </div>
 
@@ -64,4 +65,4 @@ class ReviewIndexItem extends React.Component {
   }
 };
 
-export default withRouter(ReviewIndexItem);
+export default withRouter(BusinessIndexItem);

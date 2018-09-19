@@ -15,6 +15,7 @@ class SearchResultList extends React.Component {
 
   render () {
     let businesses = this.props.businesses;
+    let photos = this.props.photos;
     let requestBusiness = this.props.requestBusiness;
     let requestSearch = this.props.requestSearch;
 
@@ -23,7 +24,7 @@ class SearchResultList extends React.Component {
       //   <div>Search result turned up nothing please try again</div>
       // )
     }
-
+    // debugger
     return (
       <div className="search-main">
         <h2>Search Results</h2>
@@ -38,6 +39,7 @@ class SearchResultList extends React.Component {
               index={i + 1}
               requestBusiness={requestBusiness}
               requestSearch={requestSearch}
+              photo={photos[i]}
               />)
             })}
             </ul>

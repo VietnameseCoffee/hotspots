@@ -17,14 +17,14 @@ class BusinessImages extends React.Component {
   }
 
   render () {
-    const photos = this.props.photoUrls.slice(0, 3).map((url, i) => {
+    const photos = this.props.photos.slice(0, 3).map((pic, i) => {
       let classes = classNames({
         [`biz-show-img-${i}`]: true,
         'biz-img-default': i === 1
       });
       return (
-        <div key ={url.photoUrl} className={classes}>
-          <img src={url.photoUrl}></img>
+        <div key ={pic.photoUrl} className={classes}>
+          <img src={pic.photoUrl}></img>
         </div>
       )}
     );

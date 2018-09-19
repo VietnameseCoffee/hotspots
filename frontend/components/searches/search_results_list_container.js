@@ -5,9 +5,18 @@ import { requestBusiness } from '../../actions/business_actions'
 import { requestSearch } from '../../actions/search_actions'
 
 const msp = (state) => {
+  const businesses = [];
+  const photos = [];
 
+  state.search.map((id) => {
+    let biz = state.entities.businesses[id];
+    businesses.push(biz);
+    // debugger
+    photos.push(state.entities.photos[biz.photoIds[0]]);
+  })
   return {
-    businesses: state.search.map ((id) => state.entities.businesses[id])
+    businesses: businesses,
+    photos: photos
   };
 };
 
