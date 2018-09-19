@@ -5,8 +5,18 @@ import { requestBusinesses, requestBusiness } from '../../actions/business_actio
 
 
 const msp = ({ entities }) => {
+  const businesses = [];
+  const photos = {};
+  entities.businesses.hotSpots.map((id) => {
+    let biz = entities.businesses[id];
+    let picId = biz.photoIds[0];
+    businesses.push(biz);
+    if (picId) photos[picId] = entities.photos[picId];
+  })
+
   return ({
-    businesses: entities.businesses.hotSpots.map((id) => entities.businesses[id])
+    businesses: businesses,
+    photos: photos
   });
 };
 

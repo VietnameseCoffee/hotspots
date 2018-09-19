@@ -24,7 +24,7 @@ class SearchResultList extends React.Component {
       //   <div>Search result turned up nothing please try again</div>
       // )
     }
-    // debugger
+    
     return (
       <div className="search-main">
         <h2>Search Results</h2>

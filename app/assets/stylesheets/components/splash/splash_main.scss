@@ -20,6 +20,19 @@
         border: 1px solid #c6c6c6;
         border-radius: 4px;
 
+        .splash-biz-top {
+          height: 180px;
+          border-bottom: 1px solid #c6c6c6;
+          .image-container {
+            height: 100%;
+            overflow: hidden;
+            img {
+              object-fit: cover;
+              height: 100%;
+            }
+          }
+        }
+
         .splash-biz-body {
           padding: 9px;
           .splash-biz-main-info {

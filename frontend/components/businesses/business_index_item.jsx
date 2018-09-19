@@ -33,7 +33,7 @@ class BusinessIndexItem extends React.Component {
     let anchorTags;
     // debugger
     while (price_str.length < price) {price_str = price_str.concat("$")};
-    anchorTags = tags.map((tag) => <a onClick={(e) => this.clickTag(e, tag)}>{tag}</a>)
+    anchorTags = tags.map((tag, i) => <a key ={i} onClick={(e) => this.clickTag(e, tag)}>{tag}</a>)
 
     let photoUrl = photo ? photo.photoUrl : "https://s3-us-west-1.amazonaws.com/hot-spots-dev/default_biz.jpg";
     return (

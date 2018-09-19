@@ -4,15 +4,17 @@
   border-top: 1px solid gray;
   background-color: #ededed;
   .footer {
-    display: flex;
-    justify-content: space-around;
+    padding-top: 20px;
     margin: 0 auto;
     width: 960px;
+
+  
     a {
       color: #0073bb;
-      font-weight: 700;
+      font-size: 14px;
     }
   }
+
   .footer-image {
     margin: 0 auto;
     width: 900px;

@@ -15,6 +15,7 @@ class SplashMain extends React.Component {
       (biz) => <SplashSpotItem
         key={biz.id}
         biz={biz}
+        photo={this.props.photos[biz.photoIds[0]]}
         requestBusiness={this.props.requestBusiness}/>);
 
     return (

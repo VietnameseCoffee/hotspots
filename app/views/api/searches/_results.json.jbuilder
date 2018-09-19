@@ -16,7 +16,6 @@ json.businesses do
 end
 
 json.photos do
-  # debugger
   search_results.each do |biz|
     pic = biz.images.first
     if pic

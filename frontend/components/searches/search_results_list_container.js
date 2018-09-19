@@ -11,9 +11,9 @@ const msp = (state) => {
   state.search.map((id) => {
     let biz = state.entities.businesses[id];
     let picId = biz.photoIds[0];
-    y
+
     businesses.push(biz);
-    photos[picId] = state.entities.photos[picId];
+    if (picId) photos[picId] = state.entities.photos[picId];
   })
 
   return {
