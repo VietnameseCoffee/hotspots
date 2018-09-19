@@ -6,14 +6,15 @@ import { requestSearch } from '../../actions/search_actions'
 
 const msp = (state) => {
   const businesses = [];
-  const photos = [];
+  const photos = {};
 
   state.search.map((id) => {
     let biz = state.entities.businesses[id];
     businesses.push(biz);
-    // debugger
-    photos.push(state.entities.photos[biz.photoIds[0]]);
+    let picId = biz.photoIds[0];
+    photos[picId] = state.entities.photos[picId];
   })
+
   return {
     businesses: businesses,
     photos: photos

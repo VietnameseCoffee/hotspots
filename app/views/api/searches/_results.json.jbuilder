@@ -3,7 +3,11 @@ json.businesses do
   search_results.each do |biz|
     json.set! biz.id do
       json.extract! biz, :id, :name, :address, :city, :state, :price, :stars, :phone_number
-      json.photoIds [biz.images.first.id]
+      if biz.images.length != 0
+        json.photoIds [biz.images.first.id]
+      else
+        json.photoIds []
+      end
 
       json.categories biz.categories.map { |tag| tag.category }
       json.num_reviews biz.reviews.count

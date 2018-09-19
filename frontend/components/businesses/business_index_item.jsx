@@ -25,15 +25,17 @@ class BusinessIndexItem extends React.Component {
 
   render () {
     let biz = this.props.biz;
-    let photoUrl = this.props.photo.photoUrl;
+    let photo = this.props.photo;
     let tags = biz.categories;
     let price = this.props.biz.price;
     let index = this.props.index;
     let price_str = "";
     let anchorTags;
-
+    // debugger
     while (price_str.length < price) {price_str = price_str.concat("$")};
     anchorTags = tags.map((tag) => <a onClick={(e) => this.clickTag(e, tag)}>{tag}</a>)
+
+    let photoUrl = photo ? photo.photoUrl : "https://s3-us-west-1.amazonaws.com/hot-spots-dev/default_biz.jpg";
     return (
       <li className="biz-index-item">
         <div className="biz-side" >
