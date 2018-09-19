@@ -8,19 +8,20 @@ class Api::SearchesController < ApplicationController
     if name == ""
       @search_results = []
       render 'api/searches/show'
-
     else
-      biz_results = Business.includes(:images)
+      biz_results = Business.includes(:images, :categories)
         .where('LOWER(name) like ?', "#{name}%")
-        .references(:images)
-      # debugger
+        .references(:images, :categories)
+        # debugger
       if biz_results.empty?
         biz_results = [];
         category_results = find_by_category(name)
       else
-        #assume has categories hmm
-        tag = biz_results.first.categories.first.category
-        category_results = find_by_category(tag)
+        tags = biz_results.first.categories.pluck(:category)
+        category_results = []
+        tags.each do |tag|
+          category_results.concat(find_by_category(tag.downcase))
+        end
       end
 
       @search_results = (biz_results + category_results).uniq
@@ -39,7 +40,7 @@ class Api::SearchesController < ApplicationController
     category_results = []
     categories = Category
       .includes(:business)
-      .where('LOWER(categories.category) like ?', name )
+      .where('LOWER(categories.category) like ?', "#{name}%")
 
     categories.each { |tag| category_results.push(tag.business)}
     category_results
