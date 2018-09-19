@@ -8,8 +8,11 @@ class Api::SearchesController < ApplicationController
     if name == ""
       @search_results = Business.all
       render 'api/searches/show'
+      
     else
-      biz_results = Business.where('LOWER(name) like ?', "#{name}%")
+      biz_results = Business.includes(:images)
+        .where('LOWER(name) like ?', "#{name}%")
+        .references(:images)
 
       if biz_results.empty?
         biz_results = [];

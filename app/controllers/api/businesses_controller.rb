@@ -17,7 +17,7 @@ class Api::BusinessesController < ApplicationController
 
     @business = Business.includes(:categories, :hour, :business_info, :images, reviews: [:user])
       .where(id: params[:business][:id])
-      .references(:categories, :hour, :business_info, :reviews)
+      .references(:categories, :hour, :business_info, :reviews, :images)
 
 
     if @business.length == 1
