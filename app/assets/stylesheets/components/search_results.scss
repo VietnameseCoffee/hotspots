@@ -34,6 +34,9 @@
             object-fit: cover;
             height: 100%;
           }
+          img:hover {
+            cursor: pointer;
+          }
         }
       }
 

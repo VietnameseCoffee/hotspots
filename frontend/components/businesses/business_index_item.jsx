@@ -40,7 +40,7 @@ class BusinessIndexItem extends React.Component {
       <li className="biz-index-item">
         <div className="biz-side" >
           <div className="image-container">
-            <img src={photoUrl}></img>
+            <img onClick={(e) => this.handleClick(e, this.props.biz.id)} src={photoUrl}></img>
           </div>
         </div>
 
