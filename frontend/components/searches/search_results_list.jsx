@@ -19,14 +19,19 @@ class SearchResultList extends React.Component {
     let requestBusiness = this.props.requestBusiness;
     let requestSearch = this.props.requestSearch;
     let searchContent;
-    // debugger
-
-
 
     if (businesses.length === 0) {
-      searchContent = <div> No Results Were Found </div>
+      searchContent = (
+        <div className="no-results">
+          <div>
+            No Results Were Found :(
+          </div>
+          <div>
+            Please check for typos or use similar phrases
+          </div>
+        </div>
+      )
     } else {
-
       searchContent = businesses.map ((biz, i) => {
         return (
           <BusinessIndexItem
@@ -49,7 +54,7 @@ class SearchResultList extends React.Component {
         <div className="search-list">
           <ul>
           {searchContent}
-            </ul>
+          </ul>
         </div>
 
         <div className="search-aside">

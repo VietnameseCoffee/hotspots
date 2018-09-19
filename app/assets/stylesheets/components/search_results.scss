@@ -6,7 +6,13 @@
 
 
   .search-list {
+    .no-results {
+      margin-top: 15px;
+      padding-top: 5px;
+      border-top: 1px solid #c6c6c6;
+      width: 630px;
 
+    }
     .biz-index-item {
       width: 630px;
       height: 160px;
