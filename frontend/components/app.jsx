@@ -11,6 +11,7 @@ import BusinessShowContainer from './businesses/business_show_container';
 import ReviewFormContainer from './reviews/review_form_container';
 import SearchResultListContainer from './searches/search_results_list_container';
 import SplashMainContainer from './splash/splash_main_container';
+import Footer from './footer/footer';
 
 
 const App = () => {
@@ -34,8 +35,9 @@ const App = () => {
         <Route exact path={`/`} component={SplashMainContainer} />
       </div>
 
-      <div className="footer">
-
+      <div className="footer-container">
+        <Footer/>
+        <div className="footer-image"></div>
       </div>
     </div>
   );

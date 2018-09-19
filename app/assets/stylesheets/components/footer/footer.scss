@@ -1,6 +1,24 @@
-.footer {
-  height: 320px;
+.footer-container {
   width: 100%;
-  background-color: #ccc;
+  height: 300px;
   border-top: 1px solid gray;
+  background-color: #ededed;
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 960px;
+    a {
+      color: #0073bb;
+      font-weight: 700;
+    }
+  }
+  .footer-image {
+    margin: 0 auto;
+    width: 900px;
+    height: 180px;
+    background-image: image-url("footer_pic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
