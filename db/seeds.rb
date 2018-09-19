@@ -348,7 +348,7 @@ b24 = Business.create(
 
 Category.create(
   business_id: b1.id,
-  category: 'Bakeries',
+  category: 'Chinese',
 )
 Category.create(
   business_id: b1.id,
@@ -356,7 +356,7 @@ Category.create(
 )
 Category.create(
   business_id: b1.id,
-  category: 'Chinese',
+  category: 'Bakeries',
 )
 Category.create(
   business_id: b2.id,
@@ -1392,4 +1392,88 @@ i1.photo.attach(io: file, filename: "03.jpg")
 
 i1 = Image.create(user_id: u15.id, business_id: b11.id)
 file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(29).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u19.id, business_id: b12.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(30).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u19.id, business_id: b12.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(31).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u5.id, business_id: b12.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(32).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b13.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(33).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b13.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(34).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u7.id, business_id: b13.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(35).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b14.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(36).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b14.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(37).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u17.id, business_id: b14.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(38).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u2.id, business_id: b15.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(39).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u2.id, business_id: b15.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(40).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u2.id, business_id: b15.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(41).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u8.id, business_id: b16.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(42).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u1.id, business_id: b16.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(43).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u4.id, business_id: b16.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(44).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b17.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(45).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b17.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(46).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u9.id, business_id: b17.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(47).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u13.id, business_id: b18.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(48).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u1.id, business_id: b18.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(49).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u1.id, business_id: b18.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(50).jpg")
 i1.photo.attach(io: file, filename: "03.jpg")

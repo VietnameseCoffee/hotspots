@@ -5,7 +5,7 @@ class Api::SearchesController < ApplicationController
   def show
     name = search_params[:name].downcase
     place = search_params[:place]
-    if name == ""
+    if name.length < 3
       @search_results = []
       render 'api/searches/show'
     else
