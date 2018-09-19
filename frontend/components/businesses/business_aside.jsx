@@ -19,13 +19,6 @@ const BusinessAside = ({ hours, info }) => {
         <BusinessExtraInfo info={info}/>
       </div>
 
-      <div className="aside-info">
-        <h3>Browse nearby</h3>
-
-      </div>
-
-
-
     </div>
   );
 }

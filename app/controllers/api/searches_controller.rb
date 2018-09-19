@@ -6,14 +6,14 @@ class Api::SearchesController < ApplicationController
     name = search_params[:name].downcase
     place = search_params[:place]
     if name == ""
-      @search_results = Business.all
+      @search_results = []
       render 'api/searches/show'
-      
+
     else
       biz_results = Business.includes(:images)
         .where('LOWER(name) like ?', "#{name}%")
         .references(:images)
-
+      # debugger
       if biz_results.empty?
         biz_results = [];
         category_results = find_by_category(name)

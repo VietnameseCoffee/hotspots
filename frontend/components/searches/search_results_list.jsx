@@ -18,30 +18,37 @@ class SearchResultList extends React.Component {
     let photos = this.props.photos;
     let requestBusiness = this.props.requestBusiness;
     let requestSearch = this.props.requestSearch;
+    let searchContent;
+    // debugger
 
-    if (businesses) {
-      // return (
-      //   <div>Search result turned up nothing please try again</div>
-      // )
+
+
+    if (businesses.length === 0) {
+      searchContent = <div> No Results Were Found </div>
+    } else {
+
+      searchContent = businesses.map ((biz, i) => {
+        return (
+          <BusinessIndexItem
+          key={biz.id}
+          biz={biz}
+          index={i + 1}
+          requestBusiness={requestBusiness}
+          requestSearch={requestSearch}
+          photo={photos[biz.photoIds[0]]}
+          />)
+        })
+
     }
-    
+
+
     return (
       <div className="search-main">
         <h2>Search Results</h2>
 
         <div className="search-list">
           <ul>
-          {businesses.map ((biz, i) => {
-            return (
-              <BusinessIndexItem
-              key={biz.id}
-              biz={biz}
-              index={i + 1}
-              requestBusiness={requestBusiness}
-              requestSearch={requestSearch}
-              photo={photos[biz.photoIds[0]]}
-              />)
-            })}
+          {searchContent}
             </ul>
         </div>
 

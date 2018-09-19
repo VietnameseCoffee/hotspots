@@ -26,7 +26,7 @@ class SplashSpotItem extends React.Component {
     let photo = this.props.photo;
     let photoUrl = photo ? photo.photoUrl : "https://s3-us-west-1.amazonaws.com/hot-spots-dev/default_biz.jpg";
     while (price_str.length < biz.price) {price_str = price_str.concat("$")};
-    // debugger
+    
     return (
       <div className="splash-biz-item">
         <div className="splash-biz-top" >
