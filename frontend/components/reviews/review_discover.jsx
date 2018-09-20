@@ -22,14 +22,20 @@ class ReviewDiscover extends React.Component {
       <div className="review-discover-main-container">
         <div className="gray">
           <div className="gray-content">
+            <div className="gray-right">
+              <h2>Your Next Review Awaits</h2>
+              <p>Discover all the cool places you want to try out and write a review!</p>
+            </div>
+            <div className="gray-right">
+              <div className="gray-image">
 
-            <h2>Your Next Review Awaits</h2>
-            <p>Discover all the cool places you want to try out and write a review!</p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="review-discover-parts-container">
 
-          <h2>Been to These Businesses?</h2>
+          <h2>Been there? Write a Review!</h2>
           <div className="hot-spots-grid">
             {businesses}
           </div>

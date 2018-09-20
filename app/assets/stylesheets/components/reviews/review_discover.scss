@@ -7,6 +7,8 @@
     .gray-content {
       width: 900px;
       margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
 
       h2 {
         // text-align: center;
@@ -17,6 +19,11 @@
 
       p {
         font-size: 18px;
+      }
+      .gray-image {
+        background-image: image-url("review_image.png");
+        width: 260px;
+        height: 160px;
       }
     }
   }
