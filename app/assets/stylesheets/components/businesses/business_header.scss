@@ -60,13 +60,15 @@
           font-size: 14px;
           margin-right: 10px;
           border-radius: 3px;
+          font-weight: 700;
+          border: 1px solid #666;
           .fa-star {
             margin-right: 8px;
             font-size: 15px;
           }
         }
 
-        a {
+        .biz-action {
           border: 1px solid #666;
           box-shadow:  #555;
           border-radius: 2px;
@@ -75,6 +77,11 @@
           font-size: 12px;
           font-weight: 700;
         }
+
+        .biz-action:hover {
+          cursor: not-allowed;
+        }
+
       }
     }
 

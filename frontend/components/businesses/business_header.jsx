@@ -37,9 +37,9 @@ const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history, n
 
         <div className="biz-header-actions">
           <Link className="write-a-review" to={`/writeareview/${id}`}><i className="fa fa-star"></i>Write a Review</Link>
-          <Link className="biz-action" to="/">Add Photo</Link>
-          <Link className="biz-action" to="/">Share</Link>
-          <Link className="biz-action" to="/">Save</Link>
+          <Link className="biz-action" to="#">Add Photo</Link>
+          <Link className="biz-action" to="#">Share</Link>
+          <Link className="biz-action" to="#">Save</Link>
 
         </div>
 

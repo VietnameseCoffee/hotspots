@@ -12,7 +12,6 @@ class Api::SearchesController < ApplicationController
       biz_results = Business.includes(:images, :categories)
         .where('LOWER(name) like ?', "#{name}%")
         .references(:images, :categories)
-        # debugger
       if biz_results.empty?
         biz_results = [];
         category_results = find_by_category(name)
