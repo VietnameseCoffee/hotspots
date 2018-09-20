@@ -23,7 +23,7 @@ const BusinessDetail = ({details}) => {
           </li>
           <li>{details.phoneNumber}</li>
           <li><a href={mapLink}>Get Directions</a></li>
-          <li><Link to="/">Message the Business</Link></li>
+          <li><Link className="working" to="#">Message the Business</Link></li>
         </ul>
 
       </div>
