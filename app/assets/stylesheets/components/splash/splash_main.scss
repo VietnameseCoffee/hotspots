@@ -17,8 +17,6 @@
       grid-row-gap: 2em;
 
       .splash-biz-item {
-        border: 1px solid #c6c6c6;
-        border-radius: 4px;
 
         .splash-biz-top {
           height: 180px;
@@ -27,8 +25,10 @@
             height: 100%;
             overflow: hidden;
             img {
+              border-top-right-radius: 4px;
+              border-top-left-radius: 4px;
               object-fit: cover;
-              height: 102%;
+              height: 100%;
             }
 
             img:hover {
@@ -39,6 +39,11 @@
 
         .splash-biz-body {
           padding: 9px;
+          border-bottom: 1px solid #c6c6c6;
+          border-left: 1px solid #c6c6c6;
+          border-right: 1px solid #c6c6c6;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
           .splash-biz-main-info {
             .link-h3 {
               font-size: 18px;
