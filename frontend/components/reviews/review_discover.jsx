@@ -19,9 +19,17 @@ class ReviewDiscover extends React.Component {
         requestBusiness={this.props.requestBusiness}/>);
 
     return (
-      <div className="splash-main-container">
-        <div className="splash-parts-container">
-          <h2>Been to These Businesses? <br></br> Your Next Review Awaits!</h2>
+      <div className="review-discover-main-container">
+        <div className="gray">
+          <div className="gray-content">
+
+            <h2>Your Next Review Awaits</h2>
+            <p>Discover all the cool places you want to try out and write a review!</p>
+          </div>
+        </div>
+        <div className="review-discover-parts-container">
+
+          <h2>Been to These Businesses?</h2>
           <div className="hot-spots-grid">
             {businesses}
           </div>
