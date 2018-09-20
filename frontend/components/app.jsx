@@ -11,6 +11,7 @@ import BusinessShowContainer from './businesses/business_show_container';
 import ReviewFormContainer from './reviews/review_form_container';
 import SearchResultListContainer from './searches/search_results_list_container';
 import SplashMainContainer from './splash/splash_main_container';
+import ReviewDiscover from './reviews/review_discover_container';
 import Footer from './footer/footer';
 
 
@@ -31,6 +32,7 @@ const App = () => {
         <AuthRoute exact path="/signup" component={ SignupFormContainer }/>
         <Route path={`/businesses/:businessId`} component={BusinessShowContainer} />
         <Route path={`/writeareview/:businessId`} component={ReviewFormContainer} />
+        <Route path={`/writeareview`} component={ReviewDiscover} />
         <Route path={`/searches/:query`} component={SearchResultListContainer} />
         <Route exact path={`/`} component={SplashMainContainer} />
       </div>
