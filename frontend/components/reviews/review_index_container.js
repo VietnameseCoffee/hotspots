@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import ReviewIndex from './review_index';
 import { requestDeleteReview } from '../../actions/review_actions';
 
-const msp = (state, ownProps) => {
 
+const msp = (state, ownProps) => {
   let revUsers = {}, entities = state.entities;
   let userIds = ownProps.reviewIds.map((revId) => entities.reviews[revId].userId);
 
@@ -12,6 +12,7 @@ const msp = (state, ownProps) => {
   return ({
     reviews: ownProps.reviewIds.map((revId) => entities.reviews[revId]),
     users: revUsers,
+    photos: ownProps.photoIds.map((id) => entities.photos[id]),
     currentUser: parseInt(state.session.id)
   });
 };

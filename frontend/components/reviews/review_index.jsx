@@ -2,12 +2,13 @@ import React from 'react';
 
 import ReviewIndexItem from './review_index_item';
 
-const ReviewIndex = ({ reviews, users, deleteReview, currentUser }) => {
+const ReviewIndex = ({ reviews, users, deleteReview, currentUser, photos }) => {
 
   return (
     <div className="review-index">
       <ul>
         {reviews.map ((review) => {
+          let photos;
           return (
           <ReviewIndexItem
             key={review.id}
@@ -15,6 +16,7 @@ const ReviewIndex = ({ reviews, users, deleteReview, currentUser }) => {
             user={users[review.userId]}
             deleteReview={deleteReview}
             currentUser={currentUser}
+            photos={photos}
           />)
         })}
       </ul>
