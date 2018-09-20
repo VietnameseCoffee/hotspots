@@ -16,19 +16,19 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
 
     if (splash){
       loginLink = (
-        <span className={`${splash}login`}>
+        <div className={`${splash}login`}>
           <Link to="/login">Login</Link>
-        </span>
+        </div>
       );
     }
 
     if (!currentUser) {
       demo = (
-        <span className="">
+
         <button
           className="demo-login"
           onClick={() => demoLogin(demo_user)}>Demo</button>
-        </span>
+
       )
     }
 
@@ -37,9 +37,7 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
       <div className={`${splash}login-signup`}>
         {loginLink}
         &nbsp;&nbsp;
-        <span>
-          <Link className={`${splash}signup`} to="/signup">Sign up</Link>
-        </span>
+        <Link className={`${splash}signup`} to="/signup">Sign up</Link>
         {splash ? demo : null}
       </div>
     );
