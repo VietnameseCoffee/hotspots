@@ -3,7 +3,7 @@ import React from 'react';
 import ReviewIndexItem from './review_index_item';
 
 const ReviewIndex = ({ reviews, users, deleteReview, currentUser, photos }) => {
-  debugger
+
   return (
     <div className="review-index">
       <ul>

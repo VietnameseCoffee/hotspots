@@ -1,18 +1,27 @@
 import React from 'react';
 
 const ReviewIndexItem = ({ review, user, currentUser, deleteReview, userPhotos }) => {
-  let deleteButton
-  let profilePic = 5;
+  let deleteButton;
+  let photos;
   if (review.userId === currentUser) {
     deleteButton = (
       <button onClick={() => {deleteReview(review.id)}}>
         <i className="fa fa-trash" aria-hidden="true"></i>
       </button>);
   }
+  // debugger
+  if (userPhotos.length > 0) {
+    // debugger
+    photos = (
+      <div className="review-images">
+        {userPhotos.map((pic) => (
+          <div className="image-container">
+            <img src={pic.photoUrl}></img>
+          </div>
+        ))}
+      </div>
 
-  if (userPhotos.length !== 0) {
-    debugger
-
+  )
   }
   return (
     <li className="review-index-item">
@@ -35,6 +44,8 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview, userPhotos }
         <p>
           {review.text}
         </p>
+
+        {photos}
 
         <div className="review-extras">
           <div>

@@ -49,12 +49,30 @@
           .review-body{
             width: 400px;
             position: relative;
+            margin-bottom: 10px;
             .review-info {
               margin: 5px 0;
             }
 
             p {
               margin-bottom: 50px;
+            }
+
+            .review-images {
+              height: 200px;
+              .image-container {
+                float: left;
+                margin-left: 5px;
+                width: 195px;
+                height: 195px;
+                overflow: hidden;
+                img {
+                  overflow: hidden;
+                  object-fit: cover;
+                  height: 100%;
+                  border-radius: 4px;
+                }
+              }
             }
 
             .review-extras {
