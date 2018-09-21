@@ -49,9 +49,8 @@
 
           .splash-signup {
             border: 2px solid white;
-            padding: 6px 24px 6px;
+            padding: 7px 24px 8px;
             border-radius: 3px;
-            margin-left: 5px;
           }
         }
       }
@@ -59,11 +58,13 @@
 
     .splash-logo {
       padding-top: 80px;
-      display: flex;
-      justify-content: center;
-      h1 {
-        font-size: 81px;
-        color: white;
+      .logo-img {
+        margin: 0 auto;
+        width: 260px;
+        height: 180px;
+        background-image: image-url('logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
 

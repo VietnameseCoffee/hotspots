@@ -22,7 +22,7 @@ const SplashHeader = () => {
         </div>
 
         <div className="splash-logo">
-          <h1>HotSpots</h1>
+          <div className="logo-img"></div>
         </div>
 
         <div className="splash-search-bar">

@@ -16,8 +16,14 @@
     box-sizing: border-box;
 
     .header-logo {
-      width: 68px;
-
+      width: 76px;
+      .logo-img {
+        width: 100%;
+        height: 52px;
+        background-image: image-url('logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
     }
     .header-search-bar-wrapper {
       width: 700px;
@@ -102,7 +108,7 @@
 
           .signup {
             background-color: #bd1f1f;
-            padding: 12px 15px 12px;
+            padding: 10px 15px 10px;
             font-weight: 700;
             border-radius: 4px;
             align-items: center;
