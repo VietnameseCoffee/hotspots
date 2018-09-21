@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
+const ReviewIndexItem = ({ review, user, currentUser, deleteReview, userPhotos }) => {
   let deleteButton
   let profilePic = 5;
   if (review.userId === currentUser) {
@@ -10,7 +10,8 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview }) => {
       </button>);
   }
 
-  if (user.photoUrl) {
+  if (userPhotos.length !== 0) {
+    debugger
 
   }
   return (

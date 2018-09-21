@@ -3,12 +3,18 @@ import React from 'react';
 import ReviewIndexItem from './review_index_item';
 
 const ReviewIndex = ({ reviews, users, deleteReview, currentUser, photos }) => {
-
+  debugger
   return (
     <div className="review-index">
       <ul>
         {reviews.map ((review) => {
-          let photos;
+          let userPhotos = [];
+          photos.forEach((pic) => {
+            if (pic.userId === review.userId) {
+              userPhotos.push(pic)
+            }
+          })
+
           return (
           <ReviewIndexItem
             key={review.id}
@@ -16,7 +22,7 @@ const ReviewIndex = ({ reviews, users, deleteReview, currentUser, photos }) => {
             user={users[review.userId]}
             deleteReview={deleteReview}
             currentUser={currentUser}
-            photos={photos}
+            userPhotos={userPhotos}
           />)
         })}
       </ul>
