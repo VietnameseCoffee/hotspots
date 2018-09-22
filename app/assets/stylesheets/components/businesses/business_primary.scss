@@ -60,6 +60,7 @@
 
             .review-images {
               height: 200px;
+              margin-bottom: 3px;
               .image-container {
                 float: left;
                 margin-left: 5px;
@@ -75,14 +76,16 @@
               }
             }
 
+
+
+
             .review-extras {
               width: 100%;
-              position: absolute;
-              bottom: 0;
               display: flex;
               justify-content: space-between;
               margin-bottom: 10px;
               .extras-button {
+                display: block;
                 .fa-trash {
                   border: 2px solid #c6c6c6;
                   border-radius: 4px;

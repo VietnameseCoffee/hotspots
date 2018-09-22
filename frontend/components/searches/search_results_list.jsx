@@ -27,7 +27,7 @@ class SearchResultList extends React.Component {
             No Results Were Found :(
           </div>
           <div>
-            Please check for typos or use similar phrases
+            Please check for typos and use at least 3 characters
           </div>
         </div>
       )
