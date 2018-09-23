@@ -29,11 +29,37 @@ Businesses also contain tags of their type of food available allowing users to
 jump from one category of food to the next without having to always use the
 search bar for new queries.
 
-## Key Features
-
 ### Tags
 
-Tags were made to allow people to search for places based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as a html element with an event handler triggering a search based on its name.
+Tags were deployed to allow people to search for busineses based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as an HTML hyper-link and be used to find businesses similar in the search query.
+
+``` ruby
+def show
+  name = search_params[:name].downcase
+  place = search_params[:place]
+  if name.length < 3
+    @search_results = []
+    render 'api/searches/show'
+  else
+    biz_results = Business.includes(:images, :categories)
+      .where('LOWER(name) like ?', "#{name}%")
+      .references(:images, :categories)
+    if biz_results.empty?
+      biz_results = [];
+      category_results = find_by_category(name)
+    else
+      tags = biz_results.first.categories.pluck(:category)
+      category_results = []
+      tags.each do |tag|
+        category_results.concat(find_by_category(tag.downcase))
+      end
+    end
+
+    @search_results = (biz_results + category_results).uniq
+    render 'api/searches/show'
+  end
+end
+```
 
 ### Dynamically changing html classes
 
@@ -53,33 +79,3 @@ The technologies are listed below non-exhaustively:
 
 
 ## Features
-
-
-
-
-
-
-
-
-
-
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
