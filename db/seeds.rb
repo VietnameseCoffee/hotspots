@@ -405,8 +405,8 @@ b29 = Business.create(
 )
 b30 = Business.create(
   name: "Garaje",
-  latitude: 37.764972,
-  longitude: -122.421555,
+  latitude: 37.781583,
+  longitude: -122.396146,
   address: '3091 16th St',
   city: 'San Francisco',
   state: 'CA',
@@ -421,7 +421,7 @@ b31 = Business.create(
   longitude: -122.409953,
   address: '431 Bush St',
   city: 'San Francisco',
-  state: 'CA',431 Bush St
+  state: 'CA',
   zip: 94108,
   stars: 3.0,
   phone_number: '(415) 397-3218',
@@ -1504,7 +1504,7 @@ Review.create(
   business_id: b27.id,
   user_id: u2.id,
   stars: 4,
-  text: good,
+  text: gshort,
   post_date: '8/15/2018'
 )
 Review.create(
@@ -1518,14 +1518,14 @@ Review.create(
   business_id: b27.id,
   user_id: u13.id,
   stars: 4,
-  text: text,
+  text: gshort,
   post_date: '8/2/2018'
 )
 Review.create(
   business_id: b28.id,
   user_id: u13.id,
   stars: 5,
-  text: text,
+  text: ambig,
   post_date: '8/9/2018'
 )
 Review.create(
@@ -1539,14 +1539,14 @@ Review.create(
   business_id: b28.id,
   user_id: u15.id,
   stars: 4,
-  text: text,
+  text: okay,
   post_date: '8/29/2018'
 )
 Review.create(
   business_id: b28.id,
   user_id: u16.id,
   stars: 5,
-  text: text,
+  text: great,
   post_date: '9/7/2018'
 )
 Review.create(
@@ -1574,21 +1574,21 @@ Review.create(
   business_id: b30.id,
   user_id: u8.id,
   stars: 4,
-  text: love,
+  text: okay,
   post_date: '9/1/2018'
 )
 Review.create(
   business_id: b31.id,
   user_id: u2.id,
   stars: 3,
-  text: love,
+  text: meh,
   post_date: '8/1/2018'
 )
 Review.create(
   business_id: b31.id,
   user_id: u20.id,
   stars: 1,
-  text: love,
+  text: bad,
   post_date: '8/27/2018'
 )
 Review.create(
