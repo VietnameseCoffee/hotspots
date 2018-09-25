@@ -63,21 +63,23 @@ end
 
 ### Dynamically changing html classes
 
-Html classes were changed based on the state of the component or props passed in. Examples include determining if buttons belong to a splash page or standard view and the stars displayed on businesses and reviews. The below example takes advantage of React router's match props to determine the HTML element's class name.
+Html classes were changed based on the state of the component or props passed in. Examples include determining if buttons belong to a splash page or standard view and the stars displayed on businesses and reviews. The below example takes advantage of React router's match props to determine the HTML element's class name inside a React component function.
 
 ``` JavaScript
-const splash = match.isExact ?  'splash-': '';
-
-// further down the code
-
-return (
-  <div className={`${splash}login-signup`}>
-    {loginLink}
-    &nbsp;&nbsp;
-    <Link className={`${splash}signup`} to="/signup">Sign up</Link>
-    {splash ? demo : null}
-  </div>
+const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
+  const splash = match.isExact ?  'splash-': '';
+  .
+  .
+  .
+  return (
+    <div className={`${splash}login-signup`}>
+      {loginLink}
+      &nbsp;&nbsp;
+      <Link className={`${splash}signup`} to="/signup">Sign up</Link>
+      {splash ? demo : null}
+    </div>
 );
+}
 ```
 
 

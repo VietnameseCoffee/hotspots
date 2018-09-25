@@ -343,6 +343,90 @@ b24 = Business.create(
   phone_number: '(415) 857-1192',
   price: 2
 )
+b25 = Business.create(
+  name: "El Farolito",
+  latitude: 37.752784,
+  longitude: -122.418566,
+  address: '2779 Mission St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94108,
+  stars: 4.33,
+  phone_number: '(415) 824-7877',
+  price: 1
+)
+b26 = Business.create(
+  name: "Tín Vietnamese Cuisine",
+  latitude: 37.780824,
+  longitude: -122.405850,
+  address: '937 Howard St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94103,
+  stars: 4.0,
+  phone_number: '(415) 882-7188',
+  price: 1
+)
+b27 = Business.create(
+  name: "Reveille Coffee Co.",
+  latitude: 37.797166,
+  longitude: -122.405382,
+  address: '200 Columbus Ave',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94133,
+  stars: 4.0,
+  phone_number: '(415) 789-6258',
+  price: 2
+)
+b28 = Business.create(
+  name: "Boba Guys",
+  latitude: 37.760104,
+  longitude: -122.421229,
+  address: '3491 19th St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94113,
+  stars: 4.5,
+  phone_number: '(415) 967-2622',
+  price: 1
+)
+b29 = Business.create(
+  name: "Panchita’s Restaurant No 2",
+  latitude: 37.764972,
+  longitude: -122.421555,
+  address: '3091 16th Stt',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94103,
+  stars: 5,
+  phone_number: '(415) 967-2622',
+  price: 1
+)
+b30 = Business.create(
+  name: "Garaje",
+  latitude: 37.764972,
+  longitude: -122.421555,
+  address: '3091 16th St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94103,
+  stars: 3.5,
+  phone_number: '(415) 967-2622',
+  price: 2
+)
+b31 = Business.create(
+  name: "Akiko's Restaurant",
+  latitude: 37.789075,
+  longitude: -122.409953,
+  address: '431 Bush St',
+  city: 'San Francisco',
+  state: 'CA',431 Bush St
+  zip: 94108,
+  stars: 3.0,
+  phone_number: '(415) 397-3218',
+  price: 2
+)
 
 # categories cyo
 
@@ -534,6 +618,70 @@ Category.create(
   business_id: b24.id,
   category: 'Bars',
 )
+Category.create(
+  business_id: b25.id,
+  category: 'Mexican',
+)
+Category.create(
+  business_id: b25.id,
+  category: 'Burritos',
+)
+Category.create(
+  business_id: b25.id,
+  category: 'Sandwiches',
+)
+Category.create(
+  business_id: b26.id,
+  category: 'Vietnamese',
+)
+Category.create(
+  business_id: b26.id,
+  category: 'Noodles',
+)
+Category.create(
+  business_id: b27.id,
+  category: 'Coffee',
+)
+Category.create(
+  business_id: b27.id,
+  category: 'Tea',
+)
+Category.create(
+  business_id: b28.id,
+  category: 'Bubble Tea',
+)
+Category.create(
+  business_id: b28.id,
+  category: 'Boba',
+)
+Category.create(
+  business_id: b29.id,
+  category: 'Salvadoran',
+)
+Category.create(
+  business_id: b29.id,
+  category: 'Mexican',
+)
+Category.create(
+  business_id: b30.id,
+  category: 'Mexican',
+)
+Category.create(
+  business_id: b30.id,
+  category: 'Burgers',
+)
+Category.create(
+  business_id: b30.id,
+  category: 'American',
+)
+Category.create(
+  business_id: b31.id,
+  category: 'Japanese',
+)
+Category.create(
+  business_id: b31.id,
+  category: 'Sushi',
+)
 
 
 # Hours hyo
@@ -634,6 +782,34 @@ Hour.create(
   business_id: b24.id,
   hours: late
 )
+Hour.create(
+  business_id: b25.id,
+  hours: late
+)
+Hour.create(
+  business_id: b26.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b27.id,
+  hours: norm_7
+)
+Hour.create(
+  business_id: b28.id,
+  hours: norm_7
+)
+Hour.create(
+  business_id: b29.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b30.id,
+  hours: late
+)
+Hour.create(
+  business_id: b31.id,
+  hours: normal
+)
 
 # Biz info byo
 
@@ -731,6 +907,34 @@ BusinessInfo.create(
 )
 BusinessInfo.create(
   business_id: b24.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b25.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b26.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b27.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b28.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b29.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b30.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b31.id,
   details: detail
 )
 
@@ -1261,6 +1465,139 @@ Review.create(
   text: "Esta plays here and it gets lit, can't ask for anything else here",
   post_date: '8/22/2018'
 )
+Review.create(
+  business_id: b25.id,
+  user_id: u10.id,
+  stars: 5,
+  text: love,
+  post_date: '8/25/2018'
+)
+Review.create(
+  business_id: b25.id,
+  user_id: u11.id,
+  stars: 4,
+  text: meh,
+  post_date: '8/25/2018'
+)
+Review.create(
+  business_id: b25.id,
+  user_id: u12.id,
+  stars: 4,
+  text: good,
+  post_date: '8/29/2018'
+)
+Review.create(
+  business_id: b26.id,
+  user_id: u6.id,
+  stars: 4,
+  text: good,
+  post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b26.id,
+  user_id: u7.id,
+  stars: 4,
+  text: great,
+  post_date: '8/29/2018'
+)
+Review.create(
+  business_id: b27.id,
+  user_id: u2.id,
+  stars: 4,
+  text: good,
+  post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b27.id,
+  user_id: u5.id,
+  stars: 4,
+  text: great,
+  post_date: '8/1/2018'
+)
+Review.create(
+  business_id: b27.id,
+  user_id: u13.id,
+  stars: 4,
+  text: text,
+  post_date: '8/2/2018'
+)
+Review.create(
+  business_id: b28.id,
+  user_id: u13.id,
+  stars: 5,
+  text: text,
+  post_date: '8/9/2018'
+)
+Review.create(
+  business_id: b28.id,
+  user_id: u14.id,
+  stars: 4,
+  text: text,
+  post_date: '8/12/2018'
+)
+Review.create(
+  business_id: b28.id,
+  user_id: u15.id,
+  stars: 4,
+  text: text,
+  post_date: '8/29/2018'
+)
+Review.create(
+  business_id: b28.id,
+  user_id: u16.id,
+  stars: 5,
+  text: text,
+  post_date: '9/7/2018'
+)
+Review.create(
+  business_id: b29.id,
+  user_id: u18.id,
+  stars: 5,
+  text: text,
+  post_date: '9/2/2018'
+)
+Review.create(
+  business_id: b29.id,
+  user_id: u11.id,
+  stars: 5,
+  text: text,
+  post_date: '9/17/2018'
+)
+Review.create(
+  business_id: b30.id,
+  user_id: u10.id,
+  stars: 3,
+  text: text,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b30.id,
+  user_id: u8.id,
+  stars: 4,
+  text: love,
+  post_date: '9/1/2018'
+)
+Review.create(
+  business_id: b31.id,
+  user_id: u2.id,
+  stars: 3,
+  text: love,
+  post_date: '8/1/2018'
+)
+Review.create(
+  business_id: b31.id,
+  user_id: u20.id,
+  stars: 1,
+  text: love,
+  post_date: '8/27/2018'
+)
+Review.create(
+  business_id: b31.id,
+  user_id: u17.id,
+  stars: 5,
+  text: love,
+  post_date: '9/4/2018'
+)
 
 i1 = Image.create(user_id: u2.id, business_id: b1.id)
 file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/fivFqKRBrA1ajiXJhTKesfrZ")
@@ -1476,4 +1813,160 @@ i1.photo.attach(io: file, filename: "03.jpg")
 
 i1 = Image.create(user_id: u1.id, business_id: b18.id)
 file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(50).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u18.id, business_id: b19.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(51).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u18.id, business_id: b19.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(52).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b19.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(53).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u18.id, business_id: b20.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(54).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u10.id, business_id: b20.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(55).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u10.id, business_id: b20.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(56).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u10.id, business_id: b21.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(57).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b21.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(58).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b21.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(59).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b22.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(60).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b22.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(61).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b22.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(62).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b23.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(63).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b23.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(64).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b23.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(65).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u18.id, business_id: b24.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(66).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u8.id, business_id: b24.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(67).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u20.id, business_id: b24.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(68).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u10.id, business_id: b25.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(69).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b25.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(70).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u12.id, business_id: b25.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(71).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u6.id, business_id: b26.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(72).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u6.id, business_id: b26.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(73).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u7.id, business_id: b26.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(74).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u2.id, business_id: b27.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(75).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u13.id, business_id: b27.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(76).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u13.id, business_id: b27.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(77).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u14.id, business_id: b28.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(78).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u16.id, business_id: b28.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(79).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u16.id, business_id: b28.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(80).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u18.id, business_id: b29.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(81).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u18.id, business_id: b29.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(82).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u11.id, business_id: b29.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(83).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u10.id, business_id: b30.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(84).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u10.id, business_id: b30.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(85).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u8.id, business_id: b30.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(86).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u2.id, business_id: b31.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(87).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u2.id, business_id: b31.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(88).jpg")
+i1.photo.attach(io: file, filename: "03.jpg")
+
+i1 = Image.create(user_id: u17.id, business_id: b31.id)
+file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(89).jpg")
 i1.photo.attach(io: file, filename: "03.jpg")
