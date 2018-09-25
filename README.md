@@ -31,12 +31,12 @@ search bar for new queries.
 
 ### Tags
 
-Tags were deployed to allow people to search for busineses based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as an HTML hyper-link and be used to find businesses similar in the search query.
+Tags were deployed to allow people to search for busineses based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as an HTML hyper-link and be used to find businesses similar in the search query, the code below shows the process:
+
 
 ``` ruby
 def show
-  name = search_params[:name].downcase
-  place = search_params[:place]
+  name = search_params[:name].downcase]
   if name.length < 3
     @search_results = []
     render 'api/searches/show'
@@ -63,7 +63,22 @@ end
 
 ### Dynamically changing html classes
 
-Html classes were changed based on the state of the component or props passed in. Examples include determining if buttons belong to a splash page or standard view and the stars displayed on businesses and reviews.
+Html classes were changed based on the state of the component or props passed in. Examples include determining if buttons belong to a splash page or standard view and the stars displayed on businesses and reviews. The below example takes advantage of React router's match props to determine the HTML element's class name.
+
+``` JavaScript
+const splash = match.isExact ?  'splash-': '';
+
+// further down the code
+
+return (
+  <div className={`${splash}login-signup`}>
+    {loginLink}
+    &nbsp;&nbsp;
+    <Link className={`${splash}signup`} to="/signup">Sign up</Link>
+    {splash ? demo : null}
+  </div>
+);
+```
 
 
 ## Technologies
@@ -76,6 +91,3 @@ The technologies are listed below non-exhaustively:
 * Amazon Web Services
 * Google Maps API
 * jquery ajax
-
-
-## Features
