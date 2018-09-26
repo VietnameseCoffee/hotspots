@@ -18,7 +18,7 @@ const BusinessDetail = ({details}) => {
 
         <ul className="biz-info">
           <li>
-            <i class="fa fa-map-marker"></i>
+            <i className="fa fa-map-marker"></i>
             <div>
               {details.address}
               <br></br>
@@ -26,19 +26,19 @@ const BusinessDetail = ({details}) => {
             </div>
           </li>
           <li>
-            <i class="fa fa-phone"></i>
+            <i className="fa fa-phone"></i>
             <div>
               {details.phoneNumber}
             </div>
           </li>
           <li>
-            <i class="fa fa-map-signs"></i>
+            <i className="fa fa-map-signs"></i>
             <div>
               <a href={mapLink}>Get Directions</a>
             </div>
           </li>
           <li>
-            <i class="fa fa-envelope"></i>
+            <i className="fa fa-envelope"></i>
             <div>
               <Link className="working" to="#">Message the Business</Link>
             </div>

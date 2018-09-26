@@ -15,7 +15,7 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview, userPhotos }
     photos = (
       <div className="review-images">
         {userPhotos.map((pic) => (
-          <div className="image-container">
+          <div key={pic.photoUrl}className="image-container">
             <img src={pic.photoUrl}></img>
           </div>
         ))}

@@ -8,9 +8,9 @@ const Footer = (props) => {
 
       <div className="footer-column">
         <h3> About the Developer </h3>
-        <div><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/ou-kevin/">LinkedIn</a></div>
-          <div><i class="fa fa-github"></i><a href="https://github.com/VietnameseCoffee">GitHub</a></div>
-          <div><i class="fa fa-github"></i><a href="https://github.com/VietnameseCoffee/hotspots">Project Link</a></div>
+        <div><i className="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/ou-kevin/">LinkedIn</a></div>
+          <div><i className="fa fa-github"></i><a href="https://github.com/VietnameseCoffee">GitHub</a></div>
+          <div><i className="fa fa-github"></i><a href="https://github.com/VietnameseCoffee/hotspots">Project Link</a></div>
       </div>
 
       <div className="footer-column">
