@@ -17,13 +17,32 @@ const BusinessDetail = ({details}) => {
         </div>
 
         <ul className="biz-info">
-          <li>{details.address}
-            <br></br>
-            {`${details.city}, ${details.state} ${details.zip}`}
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <div>
+              {details.address}
+              <br></br>
+              {`${details.city}, ${details.state} ${details.zip}`}
+            </div>
           </li>
-          <li>{details.phoneNumber}</li>
-          <li><a href={mapLink}>Get Directions</a></li>
-          <li><Link className="working" to="#">Message the Business</Link></li>
+          <li>
+            <i class="fa fa-phone"></i>
+            <div>
+              {details.phoneNumber}
+            </div>
+          </li>
+          <li>
+            <i class="fa fa-map-signs"></i>
+            <div>
+              <a href={mapLink}>Get Directions</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <div>
+              <Link className="working" to="#">Message the Business</Link>
+            </div>
+          </li>
         </ul>
 
       </div>

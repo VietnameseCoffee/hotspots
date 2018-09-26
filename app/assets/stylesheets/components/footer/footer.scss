@@ -7,13 +7,25 @@
     padding-top: 20px;
     margin: 0 auto;
     width: 960px;
+    display: flex;
 
-  
+
+    .footer-column {
+      display: inline;
+      margin-right: 25px;
+    }
+
+    i {
+      margin-right: 5px;
+      color: #383838;
+    }
+
     a {
       color: #0073bb;
       font-size: 14px;
     }
   }
+
 
   .footer-image {
     margin: 0 auto;

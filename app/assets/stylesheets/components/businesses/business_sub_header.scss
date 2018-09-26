@@ -23,9 +23,25 @@
 
       ul {
         li {
-          margin-top: 4px;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 5px;
           border-top: 1px, solid #7A7A7A;
 
+          .fa-map-marker {
+            font-size: 16px;
+            margin-left: 3px;
+          }
+
+          div {
+            width: 92%;
+          }
+
+          i {
+            width: 8%;
+            margin-left: 2px;
+            color: #545454;
+          }
           a {
             color: #0073bb;
           }
