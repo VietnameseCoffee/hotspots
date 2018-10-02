@@ -7,7 +7,7 @@ import SearchBarContainer from '../header/search_bar_container';
 import NavBar from '../header/nav_bar'; // need to implement
 
 const SplashHeader = () => {
-  let num = Math.floor(Math.random() * 11)
+  let num = Math.floor(Math.random() * 14.99)
   let backgroundImg = {
     backgroundImage: `url(https://s3-us-west-1.amazonaws.com/hot-spots-dev/front_${num}.jpg)`
   }
