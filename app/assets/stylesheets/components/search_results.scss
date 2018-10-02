@@ -15,9 +15,8 @@
     }
     .biz-index-item {
       width: 630px;
-      height: 160px;
-      margin-bottom: 20px;
-      padding-top: 5px;
+      margin-bottom: 16px;
+      padding-top: 12px;
       border-top: 1px solid #c6c6c6;
       display: flex;
       justify-content: space-between;
@@ -25,8 +24,8 @@
       .biz-side {
 
         .image-container {
-          width: 150px;
-          height: 150px;
+          width: 180px;
+          height: 180px;
           border-radius: 4px;
           overflow: hidden;
           img {
@@ -40,7 +39,7 @@
       }
 
       .biz-body {
-        width: 450px;
+        width: 440px;
         font-size: 14px;
         .biz-main-info {
           display: flex;
