@@ -24,11 +24,9 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
 
     if (!currentUser) {
       demo = (
-
         <button
           className="demo-login"
           onClick={() => demoLogin(demo_user)}>Demo</button>
-
       )
     }
 
@@ -36,7 +34,6 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
     return (
       <div className={`${splash}login-signup`}>
         {loginLink}
-        &nbsp;&nbsp;
         <Link className={`${splash}signup`} to="/signup">Sign up</Link>
         {splash ? demo : null}
       </div>

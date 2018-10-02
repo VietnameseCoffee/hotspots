@@ -33,10 +33,12 @@
       }
 
       .splash-header-right {
-        width: 300px;
+        width: 310px;
 
         .splash-login-signup {
-          width: 390px;
+          width: 310px;
+          display: flex;
+          justify-content: space-between;
 
           .splash-login {
             display: inline;
@@ -50,6 +52,19 @@
             padding: 7px 24px 8px;
             border-radius: 3px;
           }
+
+          .demo-login {
+            border: 4px solid #b51e1e;
+            color: white;
+            background-color:  #d32323;
+            padding: 6px 22px 7px;
+            border-radius: 3px;
+          }
+
+        }
+
+        .header-group {
+          float: right;
         }
       }
     }
