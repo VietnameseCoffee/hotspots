@@ -29,9 +29,9 @@ class BusinessIndexItem extends React.Component {
     let tags = biz.categories;
     let price = this.props.biz.price;
     let index = this.props.index;
+    let numReviews = this.props.biz.numReviews;
     let price_str = "";
     let anchorTags;
-
     while (price_str.length < price) {price_str = price_str.concat("$")};
     anchorTags = tags.map((tag, i) => <a key ={i} onClick={(e) => this.clickTag(e, tag)}>{tag}</a>)
 
@@ -50,7 +50,7 @@ class BusinessIndexItem extends React.Component {
 
             <div className="biz-details">
               <div className="link-h3"><span>{index}.</span><span onClick={(e) => this.handleClick(e, this.props.biz.id)}>{biz.name}</span> </div>
-              <div><span className={`stars-mid-${starUtil.round(biz.stars)}`}></span> </div>
+              <div><span className={`stars-mid-${starUtil.round(biz.stars)}`}></span>&nbsp;{numReviews} reviews</div>
               <div><span>{price_str}</span><span>{anchorTags}</span></div>
             </div>
 
