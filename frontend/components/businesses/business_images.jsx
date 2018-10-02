@@ -12,10 +12,12 @@ class BusinessImages extends React.Component {
   }
 
   growImage() {
+    const middle = document.querySelector('.biz-show-img-1')
     middle.classList.add('biz-img-default')
   }
 
   shrinkImage() {
+    const middle = document.querySelector('.biz-show-img-1')
     middle.classList.remove('biz-img-default')
   }
 
@@ -24,26 +26,19 @@ class BusinessImages extends React.Component {
     const middle = document.querySelector('.biz-show-img-1')
 
     if (middle) {
-      imageContainer.addEventListener('mouseleave', () => {
-        middle.classList.add('biz-img-default')
-      })
-      imageContainer.addEventListener('mouseenter', () => {
-        middle.classList.remove('biz-img-default')
-      })
+      imageContainer.addEventListener('mouseleave', this.growImage);
+      imageContainer.addEventListener('mouseenter', this.shrinkImage);
     }
-  }
+    }
 
   componentWillUnmount() {
     const imageContainer = document.querySelector('.biz-images')
     const middle = document.querySelector('.biz-show-img-1')
 
     if (middle) {
-      imageContainer.removeEventListener('mouseleave', () => {
-        middle.classList.add('biz-img-default')
-      })
-      imageContainer.removeEventListener('mouseenter', () => {
-        middle.classList.remove('biz-img-default')
-      })
+      imageContainer.removeEventListener('mouseleave', this.growImage);
+      imageContainer.removeEventListener('mouseenter', this.shrinkImage);
+
     }
   }
 
