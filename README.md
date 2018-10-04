@@ -8,7 +8,7 @@
 
 Hot-Spots is a full-stack clone of the popular site Yelp. Hot Spots is a community based website to help users explore restaurants and food around the San Francisco, Bay Area. Visitors can search for places and types of food, while members can place reviews to influence ratings.
 
-This project was built in a 10 day time span, and more features are intended to be
+This project was built in a 2 week time span, and more features are intended to be
 implemented soon.
 
 ## Features
@@ -25,13 +25,13 @@ login in order for their review to be posted for others to see. People can also
 delete their reviews by clicking on the little trash can on the right bottom side of
 their own reviews.
 
-Businesses also contain tags of their type of food available allowing users to
-jump from one category of food to the next without having to always use the
+Businesses also contain tags of their type of food available allowing users to search
+from one category to the next without having to explicitly use the
 search bar for new queries.
 
 ### Tags
 
-Tags were deployed to allow people to search for busineses based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as an HTML hyper-link and be used to find businesses similar in the search query, the code below shows the process:
+Tags were deployed to allow people to search for businesess based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as an HTML hyper-link and be used to find businesses similar in the search query, the code below shows the process:
 
 
 ``` ruby
