@@ -11,7 +11,20 @@ Hot-Spots is a full-stack clone of the popular site Yelp. Hot Spots is a communi
 This project was built in a 2 week time span, and more features are intended to be
 implemented soon.
 
+## Technologies
+
+The technologies are listed below non-exhaustively:
+* Ruby on Rails
+* React with Redux
+* HTML/CSS
+* SCSS
+* Amazon Web Services
+* Google Maps API
+* jquery ajax
+
 ## Features
+
+### Overview
 
 In hot spots, users can browse by searching for Restaurants and Foods of their interests.
 Searching returns a selection of businesses that match their query including ratings
@@ -29,10 +42,9 @@ Businesses also contain tags of their type of food available allowing users to s
 from one category to the next without having to explicitly use the
 search bar for new queries.
 
-### Tags
+### Searching
 
-Tags were deployed to allow people to search for businesess based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as an HTML hyper-link and be used to find businesses similar in the search query, the code below shows the process:
-
+Searching is implemented in a searches controller, where it takes in user inputs. Currently only names of tags or businesses are searched. Search starts by checking if the input string is too short. If the length is long enough, the controller invokes an ActiveRecord SQL query for businesses of similar name.
 
 ``` ruby
 def show
@@ -44,9 +56,22 @@ def show
     biz_results = Business.includes(:images, :categories)
       .where('LOWER(name) like ?', "#{name}%")
       .references(:images, :categories)
+```
+
+If the results is empty? The controller proceeds to search for tags of similar name, which is compartmentalized in a helper method.
+
+``` ruby
+  # name is the search query
+  ...
     if biz_results.empty?
       biz_results = [];
-      category_results = find_by_category(name)
+      category_results = find_by_category(name) # finds businesses by category name
+```
+
+Otherwise successful searches will take the first businesses and iterate through the tags to find other stores with associated tags.
+
+``` ruby
+  ...
     else
       tags = biz_results.first.categories.pluck(:category)
       category_results = []
@@ -61,9 +86,50 @@ def show
 end
 ```
 
-### Dynamically changing html classes
 
-Html classes were changed based on the state of the component or props passed in. Examples include determining if buttons belong to a splash page or standard view and the stars displayed on businesses and reviews. The below example takes advantage of React router's match props to determine the HTML element's class name inside a React component function.
+### Tags
+
+Tags were deployed to allow people to search for businesses based on categories like pizza or burgers. This was implemented using a categories table with associations to businesses. Tags can be pulled with each query of a business and tags can be displayed as an HTML hyper-link to find businesses similar in the search query.
+
+### Image Animations
+
+Images on a business show page are animated based on if a cursor is hovering over the image or not. The middle picture of the picture display by default is expanded but shrinks when other pictures are hovered. This is implemented using event listeners on DOM elements and taking advantage of React life cycle methods.
+
+
+Here are the callbacks that add classes that transform the middle image element.
+
+``` JavaScript
+growImage() {
+  const middle = document.querySelector('.biz-show-img-1')
+  middle.classList.add('biz-img-default')
+}
+
+shrinkImage() {
+  const middle = document.querySelector('.biz-show-img-1')
+  middle.classList.remove('biz-img-default')
+}
+
+```
+
+Once the image component mounts, add event listeners onto the DOM elements, removing event listeners are needed when unmounting as well.
+
+``` JavaScript
+
+componentDidMount() {
+  const imageContainer = document.querySelector('.biz-images')
+  const middle = document.querySelector('.biz-show-img-1')
+
+  if (middle) {
+    imageContainer.addEventListener('mouseleave', this.growImage);
+    imageContainer.addEventListener('mouseenter', this.shrinkImage);
+  }
+}
+```
+
+
+### Dynamically assigning HTML classes
+
+HTML classes are changed based on the state of the component or props passed in. Examples include determining if buttons belong to a splash page or standard view and the stars displayed on businesses and reviews. The below example takes advantage of React router's match props to determine the HTML element's class name inside a React component function.
 
 ``` JavaScript
 const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
@@ -81,15 +147,3 @@ const UserHeader = ({ currentUser, requestLogout, match, demoLogin}) => {
 );
 }
 ```
-
-
-## Technologies
-
-The technologies are listed below non-exhaustively:
-* Ruby on Rails
-* React with Redux
-* HTML/CSS
-* SCSS
-* Amazon Web Services
-* Google Maps API
-* jquery ajax
