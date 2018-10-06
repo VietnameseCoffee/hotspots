@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Util from '../../util/open_modal_util';
 
 const ReviewIndexItem = ({ review, user, currentUser, deleteReview, userPhotos }) => {
   let deleteButton;
@@ -15,7 +16,10 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview, userPhotos }
     photos = (
       <div className="review-images">
         {userPhotos.map((pic) => (
-          <div key={pic.photoUrl}className="image-container">
+          <div
+            key={pic.photoUrl}
+            className="image-container"
+            onClick={() => Util.openModal(pic.photoUrl)}>
             <img src={pic.photoUrl}></img>
           </div>
         ))}
