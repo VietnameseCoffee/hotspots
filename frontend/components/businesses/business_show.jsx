@@ -87,8 +87,16 @@ class BusinessShow extends React.Component {
           </div>
         </div>
 
+        <div className="modal">
+          <div className="image-show">
+            image
+          </div>
+          <div className="modal-shadow">
+          </div>
+        </div>
 
       </div>
+
     );
   }
 

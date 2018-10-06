@@ -17,4 +17,28 @@
     display: flex;
     justify-content: space-between;
   }
+
+}
+
+.modal {
+  // display: none;
+  .modal-shadow {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.32);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .image-show {
+    z-index: 3;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 5px;
+  }
 }
