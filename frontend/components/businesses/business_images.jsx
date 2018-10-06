@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import ReactDOM from 'react-dom';
+import * as Util from '../../util/open_modal_util';
 
 class BusinessImages extends React.Component {
 
@@ -9,7 +10,6 @@ class BusinessImages extends React.Component {
 
     this.growImage = this.growImage.bind(this);
     this.shrinkImage = this.shrinkImage.bind(this);
-    this.openModal = this.openModal.bind(this);
   }
 
   growImage() {
@@ -20,16 +20,6 @@ class BusinessImages extends React.Component {
   shrinkImage() {
     const middle = document.querySelector('.biz-show-img-1')
     middle.classList.remove('biz-img-default')
-  }
-
-  openModal(url) {
-    const modal = document.querySelector(".modal");
-    const modalImage = document.getElementById("modal-image");
-
-    if (modal && modalImage) {
-      modal.classList.add("opened")
-      modalImage.src=url
-    }
   }
 
   componentDidMount() {
@@ -63,7 +53,7 @@ class BusinessImages extends React.Component {
         <div
           key ={pic.photoUrl}
           className={classes}
-          onClick={() => this.openModal(pic.photoUrl)}>
+          onClick={() => Util.openModal(pic.photoUrl)}>
           <img src={pic.photoUrl}></img>
         </div>
       )}
