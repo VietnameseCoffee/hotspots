@@ -15,6 +15,17 @@ class BusinessShow extends React.Component {
   }
 
   componentDidMount () {
+    // debugger
+    const modalShadow = document.querySelector(".modal-shadow");
+    const modal = document.querySelector(".modal");
+    if (modalShadow && modal) {
+      console.log(555 )
+      modalShadow.addEventListener("click", () => {
+        console.log(5 )
+        modal.classList.remove("opened")
+      })
+    }
+
     this.props.requestBusiness(this.props.businessId);
   }
 
@@ -84,14 +95,6 @@ class BusinessShow extends React.Component {
             <BusinessAside
               hours={businessDetails.hours}
               info={businessDetails.info} />
-          </div>
-        </div>
-
-        <div className="modal">
-          <div className="image-show">
-            image
-          </div>
-          <div className="modal-shadow">
           </div>
         </div>
 

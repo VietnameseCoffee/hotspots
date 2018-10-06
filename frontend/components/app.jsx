@@ -41,6 +41,14 @@ const App = () => {
         <Footer/>
         <div className="footer-image"></div>
       </div>
+
+      <div className="modal">
+        <div className="image-show">
+          image
+        </div>
+        <div className="modal-shadow">
+        </div>
+      </div>
     </div>
   );
 };

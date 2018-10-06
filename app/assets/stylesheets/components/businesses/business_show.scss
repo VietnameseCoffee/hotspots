@@ -21,7 +21,7 @@
 }
 
 .modal {
-  // display: none;
+  display: none;
   .modal-shadow {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.32);
     position: fixed;
@@ -33,7 +33,7 @@
   }
   .image-show {
     z-index: 3;
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 10%;
     width: 80%;
@@ -41,4 +41,8 @@
     background-color: white;
     border-radius: 5px;
   }
+}
+
+.modal.opened {
+  display: block;
 }
