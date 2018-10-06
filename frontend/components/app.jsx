@@ -13,6 +13,7 @@ import SearchResultListContainer from './searches/search_results_list_container'
 import SplashMainContainer from './splash/splash_main_container';
 import ReviewDiscover from './reviews/review_discover_container';
 import Footer from './footer/footer';
+import Modal from './modal/modal';
 
 
 const App = () => {
@@ -41,14 +42,8 @@ const App = () => {
         <Footer/>
         <div className="footer-image"></div>
       </div>
-
-      <div className="modal">
-        <div className="image-show">
-          image
-        </div>
-        <div className="modal-shadow">
-        </div>
-      </div>
+      
+      <Modal/>
     </div>
   );
 };

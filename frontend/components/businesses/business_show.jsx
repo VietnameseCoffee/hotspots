@@ -15,17 +15,6 @@ class BusinessShow extends React.Component {
   }
 
   componentDidMount () {
-    // debugger
-    const modalShadow = document.querySelector(".modal-shadow");
-    const modal = document.querySelector(".modal");
-    if (modalShadow && modal) {
-      console.log(555 )
-      modalShadow.addEventListener("click", () => {
-        console.log(5 )
-        modal.classList.remove("opened")
-      })
-    }
-
     this.props.requestBusiness(this.props.businessId);
   }
 

@@ -22,10 +22,13 @@ class BusinessImages extends React.Component {
     middle.classList.remove('biz-img-default')
   }
 
-  openModal() {
+  openModal(url) {
     const modal = document.querySelector(".modal");
-    if (modal) {
+    const modalImage = document.getElementById("modal-image");
+    debugger
+    if (modal && modalImage) {
       modal.classList.add("opened")
+      modalImage.src="url"
     }
   }
 
@@ -60,7 +63,7 @@ class BusinessImages extends React.Component {
         <div
           key ={pic.photoUrl}
           className={classes}
-          onClick={this.openModal}>
+          onClick={() => this.openModal(pic.photoUrl)}>
           <img src={pic.photoUrl}></img>
         </div>
       )}
