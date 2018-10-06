@@ -25,10 +25,10 @@ class BusinessImages extends React.Component {
   openModal(url) {
     const modal = document.querySelector(".modal");
     const modalImage = document.getElementById("modal-image");
-    debugger
+
     if (modal && modalImage) {
       modal.classList.add("opened")
-      modalImage.src="url"
+      modalImage.src=url
     }
   }
 

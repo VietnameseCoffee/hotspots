@@ -22,7 +22,6 @@ class Modal extends React.Component {
     return (
       <div className="modal">
         <div className="modal-image-container">
-          image
           <img id="modal-image"></img>
         </div>
         <div className="modal-shadow">

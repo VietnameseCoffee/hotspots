@@ -1,13 +1,15 @@
 .modal {
   display: none;
   .modal-shadow {
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.32);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.69);
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 2;
+
+    animation: darken 0.3s;
   }
   .modal-image-container {
     z-index: 3;
@@ -16,11 +18,24 @@
     left: 10%;
     width: 80%;
     height: 80%;
-    background-color: white;
-    border-radius: 5px;
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: darken 0.6s;
+
+    #modal-image {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 }
 
 .modal.opened {
   display: block;
+}
+
+@keyframes darken {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
