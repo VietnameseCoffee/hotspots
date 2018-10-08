@@ -1,7 +1,7 @@
 const getDate = function () {
   let date = new Date(Date.now());
   var day = date.getDate();
-  var monthIndex = date.getMonth();
+  var monthIndex = date.getMonth() + 1;
   var year = date.getFullYear();
 
   return monthIndex + '/' + day + '/' + year;
