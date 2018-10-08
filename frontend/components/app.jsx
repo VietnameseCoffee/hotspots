@@ -33,7 +33,7 @@ const App = () => {
         <AuthRoute exact path="/signup" component={ SignupFormContainer }/>
         <Route path={`/businesses/:businessId`} component={BusinessShowContainer} />
         <Route path={`/writeareview/:businessId`} component={ReviewFormContainer} />
-        <Route path={`/writeareview`} component={ReviewDiscover} />
+        <Route exact path={`/writeareview`} component={ReviewDiscover} />
         <Route path={`/searches/:query`} component={SearchResultListContainer} />
         <Route exact path={`/`} component={SplashMainContainer} />
       </div>
@@ -42,7 +42,7 @@ const App = () => {
         <Footer/>
         <div className="footer-image"></div>
       </div>
-      
+
       <Modal/>
     </div>
   );
