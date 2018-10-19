@@ -15,6 +15,17 @@ json.businesses do
   end
 end
 
+json.reviews do
+  search_results.each do |biz|
+    rev = biz.reviews[-1]
+    if rev
+      json.set! rev.id do
+        json.extract! rev, :text
+      end
+    end
+  end
+end
+
 json.photos do
   search_results.each do |biz|
     pic = biz.images.first

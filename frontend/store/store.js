@@ -8,7 +8,7 @@ const configureStore = (startState = {}) => (
   createStore(
     rootReducer,
     startState,
-    applyMiddleware(thunk)
+    applyMiddleware(thunk, logger)
   )
 );
 
