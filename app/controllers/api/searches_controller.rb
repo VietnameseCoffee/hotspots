@@ -9,9 +9,9 @@ class Api::SearchesController < ApplicationController
       @search_results = []
       render 'api/searches/show'
     else
-      biz_results = Business.includes(:images, :categories)
+      biz_results = Business.includes(:images, :categories, :reviews)
         .where('LOWER(name) like ?', "#{name}%")
-        .references(:images, :categories)
+        .references(:images, :categories, :reviews)
       if biz_results.empty?
         biz_results = [];
         category_results = find_by_category(name)
@@ -38,7 +38,7 @@ class Api::SearchesController < ApplicationController
   def find_by_category(name)
     category_results = []
     categories = Category
-      .includes(:business)
+      .includes(business: :reviews)
       .where('LOWER(categories.category) like ?', "#{name}%")
 
     categories.each { |tag| category_results.push(tag.business)}
