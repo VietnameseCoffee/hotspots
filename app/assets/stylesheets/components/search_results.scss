@@ -41,6 +41,7 @@
       .biz-body {
         width: 440px;
         font-size: 14px;
+
         .biz-main-info {
           display: flex;
           justify-content: space-between;
@@ -78,6 +79,14 @@
             text-align: right;
           }
 
+        }
+
+        .biz-review-teaser {
+          margin-top: 15px;
+          a {
+            color: #0073bb;
+            cursor: pointer;
+          }
         }
       }
     }

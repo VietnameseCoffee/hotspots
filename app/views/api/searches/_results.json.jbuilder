@@ -11,7 +11,8 @@ json.businesses do
 
       rev = biz.reviews[-1]
       if rev
-        json.search_review rev.text
+        words = rev.text.split
+        json.search_review words.length > 30 ? "#{words[0..28].join(' ')}..." : rev.text
       end
 
       json.categories biz.categories.map { |tag| tag.category }

@@ -30,7 +30,7 @@ class BusinessIndexItem extends React.Component {
     let numReviews = this.props.biz.numReviews;
     let price_str = "";
     let anchorTags;
-    let teaser = this.props.biz.searchReview;
+    let teaser = `"${this.props.biz.searchReview}"`;
     while (price_str.length < price) {price_str = price_str.concat("$")};
     anchorTags = tags.map((tag, i) => <a key ={i} onClick={(e) => this.clickTag(e, tag)}>{tag}</a>)
 
@@ -62,7 +62,7 @@ class BusinessIndexItem extends React.Component {
           </div>
 
           <div className="biz-review-teaser">
-            {teaser}
+            {teaser} <a onClick={(e) => this.handleClick(e, this.props.biz.id)}>read more</a>
           </div>
         </div>
       </li>
