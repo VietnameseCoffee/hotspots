@@ -10,9 +10,8 @@ const ReviewIndexItem = ({ review, user, currentUser, deleteReview, userPhotos }
         <i className="fa fa-trash" aria-hidden="true"></i>
       </button>);
   }
-  // debugger
+
   if (userPhotos.length > 0) {
-    // debugger
     photos = (
       <div className="review-images">
         {userPhotos.map((pic) => (

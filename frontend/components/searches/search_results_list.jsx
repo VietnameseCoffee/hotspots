@@ -6,15 +6,16 @@ class SearchResultList extends React.Component {
 
   constructor (props) {
     super(props)
-
-    this.state = { loading: false }
   }
 
   componentDidMount () {
-    // debugger
-    // if (this.props.history.location.pathname.split("/")[2] !== this.props.match.params.query) {
-    // }
     this.props.requestSearch({name: this.props.match.params.query});
+  }
+
+  componentDidUpdate(oldProps) {
+    if (oldProps.match.params.query !== this.props.match.params.query) {
+      this.props.requestSearch({name: this.props.match.params.query});
+    }
   }
 
 
@@ -26,9 +27,8 @@ class SearchResultList extends React.Component {
     let searchContent;
 
 
-    if (this.state.loading) {
 
-    } else if (businesses.length === 0) {
+    if (businesses.length === 0) {
       searchContent = (
         <div className="no-results">
           <div>
@@ -39,7 +39,7 @@ class SearchResultList extends React.Component {
           </div>
         </div>
       )
-    } else if {
+    } else {
       searchContent = businesses.map ((biz, i) => {
         return (
           <BusinessIndexItem
@@ -50,7 +50,6 @@ class SearchResultList extends React.Component {
           photo={photos[biz.photoIds[0]]}
           />)
         })
-
     }
 
 

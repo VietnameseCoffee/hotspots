@@ -18,9 +18,10 @@ class BusinessIndexItem extends React.Component {
 
   clickTag (e, tag) {
     e.preventDefault;
-    this.props.requestSearch({name: tag}).then(() => {
-      this.props.history.push(`/searches/${tag}`)
-    });
+    this.props.history.push(`/searches/${tag}`)
+    // this.props.requestSearch({name: tag}).then(() => {
+    //   this.props.history.push(`/searches/${tag}`)
+    // });
   }
 
   render () {

@@ -8,7 +8,7 @@ const _initialState = { hotSpots: [] }
 const businessesReducer = (state = _initialState, action) => {
   Object.freeze(state);
   let payload = action.payload;
-
+  // debugger
   switch (action.type) {
     case RECEIVE_BUSINESS:
       return merge({}, state, {[payload.business.id]: payload.business });

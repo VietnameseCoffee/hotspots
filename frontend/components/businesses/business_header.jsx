@@ -8,10 +8,9 @@ const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history, n
   let anchorTags;
 
   const clickTag1 = (e, tag) =>{
-    e.preventDefault;
-    requestSearch({name: tag}).then(
-      () => {history.push(`/searches/${tag}`)
-    document.body.scrollTop = document.documentElement.scrollTop = 0;})
+
+    history.push(`/searches/${tag}`)
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   };
 
   while (price_str.length < price) {price_str = price_str.concat("$")};
