@@ -38,7 +38,6 @@ class SearchResultList extends React.Component {
           key={biz.id}
           biz={biz}
           index={i + 1}
-          requestBusiness={requestBusiness}
           requestSearch={requestSearch}
           photo={photos[biz.photoIds[0]]}
           />)
