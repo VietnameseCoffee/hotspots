@@ -7,14 +7,12 @@ const BusinessHeader = ({name, price, tags, id, stars, requestSearch, history, n
   let price_str = "";
   let anchorTags;
 
-  const clickTag1 = (e, tag) =>{
-
+  const clickTag = (e, tag) =>{
     history.push(`/searches/${tag}`)
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
   };
 
   while (price_str.length < price) {price_str = price_str.concat("$")};
-  anchorTags = tags.map((tag) => <a key={tag}onClick={(e) => clickTag1(e, tag)}>{tag}</a>);
+  anchorTags = tags.map((tag) => <a key={tag}onClick={(e) => clickTag(e, tag)}>{tag}</a>);
 
   return (
     <div className="biz-header-container">

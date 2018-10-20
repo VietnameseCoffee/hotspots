@@ -15,6 +15,7 @@ class BusinessShow extends React.Component {
   }
 
   componentDidMount () {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.props.requestBusiness(this.props.businessId);
   }
 

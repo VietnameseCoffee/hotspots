@@ -4,27 +4,22 @@ json.businesses do
     json.set! biz.id do
       json.extract! biz, :id, :name, :address, :city, :state, :price, :stars, :phone_number
       if biz.images.length != 0
-        json.photoIds [biz.images.first.id]
+        json.photo_ids [biz.images.first.id]
       else
-        json.photoIds []
+        json.photo_ids []
       end
-      json.reviewIds [biz.reviews[-1].id]
+
+      rev = biz.reviews[-1]
+      if rev
+        json.search_review rev.text
+      end
+
       json.categories biz.categories.map { |tag| tag.category }
       json.num_reviews biz.reviews.count
     end
   end
 end
 
-# json.reviews do
-#   search_results.each do |biz|
-#     rev = biz.reviews[-1]
-#     if rev
-#       json.set! rev.id do
-#         json.extract! rev, :text
-#       end
-#     end
-#   end
-# end
 
 json.photos do
   search_results.each do |biz|

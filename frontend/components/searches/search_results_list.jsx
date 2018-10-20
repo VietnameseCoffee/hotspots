@@ -9,10 +9,12 @@ class SearchResultList extends React.Component {
   }
 
   componentDidMount () {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.props.requestSearch({name: this.props.match.params.query});
   }
 
   componentDidUpdate(oldProps) {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     if (oldProps.match.params.query !== this.props.match.params.query) {
       this.props.requestSearch({name: this.props.match.params.query});
     }
@@ -23,7 +25,6 @@ class SearchResultList extends React.Component {
     let businesses = this.props.businesses;
     let photos = this.props.photos;
     let requestBusiness = this.props.requestBusiness;
-    let requestSearch = this.props.requestSearch;
     let searchContent;
 
 
@@ -46,7 +47,6 @@ class SearchResultList extends React.Component {
           key={biz.id}
           biz={biz}
           index={i + 1}
-          requestSearch={requestSearch}
           photo={photos[biz.photoIds[0]]}
           />)
         })
