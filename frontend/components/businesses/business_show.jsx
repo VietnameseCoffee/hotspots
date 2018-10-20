@@ -29,7 +29,7 @@ class BusinessShow extends React.Component {
   render () {
     let businessDetails = this.props.businessDetails;
 
-    if (!businessDetails) {
+    if (!businessDetails || !businessDetails.showReady) {
       return (
         <div className="loading">
           <div className="sk-circle">

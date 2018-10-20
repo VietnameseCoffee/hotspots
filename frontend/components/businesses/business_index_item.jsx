@@ -13,9 +13,10 @@ class BusinessIndexItem extends React.Component {
 
   handleClick (e, id) {
     e.preventDefault;
-    this.props.requestBusiness(id).then(
-      () => {this.props.history.push(`/businesses/${id}`)
-      document.body.scrollTop = document.documentElement.scrollTop = 0;});
+    this.props.history.push(`/businesses/${id}`)
+    // this.props.requestBusiness(id).then(
+    //   () => {this.props.history.push(`/businesses/${id}`)
+    //   document.body.scrollTop = document.documentElement.scrollTop = 0;});
   }
 
   clickTag (e, tag) {

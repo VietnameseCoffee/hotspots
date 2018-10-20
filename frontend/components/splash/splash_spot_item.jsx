@@ -13,11 +13,8 @@ class SplashSpotItem extends React.Component {
 
   handleClick (e, id) {
     e.preventDefault;
-    this.props.requestBusiness(id).then(
-      () => {this.props.history.push(`/businesses/${id}`)
-      document.body.scrollTop = document.documentElement.scrollTop = 0;});
+    this.props.history.push(`/businesses/${id}`)
   }
-  // scrollTop help from stackoverflow
 
   render () {
     let biz = this.props.biz;

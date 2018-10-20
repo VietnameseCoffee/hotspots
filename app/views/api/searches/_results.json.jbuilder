@@ -8,7 +8,7 @@ json.businesses do
       else
         json.photoIds []
       end
-
+      json.reviewIds [biz.reviews[-1].id]
       json.categories biz.categories.map { |tag| tag.category }
       json.num_reviews biz.reviews.count
     end

@@ -6,6 +6,7 @@ json.business do
   json.info info
   json.reviewIds reviews.map { |rev| rev.id }
   json.photoIds photos.map { |photo| photo.id }
+  json.showReady true
 
 end
 
