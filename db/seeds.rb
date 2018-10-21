@@ -478,7 +478,7 @@ b34 = Business.create(
   phone_number: '(415) 361-0448',
   price: 3
 )
-b35 = Business.create( # ADD LAT LNG
+b35 = Business.create(
   name: "Tataki",
   latitude: 37.787941,
   longitude: -122.441174,
@@ -490,7 +490,7 @@ b35 = Business.create( # ADD LAT LNG
   phone_number: '(415) 931-1182',
   price: 2
 )
-b36 = Business.create( # ADD LAT LNG
+b36 = Business.create(
   name: "Mensho Tokyo",
   latitude: 37.786628,
   longitude: -122.414285,
@@ -502,7 +502,7 @@ b36 = Business.create( # ADD LAT LNG
   phone_number: '(415) 800-8345',
   price: 2
 )
-b37 = Business.create( # ADD LAT LNG
+b37 = Business.create(
   name: "El Burrito Express",
   latitude: 37.786466,
   longitude: -122.440112,
@@ -514,7 +514,7 @@ b37 = Business.create( # ADD LAT LNG
   phone_number: '(415) 776-4246',
   price: 1
 )
-b38 = Business.create( # ADD LAT LNG
+b38 = Business.create(
   name: "Tacorea",
   latitude: 37.789873,
   longitude: -122.410905,
@@ -526,7 +526,7 @@ b38 = Business.create( # ADD LAT LNG
   phone_number: '(415) 885-1325',
   price: 1
 )
-b39 = Business.create( # ADD LAT LNG
+b39 = Business.create(
   name: "Manitas Cafe",
   latitude: 37.773399,
   longitude: -122.450615,
@@ -538,8 +538,80 @@ b39 = Business.create( # ADD LAT LNG
   phone_number: '(415) 213-5566',
   price: 1
 )
+b40 = Business.create(
+  name: "Marcello’s Pizza",
+  latitude: 37.762038,
+  longitude: -122.435236,
+  address: '420 Castro St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94105,
+  stars: 3.00,
+  phone_number: '(415) 863-3900',
+  price: 1
+)
+b41 = Business.create(
+  name: "Pho Ha Tien",
+  latitude: 37.725425,
+  longitude: -122.462422,
+  address: '1900 Ocean Ave',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94113,
+  stars: 3.2,
+  phone_number: '(415) 337-2168',
+  price: 1
+)
+b42 = Business.create(
+  name: "Khai",
+  latitude: 37.770806,
+  longitude: -122.402893,
+  address: '655 Townsend St',
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94103,
+  stars: 4.2,
+  phone_number: '(415) 724-2325',
+  price: 4
+)
+b43 = Business.create(
+  name: "Black Sugar",
+  latitude: 37.786216,
+  longitude: -122.409978,
+  address: "320 O'Farrell St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94105,
+  stars: 4.0,
+  phone_number: '(415) 521-2022',
+  price: 1
+)
+b44 = Business.create(
+  name: "Mission Beach Cafe",
+  latitude: 37.768102,
+  longitude: -122.424577,
+  address: "198 Guerrero St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94108,
+  stars: 3.6,
+  phone_number: '(415) 521-2022',
+  price: 2
+)
+b45 = Business.create(
+  name: "Lou’s Cafe",
+  latitude: 37.780375,
+  longitude: -122.473319,
+  address: "15017 Geary Blvd",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94118,
+  stars: 3.0,
+  phone_number: '(415) 379-4429',
+  price: 1
+)
 
-## Indian, Vietnamese, Mediterranean, Breakfast
+## Brendas, Milk Bomb hakkasan Puppy Bobar
 
 # business cp1
 
@@ -561,7 +633,7 @@ Category.create(
 )
 Category.create(
   business_id: b2.id,
-  category: 'Salad',
+  category: 'Salads',
 )
 Category.create(
   business_id: b3.id,
@@ -574,14 +646,6 @@ Category.create(
 Category.create(
   business_id: b4.id,
   category: 'Chocolate',
-)
-Category.create(
-  business_id: b17.id,
-  category: 'Burgers',
-)
-Category.create(
-  business_id: b17.id,
-  category: 'Fast Food',
 )
 Category.create(
   business_id: b6.id,
@@ -616,8 +680,12 @@ Category.create(
   category: 'American',
 )
 Category.create(
-  business_id: b17.id,
-  category: 'American',
+  business_id: b5.id,
+  category: 'Burgers',
+)
+Category.create(
+  business_id: b5.id,
+  category: 'French',
 )
 Category.create(
   business_id: b10.id,
@@ -664,12 +732,16 @@ Category.create(
   category: 'American',
 )
 Category.create(
-  business_id: b5.id,
+  business_id: b17.id,
+  category: 'American',
+)
+Category.create(
+  business_id: b17.id,
   category: 'Burgers',
 )
 Category.create(
-  business_id: b5.id,
-  category: 'French',
+  business_id: b17.id,
+  category: 'Fast Food',
 )
 Category.create(
   business_id: b18.id,
@@ -875,6 +947,63 @@ Category.create(
   business_id: b39.id,
   category: 'Cafe',
 )
+Category.create(
+  business_id: b40.id,
+  category: 'Pizza',
+)
+Category.create(
+  business_id: b40.id,
+  category: 'Burgers',
+)
+Category.create(
+  business_id: b40.id,
+  category: 'Salads',
+)
+Category.create(
+  business_id: b41.id,
+  category: 'Vietnamese',
+)
+Category.create(
+  business_id: b41.id,
+  category: 'Noodles',
+)
+Category.create(
+  business_id: b42.id,
+  category: 'Vietnamese',
+)
+Category.create(
+  business_id: b43.id,
+  category: 'Boba',
+)
+Category.create(
+  business_id: b43.id,
+  category: 'Coffee',
+)
+Category.create(
+  business_id: b44.id,
+  category: 'Coffee',
+)
+Category.create(
+  business_id: b44.id,
+  category: 'Cafe',
+)
+Category.create(
+  business_id: b44.id,
+  category: 'Breakfast',
+)
+Category.create(
+  business_id: b45.id,
+  category: 'Sandwiches',
+)
+Category.create(
+  business_id: b45.id,
+  category: 'Coffee',
+)
+Category.create(
+  business_id: b45.id,
+  category: 'Salads',
+)
+
 
 
 # category cp2
@@ -1035,6 +1164,30 @@ Hour.create(
   business_id: b39.id,
   hours: normal_7
 )
+Hour.create(
+  business_id: b40.id,
+  hours: normal_7
+)
+Hour.create(
+  business_id: b41.id,
+  hours: normal_7
+)
+Hour.create(
+  business_id: b42.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b43.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b44.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b45.id,
+  hours: normal
+)
 
 # hours cp3
 
@@ -1194,6 +1347,30 @@ BusinessInfo.create(
   business_id: b39.id,
   details: detail_casual
 )
+BusinessInfo.create(
+  business_id: b40.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b41.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b42.id,
+  details: detail
+)
+BusinessInfo.create(
+  business_id: b43.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b44.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b45.id,
+  details: detail_casual
+)
 
 # biz info cp4
 
@@ -1322,6 +1499,48 @@ Review.create(
   stars: 5,
   text: "This place has BOMB macarons! Perfect texture. Airy but chewy with a satisfying crunch at the beginning. My favorite was the pistachio. Simple. Delicate but noticeable flavor. I also tried the strawberry yuzu flavor and the salty caramel. I think most people would have favored the salty caramel which apparently is their best seller. It was good but a little too sweet for me.",
   post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u3.id,
+  stars: 5,
+  text: love_3,
+  post_date: '7/22/2018'
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u20.id,
+  stars: 5,
+  text: love_2,
+  post_date: '8/2/2018'
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u19.id,
+  stars: 5,
+  text: good_1,
+  post_date: '8/11/2018'
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u15.id,
+  stars: 5,
+  text: good_2,
+  post_date: '8/13/2018'
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u7.id,
+  stars: 5,
+  text: love_2,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b5.id,
+  user_id: u11.id,
+  stars: 5,
+  text: love_1,
+  post_date: '8/22/2018'
 )
 Review.create(
   business_id: b17.id,
@@ -1617,48 +1836,6 @@ Review.create(
   stars: 5,
   text: good_3,
   post_date: '8/20/2018'
-)
-Review.create(
-  business_id: b5.id,
-  user_id: u3.id,
-  stars: 5,
-  text: love_3,
-  post_date: '7/22/2018'
-)
-Review.create(
-  business_id: b5.id,
-  user_id: u20.id,
-  stars: 5,
-  text: love_2,
-  post_date: '8/2/2018'
-)
-Review.create(
-  business_id: b5.id,
-  user_id: u19.id,
-  stars: 5,
-  text: good_1,
-  post_date: '8/11/2018'
-)
-Review.create(
-  business_id: b5.id,
-  user_id: u15.id,
-  stars: 5,
-  text: good_2,
-  post_date: '8/13/2018'
-)
-Review.create(
-  business_id: b5.id,
-  user_id: u7.id,
-  stars: 5,
-  text: love_2,
-  post_date: '8/22/2018'
-)
-Review.create(
-  business_id: b5.id,
-  user_id: u11.id,
-  stars: 5,
-  text: love_1,
-  post_date: '8/22/2018'
 )
 Review.create(
   business_id: b18.id,
@@ -2373,6 +2550,216 @@ Review.create(
   stars: 4,
   text: good_3,
   post_date: '9/29/2018'
+)
+Review.create(
+  business_id: b40.id,
+  user_id: u3.id,
+  stars: 3,
+  text: good_4,
+  post_date: '7/10/2018'
+)
+Review.create(
+  business_id: b40.id,
+  user_id: u20.id,
+  stars: 5,
+  text: love_4,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b40.id,
+  user_id: u13.id,
+  stars: 2,
+  text: bad_4,
+  post_date: '8/24/2018'
+)
+Review.create(
+  business_id: b40.id,
+  user_id: u17.id,
+  stars: 2,
+  text: okay_3,
+  post_date: '9/25/2018'
+)
+Review.create(
+  business_id: b40.id,
+  user_id: u18.id,
+  stars: 3,
+  text: "Four star pizza, two star service. For a cash only place, they're quite stingy - even if you're 5c short for a topping! Second time this has happened: a few weeks ago a whole group of friends and I walked over excited for pizza after watching a game, and we were a 25c short for the final slice. One of us had to walk away without pizza",
+  post_date: '9/29/2018'
+)
+Review.create(
+  business_id: b41.id,
+  user_id: u13.id,
+  stars: 3,
+  text: meh_4,
+  post_date: '7/10/2018'
+)
+Review.create(
+  business_id: b41.id,
+  user_id: u2.id,
+  stars: 4,
+  text: good_4,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b41.id,
+  user_id: u13.id,
+  stars: 2,
+  text: meh_3,
+  post_date: '8/24/2018'
+)
+Review.create(
+  business_id: b41.id,
+  user_id: u17.id,
+  stars: 3,
+  text: okay_2,
+  post_date: '9/25/2018'
+)
+Review.create(
+  business_id: b41.id,
+  user_id: u18.id,
+  stars: 4,
+  text: "I'm pretty close by, but have avoided coming here like the plague because of their lackluster pho and rude service. This used to be the not so great and more expensive pho place, at least compared to Irving Street, but now all of the pho prices are kind of the same.",
+  post_date: '10/2/2018'
+)
+Review.create(
+  business_id: b42.id,
+  user_id: u15.id,
+  stars: 4,
+  text: love_4,
+  post_date: '8/14/2018'
+)
+Review.create(
+  business_id: b42.id,
+  user_id: u2.id,
+  stars: 4,
+  text: good_3,
+  post_date: '8/27/2018'
+)
+Review.create(
+  business_id: b42.id,
+  user_id: u13.id,
+  stars: 5,
+  text: love_1,
+  post_date: '9/24/2018'
+)
+Review.create(
+  business_id: b42.id,
+  user_id: u7.id,
+  stars: 4,
+  text: good_2,
+  post_date: '9/25/2018'
+)
+Review.create(
+  business_id: b42.id,
+  user_id: u20.id,
+  stars: 5,
+  text: "A fantastic and unique experience beyond the usual New American or Californian tasting menu. The dishes were tasty, well balanced and nuanced in flavor.",
+  post_date: '10/8/2018'
+)
+Review.create(
+  business_id: b43.id,
+  user_id: u15.id,
+  stars: 4,
+  text: okay_4,
+  post_date: '8/14/2018'
+)
+Review.create(
+  business_id: b43.id,
+  user_id: u2.id,
+  stars: 4,
+  text: good_2,
+  post_date: '9/20/2018'
+)
+Review.create(
+  business_id: b43.id,
+  user_id: u6.id,
+  stars: 4,
+  text: love_3,
+  post_date: '9/24/2018'
+)
+Review.create(
+  business_id: b43.id,
+  user_id: u17.id,
+  stars: 4,
+  text: good_1,
+  post_date: '9/30/2018'
+)
+Review.create(
+  business_id: b43.id,
+  user_id: u2.id,
+  stars: 5,
+  text: "I have been here many times, as it is not far from my building on Market street. Overall, I highly recommend this place!",
+  post_date: '10/18/2018'
+)
+Review.create(
+  business_id: b44.id,
+  user_id: u16.id,
+  stars: 5,
+  text: love_4,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b44.id,
+  user_id: u3.id,
+  stars: 3,
+  text: good_3,
+  post_date: '9/20/2018'
+)
+Review.create(
+  business_id: b44.id,
+  user_id: u7.id,
+  stars: 2,
+  text: bad_2,
+  post_date: '9/24/2018'
+)
+Review.create(
+  business_id: b44.id,
+  user_id: u18.id,
+  stars: 4,
+  text: good_2,
+  post_date: '9/30/2018'
+)
+Review.create(
+  business_id: b44.id,
+  user_id: u19.id,
+  stars: 4,
+  text: "Sunday brunch in the Mission. I like this place, but the wait can be ridiculous sometime. If it wasn't for the delicious brioche French toast, I don't think I'll wait that long again.",
+  post_date: '10/18/2018'
+)
+Review.create(
+  business_id: b45.id,
+  user_id: u6.id,
+  stars: 3,
+  text: okay_3,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b45.id,
+  user_id: u4.id,
+  stars: 1,
+  text: bad_4,
+  post_date: '9/20/2018'
+)
+Review.create(
+  business_id: b45.id,
+  user_id: u11.id,
+  stars: 2,
+  text: meh_4,
+  post_date: '9/17/2018'
+)
+Review.create(
+  business_id: b45.id,
+  user_id: u14.id,
+  stars: 5,
+  text: good_2,
+  post_date: '9/21/2018'
+)
+Review.create(
+  business_id: b45.id,
+  user_id: u19.id,
+  stars: 4,
+  text: "Good sandy at a good price for sure. Definitely recommend trying it out. Usually fairly busy and the dining room is small so be prepared.",
+  post_date: '10/3/2018'
 )
 
 # reviews cp5
