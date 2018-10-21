@@ -24,23 +24,28 @@ night= 'Closed&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 12:00am&6:00 pm - 2
 detail = "Takes Reservations:Yes&Delivery:No&Take-out:No&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:No&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:No&Caters:No"
 detail_casual = "Takes Reservations:No&Delivery:Yes&Take-out:Yes&Accepts Credit Cards:Yes&Accepts Apple Pay:No&Accepts Google Pay:No&Accepts Bitcoin:No&Parking:Street&Bike Parking:Yes&Wheelchair Accessible:Yes&Noise Level:Average&Good for Kids:Yes&Good for Groups:Yes&Attire:Casual&Wi-Fi:No&Has TV:Yes&Caters:No"
 
-text = "This place was pleasant. Some of the food is surprisingly pricy for the amount given while others were absurdly cheap, very odd."
-ambig = "Honestly the food was all right, my friend's order was honestly bland but mine was amazing so it averages out."
+text = "This place was pleasant. Some of the food is surprisingly pricy for the amount given while others were absurdly cheap, very odd. I may or may not come back here again because I'm just a waffling kinda person."
+ambig = "Honestly the food was all right, my friend's order was honestly bland but mine was amazing so it averages out. Now the hard part is coming to the ratings for the joint. I think what I gave is fair, because I'm a person of truth!"
 bad_1 = "This place is terrible, I have no idea why someone would recommend this place. Steer clear away from here for the sake of the children"
-bad_2 = "The manager there is awful! There was a hair in my order and he absolutely refused to give me a full refund!"
-bad_3 = "Why is this place open... health inspectors need to come in and shut it down like what Dirk Nowitzki says"
-meh_1 = "The food really is fine but the service could really use a pickup. Very little people but yet the service was so slow. If I'm craving it then I'll return but I dunno."
-meh_2 = "Meh, I was disappointed by the flavors, poor selection tbh. 4/10 with rice"
+bad_2 = "The manager there is awful! There was a hair in my order and he absolutely refused to give me a full refund! The freaking place is so expensive too, like why you gotta be so cheap, you're gonna drive customers away. It's a matter of time until they close down."
+bad_3 = "Why is this place open... health inspectors need to come in and shut it down like what Dirk Nowitzki says. If you want to build your immune system, you can come here and train it."
+bad_4 = "Rude customer service. Bad food, I didn't like anything here. No come back."
+meh_1 = "The food really is fine but the service could really use a pickup. Very little people but yet the service was so slow. If I'm craving it then I'll return but I damn only when I really have time and want food nearby."
+meh_2 = "So the server was so unenthusiastic, but he's a high school kid, I understand. Food was fine but the service was such a bummer :("
 meh_3 = "My Uncle Charles Barkley said San Antonio and Pheonix does it better, always thought that man was all talk, but he spoke the truth. Just dissapointed in the taste, but will come back if I'm reeally hungry."
-okay_1 = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary."
-okay_2 = "Bruh, I'm not sure why my friends hate this place, it's okay here."
-okay_3 = "If I'm hungry, I will go here. I had trouble finding this place, because the sign is being covered by the laundromat, no worries cuz I got my dope grub on."
-good_1 = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit small at times but I think it's great. Definitely return!"
-good_2 = "Place is cool, I like it, will come back"
+meh_4 = "Meh, I was disappointed by the flavors, I do like the seating arrangement here, gotta give them props for great decor. But poor selection tbh. 3/10 without rice 4/10 with rice"
+okay_1 = "This place has decent food, it can be a bit pricey. Service was fair, but I really like the surrounding view. Atmosphere was pleasant but nothing extraordinary. Also beware of finding a spot to park because you are going to be fighting with people just to get your Smart Car in a corner."
+okay_2 = "Bruh, I'm not sure why my friends hate this place, it's honestly okay here."
+okay_3 = "If I'm hungry, I will go here. I had trouble finding this place, because the sign is being covered by the laundromat, no worries cuz I got my dope grub on and as long as my belly is happy, I'm going to be returning."
+okay_4 = "First off, finding this place is really hard, I know I'm directionally challenged that was tough. Anyway it's a groovy spot around the neighborhood. Prices are cheap so i likey."
+good_1 = "I really like this place a lot! The seating was nice and the service is super friendly, the food can be a bit under-portioned at times but I think it's great. Definitely will return!"
+good_2 = "Place is cool, I like it, good service and good prices."
 good_3 = "My buddies were always giving me a buzz about this spot, and I had to check it out. no doubt is my tummy full and heart is happy. The hype train is real here! The prices are on the verge of pricey but that's coo."
+good_4 = "This is my local. I honestly feel like we have grown together. I was here the first week they opened as they were still setting up their small stand and working out their delivery times and just getting the shop running. They expanded their selections and now have their own merchandise but the quality has never dropped during this whole time."
 love_1 = "I love this spot! This is easily the hottest place in neighborhood! I'll definitely go out of my way to bring people in! Also everyone has to try the special."
 love_2 = 'Never thought I would say this place is to die for anywhere until now. Please for the sake of your grandparents please try this place out.'
-love_3 = "This deserves more great ratings. My sister and I swung by for their weekday specials, and oh mah gawd, I have seen the heavens."
+love_3 = "This deserves more great ratings. My sister and I swung by for their weekday specials, and oh mah gawd, I have seen the heavens. The neighborhood around is pretty nice and the service is really friendly."
+love_4 = "Love it love it love it. Will always be a regular."
 love_bar = "This is the spot me and my buddies always go, their drinks aren't cheap and I love the atmosphere here! So many memories getting our shots down here. I wish they kept the original pool table but that's all good, I'm never changing my weekend spot as long as I'm here."
 bad_bar = "This place used to be poppin, but management ruined it. Prices are jacked up and the servers are soooo ruuuude, like guurlll. I ain't down for this."
 
@@ -423,18 +428,6 @@ b30 = Business.create(
   zip: 94103,
   stars: 3.5,
   phone_number: '(415) 967-2622',
-  price: 2
-)
-b31 = Business.create(
-  name: "Akiko's Restaurant",
-  latitude: 37.789075,
-  longitude: -122.409953,
-  address: '431 Bush St',
-  city: 'San Francisco',
-  state: 'CA',
-  zip: 94108,
-  stars: 3.0,
-  phone_number: '(415) 397-3218',
   price: 2
 )
 b31 = Business.create(
@@ -1219,11 +1212,25 @@ Review.create(
   post_date: '8/10/2018'
 )
 Review.create(
+  business_id: b2.id,
+  user_id: u1.id,
+  stars: 5,
+  text: good_2,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b2.id,
+  user_id: u1.id,
+  stars: 4,
+  text: love_4,
+  post_date: '8/23/2018'
+)
+Review.create(
   business_id: b1.id,
   user_id: u2.id,
   stars: 3,
   text: meh_1,
-  post_date: '8/10/2018'
+  post_date: '8/7/2018'
 )
 Review.create(
   business_id: b3.id,
@@ -1251,7 +1258,7 @@ Review.create(
   user_id: u5.id,
   stars: 4,
   text: okay_1,
-  post_date: '8/10/2018'
+  post_date: '8/9/2018'
 )
 Review.create(
   business_id: b3.id,
@@ -1263,30 +1270,30 @@ Review.create(
 Review.create(
   business_id: b1.id,
   user_id: u3.id,
-  stars: 4,
-  text: good_1,
+  stars: 3,
+  text: meh_4,
   post_date: '8/10/2018'
 )
 Review.create(
   business_id: b1.id,
   user_id: u8.id,
-  stars: 3,
-  text: meh_1,
+  stars: 4,
+  text: "Now don't get me wrong... I am of the STRONG belief that LA has some of the BEST dimsum ever. But man... I think about this place a lot. Good Mong Kok Bakery is truly an EXCEPTIONAL dimsum store that serves really delicious and authentic stuff.",
   post_date: '8/10/2018'
 )
 Review.create(
   business_id: b3.id,
   user_id: u7.id,
   stars: 4,
-  text: good_1,
+  text: "I enjoyed the custard French toast and a side of sausage. It was incredible! The french toast with the vanilla mascarpone cream was so good I made another order to-go (and enjoyed the next day).",
   post_date: '8/10/2018'
 )
 Review.create(
   business_id: b2.id,
   user_id: u7.id,
   stars: 5,
-  text: text,
-  post_date: '8/10/2018'
+  text: "I wish I could eat here every day! As someone looking to eat less dairy and meat, they have so many great salad options (especially the seaweed salad). I have no complaints and hope it stays that way after future visits.",
+  post_date: '9/10/2018'
 )
 Review.create(
   business_id: b4.id,
@@ -1294,6 +1301,13 @@ Review.create(
   stars: 5,
   text: good_3,
   post_date: '8/9/2018'
+)
+Review.create(
+  business_id: b4.id,
+  user_id: u20.id,
+  stars: 4,
+  text: good_3,
+  post_date: '8/11/2018'
 )
 Review.create(
   business_id: b4.id,
@@ -1306,7 +1320,7 @@ Review.create(
   business_id: b4.id,
   user_id: u2.id,
   stars: 5,
-  text: text,
+  text: "This place has BOMB macarons! Perfect texture. Airy but chewy with a satisfying crunch at the beginning. My favorite was the pistachio. Simple. Delicate but noticeable flavor. I also tried the strawberry yuzu flavor and the salty caramel. I think most people would have favored the salty caramel which apparently is their best seller. It was good but a little too sweet for me.",
   post_date: '8/15/2018'
 )
 Review.create(
@@ -1341,7 +1355,7 @@ Review.create(
   business_id: b6.id,
   user_id: u18.id,
   stars: 4,
-  text: text,
+  text: "Okay, this place has now become my favorite place to get tacos. I'm a huge fan of cabeza and lengua tacos. Not many places make good cabeza or lengua tacos in the area. But this place OH MY GOD. Where do I even begin?! The cabeza and lengua were both juicy and flavorful! Also, the salsa that goes on top is amazing.",
   post_date: '8/5/2018'
 )
 Review.create(
@@ -1432,7 +1446,21 @@ Review.create(
   business_id: b10.id,
   user_id: u1.id,
   stars: 4,
-  text: good_1,
+  text: love_bar,
+  post_date: '8/15/2018'
+)
+Review.create(
+  business_id: b11.id,
+  user_id: u9.id,
+  stars: 5,
+  text: love_2,
+  post_date: '8/1/2018'
+)
+Review.create(
+  business_id: b11.id,
+  user_id: u3.id,
+  stars: 2,
+  text: meh_2,
   post_date: '8/15/2018'
 )
 Review.create(
@@ -1446,14 +1474,14 @@ Review.create(
   business_id: b11.id,
   user_id: u10.id,
   stars: 3,
-  text: text,
-  post_date: '8/15/2018'
+  text: love_1,
+  post_date: '9/11/2018'
 )
 Review.create(
   business_id: b11.id,
   user_id: u15.id,
   stars: 3,
-  text: meh_1,
+  text: "Have ordered from this location through DoorDash on multiple occasions. For those busy days where we can't seem to find time to cook dinner. Very happy that it usually takes no more than 40 minutes from order to delivery on a week night. I imagine weekends can take a little longer.",
   post_date: '8/15/2018'
 )
 Review.create(
@@ -1465,10 +1493,24 @@ Review.create(
 )
 Review.create(
   business_id: b12.id,
+  user_id: u9.id,
+  stars: 5,
+  text: love_2,
+  post_date: '8/11/2018'
+)
+Review.create(
+  business_id: b12.id,
+  user_id: u18.id,
+  stars: 2,
+  text: meh_2,
+  post_date: '8/11/2018'
+)
+Review.create(
+  business_id: b12.id,
   user_id: u5.id,
   stars: 4,
-  text: good_1,
-  post_date: '8/12/2018'
+  text: "My small 4 oz. burger was of high-quality, but on the small side for the money ($6.99 with tax, no fries). But you know, quality costs, not to mention the ridiculous price of everything nowadays.",
+  post_date: '8/30/2018'
 )
 Review.create(
   business_id: b13.id,
@@ -1495,8 +1537,22 @@ Review.create(
   business_id: b13.id,
   user_id: u7.id,
   stars: 4,
-  text: love_2,
+  text: love_1,
   post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b14.id,
+  user_id: u7.id,
+  stars: 1,
+  text: bad_4,
+  post_date: '7/18/2018'
+)
+Review.create(
+  business_id: b14.id,
+  user_id: u12.id,
+  stars: 5,
+  text: okay_4,
+  post_date: '8/10/2018'
 )
 Review.create(
   business_id: b14.id,
@@ -1509,7 +1565,7 @@ Review.create(
   business_id: b14.id,
   user_id: u14.id,
   stars: 3,
-  text: meh_1,
+  text: "I was told by some that it's the Subway of Cali, but others live and die by this sandwich shop. First off, the menu is MASSIVE and slightly overwhelming. Definitely not a knock against them, but I'd take a look at the extensive menu before coming here.",
   post_date: '8/13/2018'
 )
 Review.create(
@@ -1537,7 +1593,8 @@ Review.create(
   business_id: b15.id,
   user_id: u2.id,
   stars: 4,
-  text: good_2,
+  text: "
+Dive bars are not my favorite, but if you're in the area and you love beer, then Zeitgeist is an easy, casual option. Three of us stopped in for beers and enjoyed them in the outside patio area. The weather was perfect that day, and we shared a big pitcher of draft beer which my husband selected from the bar.",
   post_date: '8/18/2018'
 )
 Review.create(
@@ -1649,8 +1706,22 @@ Review.create(
   business_id: b19.id,
   user_id: u11.id,
   stars: 4,
-  text: okay_1,
+  text: "Kung pao shrimp was flavorful and had the right amount of spice. We also tried the house chow mein, house fried rice and shrimp chow mein. All in all tasty food.",
   post_date: '8/21/2018'
+)
+Review.create(
+  business_id: b20.id,
+  user_id: u15.id,
+  stars: 3,
+  text: okay_4,
+  post_date: '7/21/2018'
+)
+Review.create(
+  business_id: b20.id,
+  user_id: u5.id,
+  stars: 3,
+  text: okay_2,
+  post_date: '8/14/2018'
 )
 Review.create(
   business_id: b20.id,
@@ -1668,24 +1739,52 @@ Review.create(
 )
 Review.create(
   business_id: b21.id,
+  user_id: u13.id,
+  stars: 4,
+  text: okay_2,
+  post_date: '7/9/2018'
+)
+Review.create(
+  business_id: b21.id,
+  user_id: u7.id,
+  stars: 4,
+  text: good_4,
+  post_date: '8/9/2018'
+)
+Review.create(
+  business_id: b21.id,
   user_id: u10.id,
   stars: 4,
-  text: good_1,
-  post_date: '8/9/2018'
+  text: good_3,
+  post_date: '8/20/2018'
 )
 Review.create(
   business_id: b21.id,
   user_id: u11.id,
   stars: 4,
-  text: good_2,
-  post_date: '8/9/2018'
+  text: "One of the best ramen restaurants I've tried in the U.S.! We ordered pork delux and regular chicken ramen which were both cooked to perfection. I particularly enjoyed the broth that came with the pork ramen - so savory, rich but not greasy at all!",
+  post_date: '9/9/2018'
+)
+Review.create(
+  business_id: b22.id,
+  user_id: u4.id,
+  stars: 3,
+  text: meh_1,
+  post_date: '8/24/2018'
+)
+Review.create(
+  business_id: b22.id,
+  user_id: u6.id,
+  stars: 3,
+  text: meh_1,
+  post_date: '9/10/2018'
 )
 Review.create(
   business_id: b22.id,
   user_id: u14.id,
   stars: 3,
-  text: meh_1,
-  post_date: '8/10/2018'
+  text: "Not the best pho I've ever had, but it's the only accessible pho location near me, so I'll take it.  I had the Pho Tai, which was a huge bowl with lots of soup and plenty of noodles!  It was more than what I could actually finish eating.  I asked for lots of basil, extra lime, and some hoisin / sriracha - and this bowl satisfied what I was looking for.",
+  post_date: '10/10/2018'
 )
 Review.create(
   business_id: b23.id,
@@ -1712,7 +1811,7 @@ Review.create(
   business_id: b23.id,
   user_id: u14.id,
   stars: 4,
-  text: good_1,
+  text: good_3,
   post_date: '8/18/2018'
 )
 Review.create(
@@ -1747,7 +1846,7 @@ Review.create(
   business_id: b24.id,
   user_id: u20.id,
   stars: 5,
-  text: "Esta plays here and it gets lit, can't ask for anything else here",
+  text: "Esta plays here and it gets lit, can't ask for much else besides that. Prices are standard SF drinks, but we warned they are strong. Get ready to turn up!",
   post_date: '8/22/2018'
 )
 Review.create(
@@ -1762,14 +1861,14 @@ Review.create(
   user_id: u11.id,
   stars: 4,
   text: meh_1,
-  post_date: '8/25/2018'
+  post_date: '9/25/2018'
 )
 Review.create(
   business_id: b25.id,
   user_id: u12.id,
   stars: 4,
-  text: okay_3,
-  post_date: '8/29/2018'
+  text: "I ordered the lengua, carne asada, and al pastor soft tacos. The lengua was my favorite and was super tender. The carne asada was a bit dry and flavorless. And the al pastor was pretty traditional in it seasoning. They give a good amount of onions and cilantro but the sauces are pretty mediocre.",
+  post_date: '9/29/2018'
 )
 Review.create(
   business_id: b26.id,
@@ -1790,41 +1889,55 @@ Review.create(
   user_id: u10.id,
   stars: 3,
   text: okay_2,
-  post_date: '8/18/2018'
+  post_date: '9/18/2018'
 )
 Review.create(
   business_id: b26.id,
   user_id: u7.id,
   stars: 4,
   text: love_1,
-  post_date: '8/27/2018'
+  post_date: '10/17/2018'
 )
 Review.create(
   business_id: b27.id,
   user_id: u8.id,
   stars: 4,
-  text: okay_1,
+  text: okay_3,
   post_date: '7/15/2018'
+)
+Review.create(
+  business_id: b27.id,
+  user_id: u20.id,
+  stars: 4,
+  text: meh_3,
+  post_date: '8/1/2018'
+)
+Review.create(
+  business_id: b27.id,
+  user_id: u3.id,
+  stars: 4,
+  text: good_3,
+  post_date: '8/12/2018'
 )
 Review.create(
   business_id: b27.id,
   user_id: u2.id,
   stars: 4,
   text: good_3,
-  post_date: '8/1/2018'
+  post_date: '9/6/2018'
 )
 Review.create(
   business_id: b27.id,
   user_id: u5.id,
   stars: 4,
   text: okay_2,
-  post_date: '8/1/2018'
+  post_date: '10/1/2018'
 )
 Review.create(
   business_id: b27.id,
   user_id: u13.id,
   stars: 4,
-  text: good_2,
+  text: "Reveille is an adorable coffee shop. There's a gorgeous outdoor seating area that's literally covered in leaves and whatnot from trees (it's even prettier when the flowers are blooming!). Great spot for people watching or doing some work. There's ample seating indoors too.",
   post_date: '10/2/2018'
 )
 Review.create(
@@ -1852,7 +1965,7 @@ Review.create(
   business_id: b28.id,
   user_id: u16.id,
   stars: 5,
-  text: love_3,
+  text: "I was blown away by how fresh their boba is. The cashier was literally taking my order while mixing a fresh hot batch of boba balls right behind her. I tried out the strawberry matcha latte and my boyfriend tried the horchata boba both at the regular sugar levels. The horchata was ok, it didn't taste like traditional horchata, but I didn't think it was going to.",
   post_date: '9/7/2018'
 )
 Review.create(
@@ -1864,7 +1977,14 @@ Review.create(
 )
 Review.create(
   business_id: b29.id,
-  user_id: u11.id,
+  user_id: u10.id,
+  stars: 5,
+  text: text,
+  post_date: '7/20/2018'
+)
+Review.create(
+  business_id: b29.id,
+  user_id: u8.id,
   stars: 5,
   text: text,
   post_date: '8/10/2018'
@@ -1873,14 +1993,14 @@ Review.create(
   business_id: b29.id,
   user_id: u18.id,
   stars: 5,
-  text: text,
+  text: love_3,
   post_date: '8/12/2018'
 )
 Review.create(
   business_id: b29.id,
   user_id: u11.id,
   stars: 5,
-  text: text,
+  text: "This place has been around for a long time instead of the new influx of mission restaurants that cater to people looking for more refined meals and $$$, this place is a good Mission OG.",
   post_date: '8/17/2018'
 )
 Review.create(
@@ -1894,29 +2014,43 @@ Review.create(
   business_id: b30.id,
   user_id: u2.id,
   stars: 4,
-  text: good_2,
+  text: good_4,
   post_date: '9/15/2018'
 )
 Review.create(
   business_id: b30.id,
   user_id: u10.id,
   stars: 3,
-  text: text,
+  text: meh_3,
   post_date: '9/17/2018'
 )
 Review.create(
   business_id: b30.id,
   user_id: u8.id,
   stars: 4,
-  text: okay_1,
+  text: "They're known for their burgers and zapatos so I got the zapatos which is basically a burrito panini. It's very filling and full of flavor. My friends got the tacos and the guy said they're small, but they were HUGE.",
   post_date: '9/19/2018'
 )
 Review.create(
   business_id: b31.id,
   user_id: u2.id,
+  stars: 2,
+  text: meh_1,
+  post_date: '7/1/2018'
+)
+Review.create(
+  business_id: b31.id,
+  user_id: u12.id,
   stars: 3,
   text: meh_1,
-  post_date: '8/1/2018'
+  post_date: '8/31/2018'
+)
+Review.create(
+  business_id: b31.id,
+  user_id: u13.id,
+  stars: 4,
+  text: love_2,
+  post_date: '8/4/2018'
 )
 Review.create(
   business_id: b31.id,
@@ -1929,7 +2063,7 @@ Review.create(
   business_id: b31.id,
   user_id: u17.id,
   stars: 5,
-  text: love_2,
+  text: "Such an amazing dinner experience! We had a reservation to sit at the bar. Our sushi chef was super friendly, which contributed to our great experience. Customer service was great!",
   post_date: '9/4/2018'
 )
 Review.create(
@@ -1971,7 +2105,7 @@ Review.create(
   business_id: b32.id,
   user_id: u12.id,
   stars: 5,
-  text: good_3,
+  text: "This was a really cute coffee shop. I like the ambiance of the place, it had like a rustic feel to it. They also have a nice outdoor seating area. The staff was really nice and friendly as well.",
   post_date: '9/30/2018'
 )
 Review.create(
@@ -2216,7 +2350,7 @@ Review.create(
   business_id: b39.id,
   user_id: u20.id,
   stars: 5,
-  text: love_1,
+  text: love_4,
   post_date: '8/17/2018'
 )
 Review.create(
@@ -2238,379 +2372,379 @@ Review.create(
   user_id: u18.id,
   stars: 4,
   text: good_3,
-  post_date: '8/29/2018'
+  post_date: '9/29/2018'
 )
 
 # reviews cp5
-
-i1 = Image.create(user_id: u2.id, business_id: b1.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/fivFqKRBrA1ajiXJhTKesfrZ")
-i1.photo.attach(io: file, filename: "01.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b1.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/jAALftUxHCPZRcZTbtPJ762B")
-i1.photo.attach(io: file, filename: "02.jpg")
-
-i1 = Image.create(user_id: u1.id, business_id: b1.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/yLEfBYwqj5ybx3Cpk32ZxUQf")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u1.id, business_id: b2.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o.jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u7.id, business_id: b2.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(1).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u7.id, business_id: b2.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(2).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u8.id, business_id: b3.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(3).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u7.id, business_id: b3.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(4).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u7.id, business_id: b3.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(5).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u7.id, business_id: b4.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(6).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u3.id, business_id: b4.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(7).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b4.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(8).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u5.id, business_id: b17.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(9).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u5.id, business_id: b17.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(10).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u6.id, business_id: b17.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(11).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b6.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(12).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b6.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(13).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u18.id, business_id: b6.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(14).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u16.id, business_id: b7.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(18).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u17.id, business_id: b7.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(19).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u9.id, business_id: b7.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(20).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b8.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(15).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u20.id, business_id: b8.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(16).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u20.id, business_id: b8.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(17).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u3.id, business_id: b9.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(21).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b9.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(22).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b9.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(23).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b10.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(24).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u1.id, business_id: b10.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(25).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u19.id, business_id: b10.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(26).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b11.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(27).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u15.id, business_id: b11.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(28).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u15.id, business_id: b11.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(29).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u19.id, business_id: b12.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(30).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u19.id, business_id: b12.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(31).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u5.id, business_id: b12.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(32).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b13.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(33).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b13.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(34).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u7.id, business_id: b13.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(35).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b14.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(36).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b14.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(37).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u17.id, business_id: b14.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(38).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b15.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(39).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b15.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(40).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b15.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(41).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u8.id, business_id: b16.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(42).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u1.id, business_id: b16.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(43).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u4.id, business_id: b16.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(44).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b5.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(45).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b5.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(46).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u9.id, business_id: b5.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(47).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u13.id, business_id: b18.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(48).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u1.id, business_id: b18.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(49).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u1.id, business_id: b18.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(50).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u18.id, business_id: b19.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(51).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u18.id, business_id: b19.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(52).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b19.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(53).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u18.id, business_id: b20.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(54).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b20.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(55).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b20.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(56).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b21.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(57).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b21.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(58).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b21.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(59).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b22.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(60).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b22.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(61).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b22.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(62).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b23.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(63).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b23.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(64).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u4.id, business_id: b23.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(65).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u18.id, business_id: b24.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(66).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u8.id, business_id: b24.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(67).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u20.id, business_id: b24.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(68).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b25.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(69).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b25.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(70).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u12.id, business_id: b25.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(71).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u6.id, business_id: b26.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(72).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u6.id, business_id: b26.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(73).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u7.id, business_id: b26.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(74).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b27.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(75).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u13.id, business_id: b27.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(76).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u13.id, business_id: b27.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(77).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u14.id, business_id: b28.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(78).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u16.id, business_id: b28.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(79).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u16.id, business_id: b28.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(80).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u18.id, business_id: b29.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(81).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u18.id, business_id: b29.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(82).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u11.id, business_id: b29.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(83).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b30.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(84).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u10.id, business_id: b30.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(85).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u8.id, business_id: b30.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(86).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b31.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(87).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u2.id, business_id: b31.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(88).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
-
-i1 = Image.create(user_id: u17.id, business_id: b31.id)
-file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(89).jpg")
-i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b1.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/fivFqKRBrA1ajiXJhTKesfrZ")
+# i1.photo.attach(io: file, filename: "01.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b1.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/jAALftUxHCPZRcZTbtPJ762B")
+# i1.photo.attach(io: file, filename: "02.jpg")
+#
+# i1 = Image.create(user_id: u1.id, business_id: b1.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/yLEfBYwqj5ybx3Cpk32ZxUQf")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u1.id, business_id: b2.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o.jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u7.id, business_id: b2.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(1).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u7.id, business_id: b2.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(2).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u8.id, business_id: b3.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(3).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u7.id, business_id: b3.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(4).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u7.id, business_id: b3.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(5).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u7.id, business_id: b4.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(6).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u3.id, business_id: b4.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(7).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b4.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(8).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u5.id, business_id: b17.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(9).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u5.id, business_id: b17.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(10).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u6.id, business_id: b17.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(11).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b6.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(12).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b6.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(13).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u18.id, business_id: b6.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(14).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u16.id, business_id: b7.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(18).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u17.id, business_id: b7.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(19).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u9.id, business_id: b7.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(20).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b8.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(15).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u20.id, business_id: b8.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(16).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u20.id, business_id: b8.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(17).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u3.id, business_id: b9.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(21).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b9.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(22).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b9.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(23).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b10.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(24).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u1.id, business_id: b10.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(25).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u19.id, business_id: b10.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(26).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b11.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(27).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u15.id, business_id: b11.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(28).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u15.id, business_id: b11.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(29).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u19.id, business_id: b12.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(30).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u19.id, business_id: b12.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(31).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u5.id, business_id: b12.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(32).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b13.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(33).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b13.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(34).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u7.id, business_id: b13.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(35).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b14.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(36).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b14.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(37).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u17.id, business_id: b14.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(38).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b15.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(39).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b15.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(40).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b15.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(41).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u8.id, business_id: b16.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(42).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u1.id, business_id: b16.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(43).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u4.id, business_id: b16.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(44).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b5.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(45).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b5.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(46).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u9.id, business_id: b5.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(47).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u13.id, business_id: b18.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(48).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u1.id, business_id: b18.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(49).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u1.id, business_id: b18.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(50).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u18.id, business_id: b19.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(51).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u18.id, business_id: b19.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(52).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b19.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(53).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u18.id, business_id: b20.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(54).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b20.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(55).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b20.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(56).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b21.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(57).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b21.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(58).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b21.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(59).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b22.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(60).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b22.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(61).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b22.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(62).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b23.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(63).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b23.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(64).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u4.id, business_id: b23.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(65).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u18.id, business_id: b24.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(66).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u8.id, business_id: b24.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(67).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u20.id, business_id: b24.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(68).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b25.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(69).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b25.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(70).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u12.id, business_id: b25.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(71).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u6.id, business_id: b26.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(72).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u6.id, business_id: b26.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(73).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u7.id, business_id: b26.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(74).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b27.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(75).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u13.id, business_id: b27.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(76).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u13.id, business_id: b27.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(77).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u14.id, business_id: b28.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(78).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u16.id, business_id: b28.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(79).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u16.id, business_id: b28.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(80).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u18.id, business_id: b29.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(81).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u18.id, business_id: b29.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(82).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u11.id, business_id: b29.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(83).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b30.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(84).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u10.id, business_id: b30.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(85).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u8.id, business_id: b30.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(86).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b31.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(87).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u2.id, business_id: b31.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(88).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
+#
+# i1 = Image.create(user_id: u17.id, business_id: b31.id)
+# file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(89).jpg")
+# i1.photo.attach(io: file, filename: "03.jpg")
