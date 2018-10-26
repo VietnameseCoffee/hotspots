@@ -610,8 +610,80 @@ b45 = Business.create(
   phone_number: '(415) 379-4429',
   price: 1
 )
+b46 = Business.create(
+  name: "Brenda's French Soul Food",
+  latitude: 37.782873,
+  longitude: -122.419170,
+  address: "652 Polk St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94102,
+  stars: 4.6,
+  phone_number: '(415) 345-8100',
+  price: 2
+)
+b47 = Business.create(
+  name: "Ramen Izakaya Goku",
+  latitude: 37.764794,
+  longitude: -122.425028,
+  address: "3232 16th St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94102,
+  stars: 2.6,
+  phone_number: '(415) 934-0321',
+  price: 2
+)
+b48 = Business.create(
+  name: "Hakkasan",
+  latitude: 37.787773,
+  longitude: -122.403592,
+  address: "1 Kearny St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94102,
+  stars: 4.0,
+  phone_number: '(415) 829-8148',
+  price: 3
+)
+b49 = Business.create(
+  name: "Puppy Bobar",
+  latitude: 37.797518,
+  longitude: -122.406975,
+  address: "1142 Grant Ave",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94108,
+  stars: 3.6,
+  phone_number: '(415) 636-5181',
+  price: 1
+)
+b50 = Business.create(
+  name: "Milkbomb Ice Cream",
+  latitude: 37.764851,
+  longitude: -122.401332,
+  address: "1717 17th St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94107,
+  stars: 4.0,
+  phone_number: '(415) 780-4429',
+  price: 1
+)
+b51 = Business.create(
+  name: "Curry Leaf",
+  latitude: 37.803188,
+  longitude: -122.414389,
+  address: "943 Columbus Ave",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94107,
+  stars: 4.0,
+  phone_number: '(415) 440-4293',
+  price: 2
+)
 
-## Brendas, Milk Bomb hakkasan Puppy Bobar
+## Milk Bomb
 
 # business cp1
 
@@ -1003,6 +1075,67 @@ Category.create(
   business_id: b45.id,
   category: 'Salads',
 )
+Category.create(
+  business_id: b46.id,
+  category: 'Breakfast',
+)
+Category.create(
+  business_id: b46.id,
+  category: 'French',
+)
+Category.create(
+  business_id: b47.id,
+  category: 'Japanese',
+)
+Category.create(
+  business_id: b47.id,
+  category: 'Ramen',
+)
+Category.create(
+  business_id: b48.id,
+  category: 'Chinese',
+)
+Category.create(
+  business_id: b48.id,
+  category: 'Dim Sum',
+)
+Category.create(
+  business_id: b48.id,
+  category: 'American',
+)
+Category.create(
+  business_id: b49.id,
+  category: 'Boba',
+)
+Category.create(
+  business_id: b49.id,
+  category: 'Ice Cream',
+)
+Category.create(
+  business_id: b49.id,
+  category: 'Desserts',
+)
+Category.create(
+  business_id: b50.id,
+  category: 'Ice Cream',
+)
+Category.create(
+  business_id: b50.id,
+  category: 'Desserts',
+)
+Category.create(
+  business_id: b51.id,
+  category: 'Indian',
+)
+Category.create(
+  business_id: b51.id,
+  category: 'Pakistani',
+)
+Category.create(
+  business_id: b51.id,
+  category: 'Curry',
+)
+
 
 
 
@@ -1188,6 +1321,30 @@ Hour.create(
   business_id: b45.id,
   hours: normal
 )
+Hour.create(
+  business_id: b46.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b47.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b48.id,
+  hours: normal_7
+)
+Hour.create(
+  business_id: b49.id,
+  hours: normal_7
+)
+Hour.create(
+  business_id: b50.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b51.id,
+  hours: normal
+)
 
 # hours cp3
 
@@ -1369,6 +1526,30 @@ BusinessInfo.create(
 )
 BusinessInfo.create(
   business_id: b45.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b46.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b47.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b48.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b49.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b50.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b51.id,
   details: detail_casual
 )
 
@@ -2760,6 +2941,216 @@ Review.create(
   stars: 4,
   text: "Good sandy at a good price for sure. Definitely recommend trying it out. Usually fairly busy and the dining room is small so be prepared.",
   post_date: '10/3/2018'
+)
+Review.create(
+  business_id: b46.id,
+  user_id: u6.id,
+  stars: 5,
+  text: love_2,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b46.id,
+  user_id: u4.id,
+  stars: 4,
+  text: love_3,
+  post_date: '9/5/2018'
+)
+Review.create(
+  business_id: b46.id,
+  user_id: u11.id,
+  stars: 5,
+  text: good_3,
+  post_date: '9/17/2018'
+)
+Review.create(
+  business_id: b46.id,
+  user_id: u14.id,
+  stars: 4,
+  text: okay_1,
+  post_date: '9/22/2018'
+)
+Review.create(
+  business_id: b46.id,
+  user_id: u19.id,
+  stars: 5,
+  text: "Order whatever you feel is right, as long as you get the crawfish beignets as well. The Shrimp and Grits are as perfect as it gets, and the Hangtown Fry makes me wish I could have seafood every morning.",
+  post_date: '10/13/2018'
+)
+Review.create(
+  business_id: b47.id,
+  user_id: u7.id,
+  stars: 3,
+  text: okay_1,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b47.id,
+  user_id: u2.id,
+  stars: 3,
+  text: okay_3,
+  post_date: '9/12/2018'
+)
+Review.create(
+  business_id: b47.id,
+  user_id: u12.id,
+  stars: 2,
+  text: bad_3,
+  post_date: '9/24/2018'
+)
+Review.create(
+  business_id: b47.id,
+  user_id: u14.id,
+  stars: 2,
+  text: meh_1,
+  post_date: '9/22/2018'
+)
+Review.create(
+  business_id: b47.id,
+  user_id: u19.id,
+  stars: 3,
+  text: "The name Goku brought me and a couple of my friends to this place. The food here is top notch but the service killed it for me. We got the assorted seaweed salad, whole squid and clam, veggie and garlic ramen. The salad could've used a little more seaweed but the squid saved the day. It was cooked perfectly and tasted super fresh. I had ordered the garlic ramen originally substituting the pork broth with chicken. However after they brought it out there was still pork in it.",
+  post_date: '9/30/2018'
+)
+Review.create(
+  business_id: b48.id,
+  user_id: u10.id,
+  stars: 4,
+  text: love_2,
+  post_date: '8/26/2018'
+)
+Review.create(
+  business_id: b48.id,
+  user_id: u15.id,
+  stars: 3,
+  text: okay_1,
+  post_date: '9/8/2018'
+)
+Review.create(
+  business_id: b48.id,
+  user_id: u13.id,
+  stars: 4,
+  text: good_1,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b48.id,
+  user_id: u4.id,
+  stars: 4,
+  text: love_1,
+  post_date: '9/12/2018'
+)
+Review.create(
+  business_id: b48.id,
+  user_id: u9.id,
+  stars: 5,
+  text: "Food: 5/5. It tasted so good! Wish portions were a bit bigger but what lacked in quantity made up in quality. I got the $38 lunch which included a choice of appetizer (I chose steamed dim sum which was what the waiter recommended) and the merlot beef. The beef was so rich and delicious! I tried my friend's bass as well and it was super melty and yummy.",
+  post_date: '9/18/2018'
+)
+Review.create(
+  business_id: b49.id,
+  user_id: u10.id,
+  stars: 4,
+  text: love_4,
+  post_date: '7/26/2018'
+)
+Review.create(
+  business_id: b49.id,
+  user_id: u15.id,
+  stars: 5,
+  text: good_4,
+  post_date: '9/8/2018'
+)
+Review.create(
+  business_id: b49.id,
+  user_id: u13.id,
+  stars: 4,
+  text: okay_4,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b49.id,
+  user_id: u4.id,
+  stars: 1,
+  text: bad_2,
+  post_date: '9/22/2018'
+)
+Review.create(
+  business_id: b49.id,
+  user_id: u9.id,
+  stars: 4,
+  text: "Unfortunately, there are no puppies here. I've come here a few times because I love boba, and I'm always hoping that I've come on an off day. But I'm convinced the drinks here are just mediocre. They come in those fat cups, so you get a lot. I've only tried the regular milk tea, and it's just ok. But the boba is always disappointing. They're always hard. But the ladies that work here are pretty friendly.",
+  post_date: '9/28/2018'
+)
+Review.create(
+  business_id: b50.id,
+  user_id: u16.id,
+  stars: 4,
+  text: love_3,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b50.id,
+  user_id: u5.id,
+  stars: 4,
+  text: good_4,
+  post_date: '9/8/2018'
+)
+Review.create(
+  business_id: b50.id,
+  user_id: u7.id,
+  stars: 4,
+  text: good_3,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b50.id,
+  user_id: u11.id,
+  stars: 4,
+  text: okay_3,
+  post_date: '9/18/2018'
+)
+Review.create(
+  business_id: b50.id,
+  user_id: u20.id,
+  stars: 4,
+  text: "It seems unfair that this place has amazing ice cream, donuts and toppings all in one place.  Everything on it's own was delicious but combining all those flavors was unbelievable.  The owners were very involved and super helpful along my tasting journey.",
+  post_date: '9/26/2018'
+)
+Review.create(
+  business_id: b51.id,
+  user_id: u19.id,
+  stars: 4,
+  text: good_2,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b51.id,
+  user_id: u5.id,
+  stars: 4,
+  text: good_3,
+  post_date: '9/8/2018'
+)
+Review.create(
+  business_id: b51.id,
+  user_id: u7.id,
+  stars: 2,
+  text: meh_3,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b51.id,
+  user_id: u11.id,
+  stars: 5,
+  text: love_1,
+  post_date: '9/18/2018'
+)
+Review.create(
+  business_id: b51.id,
+  user_id: u20.id,
+  stars: 5,
+  text: "The food here is phenom. I had a great meal (with the bonus of Skymiles) and I liked that it was self-service making ordering quick and convenient. I decided on the BENGAN BHARTA (roasted eggplant, mashed and sautéed with onions, garlic and simmered in tomato sauce) and PLAIN NAAN. The Bengan Bharta was highlighted as the chef's favorite and I'm obsessed with eggplants so that was an easy choice for me.",
+  post_date: '9/26/2018'
 )
 
 # reviews cp5
