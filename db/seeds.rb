@@ -3984,14 +3984,14 @@ i1 = Image.create(user_id: u11.id, business_id: b53.id)
 file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(155).jpg")
 i1.photo.attach(io: file, filename: "03.jpg")
 
-i1 = Image.create(user_id: u16.id, business_id: b53.id)
+i1 = Image.create(user_id: u16.id, business_id: b54.id)
 file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(156).jpg")
 i1.photo.attach(io: file, filename: "03.jpg")
 
-i1 = Image.create(user_id: u8.id, business_id: b53.id)
+i1 = Image.create(user_id: u8.id, business_id: b54.id)
 file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(157).jpg")
 i1.photo.attach(io: file, filename: "03.jpg")
 
-i1 = Image.create(user_id: u8.id, business_id: b53.id)
+i1 = Image.create(user_id: u8.id, business_id: b54.id)
 file = open("https://s3-us-west-1.amazonaws.com/hot-spots-dev/o+(158).jpg")
 i1.photo.attach(io: file, filename: "03.jpg")
