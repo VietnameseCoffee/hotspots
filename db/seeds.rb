@@ -131,7 +131,7 @@ b5 = Business.create(
   price: 2
 )
 b6 = Business.create(
-  name: 'Taco Negris',
+  name: 'Tacos Negris',
   latitude: 37.576519,
   longitude: -121.976328,
   address: '37726 Niles Blvd',
@@ -503,7 +503,7 @@ b36 = Business.create(
   price: 2
 )
 b37 = Business.create(
-  name: "El Burrito Express",
+  name: "Burrito Express",
   latitude: 37.786466,
   longitude: -122.440112,
   address: '1812 Divisadero St',
@@ -680,6 +680,42 @@ b51 = Business.create(
   zip: 94107,
   stars: 4.0,
   phone_number: '(415) 440-4293',
+  price: 2
+)
+b52 = Business.create(
+  name: "Golden Gate",
+  latitude: 37.760669,
+  longitude: -122.505552,
+  address: "4038 Judah St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94107,
+  stars: 4.0,
+  phone_number: '(415) 564-5514',
+  price: 2
+)
+b53 = Business.create(
+  name: "E Tea",
+  latitude: 37.795798,
+  longitude: -122.405072,
+  address: "839 Kearny St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94108,
+  stars: 4.0,
+  phone_number: '(415) 956-1868',
+  price: 1
+)
+b54 = Business.create(
+  name: "Tony’s Pizza Napoletana",
+  latitude: 37.800262,
+  longitude: -122.409002,
+  address: "1570 Stockton St",
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94109,
+  stars: 4.6,
+  phone_number: '(415) 835-9888',
   price: 2
 )
 
@@ -1135,6 +1171,34 @@ Category.create(
   business_id: b51.id,
   category: 'Curry',
 )
+Category.create(
+  business_id: b52.id,
+  category: 'Indian',
+)
+Category.create(
+  business_id: b52.id,
+  category: 'Pizza',
+)
+Category.create(
+  business_id: b53.id,
+  category: 'Boba',
+)
+Category.create(
+  business_id: b53.id,
+  category: 'Coffee',
+)
+Category.create(
+  business_id: b53.id,
+  category: 'Tea',
+)
+Category.create(
+  business_id: b54.id,
+  category: 'Pizza',
+)
+Category.create(
+  business_id: b54.id,
+  category: 'Italian',
+)
 
 
 
@@ -1345,6 +1409,18 @@ Hour.create(
   business_id: b51.id,
   hours: normal
 )
+Hour.create(
+  business_id: b52.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b53.id,
+  hours: normal
+)
+Hour.create(
+  business_id: b54.id,
+  hours: normal
+)
 
 # hours cp3
 
@@ -1550,6 +1626,18 @@ BusinessInfo.create(
 )
 BusinessInfo.create(
   business_id: b51.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b52.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b53.id,
+  details: detail_casual
+)
+BusinessInfo.create(
+  business_id: b54.id,
   details: detail_casual
 )
 
@@ -3151,6 +3239,111 @@ Review.create(
   stars: 5,
   text: "The food here is phenom. I had a great meal (with the bonus of Skymiles) and I liked that it was self-service making ordering quick and convenient. I decided on the BENGAN BHARTA (roasted eggplant, mashed and sautéed with onions, garlic and simmered in tomato sauce) and PLAIN NAAN. The Bengan Bharta was highlighted as the chef's favorite and I'm obsessed with eggplants so that was an easy choice for me.",
   post_date: '9/26/2018'
+)
+Review.create(
+  business_id: b52.id,
+  user_id: u10.id,
+  stars: 5,
+  text: good_1,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b52.id,
+  user_id: u13.id,
+  stars: 4,
+  text: good_2,
+  post_date: '9/8/2018'
+)
+Review.create(
+  business_id: b52.id,
+  user_id: u5.id,
+  stars: 4,
+  text: love_2,
+  post_date: '9/10/2018'
+)
+Review.create(
+  business_id: b52.id,
+  user_id: u1.id,
+  stars: 4,
+  text: okay_4,
+  post_date: '9/18/2018'
+)
+Review.create(
+  business_id: b52.id,
+  user_id: u18.id,
+  stars: 3,
+  text: "This is one of the best things about living out in the Outer Sunset! My huzz loves the chicken tandoori pizza and, now, even better, the chicken sandwich. I usually get the "classic" vegetarian Indian food (aloo gobi, bangan bartha, dal, etc.) But I decided to try the vegetarian Indian pizza tonight and it was delish! A little more bangan bartha drizzled on top would have made it perfect! I even had to try the chicken pakora he ordered because it looked so good, and it was!",
+  post_date: '9/22/2018'
+)
+Review.create(
+  business_id: b53.id,
+  user_id: u9.id,
+  stars: 5,
+  text: good_1,
+  post_date: '8/17/2018'
+)
+Review.create(
+  business_id: b53.id,
+  user_id: u5.id,
+  stars: 4,
+  text: good_2,
+  post_date: '8/18/2018'
+)
+Review.create(
+  business_id: b53.id,
+  user_id: u7.id,
+  stars: 4,
+  text: love_2,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b53.id,
+  user_id: u11.id,
+  stars: 4,
+  text: love_2,
+  post_date: '8/27/2018'
+)
+Review.create(
+  business_id: b53.id,
+  user_id: u19.id,
+  stars: 4,
+  text: "Small but cute and compact. The cow logo was what caught my attention at first, but they have a surprisingly large selection of drinks. I hesitated between the Winnie the Pooh and just a regular, so I went with the House boba to be safe. Their cups are pretty big, and it's only $3.99!",
+  post_date: '8/31/2018'
+)
+Review.create(
+  business_id: b54.id,
+  user_id: u2.id,
+  stars: 5,
+  text: good_1,
+  post_date: '7/27/2018'
+)
+Review.create(
+  business_id: b54.id,
+  user_id: u16.id,
+  stars: 4,
+  text: okay_1,
+  post_date: '8/18/2018'
+)
+Review.create(
+  business_id: b54.id,
+  user_id: u17.id,
+  stars: 4,
+  text: love_4,
+  post_date: '8/22/2018'
+)
+Review.create(
+  business_id: b54.id,
+  user_id: u7.id,
+  stars: 5,
+  text: love_1,
+  post_date: '8/30/2018'
+)
+Review.create(
+  business_id: b54.id,
+  user_id: u8.id,
+  stars: 5,
+  text: "The bucatini pasta came out first and we went in on it. The pasta was cooked al dente and it absorbed the tomato sauce so well. It had a nice spicy kick to it, which we loved and the sausage was a bit on the drier side but still good.",
+  post_date: '9/9/2018'
 )
 
 # reviews cp5
